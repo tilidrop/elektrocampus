@@ -1,0 +1,614 @@
+{
+  "id": "modul-6",
+  "nummer": 6,
+  "titel": "Steckdosen, Verteilung, Geräteanschluss",
+  "beschreibung": "Steckdosentypen nach SN 441011, Stromkreise für Geräte, Herd und Backofen, Boiler mit Netzbetreiber-Vorgaben, Verteilerfeld und CEE-Steckdosen.",
+  "minutenGesamt": 24,
+  "lektionen": [
+    {
+      "id": "m6-l1",
+      "titel": "Steckdosentypen 12, 13, 15, 21, 23, 25",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ESTI-Info SN 441011 (Stand 28.09.2025)",
+        "Electrosuisse SNG 491000-3060, Stecker und Steckdosen für Haushalts- und ähnliche Anwendungen, Januar 2021",
+        "Händlerkatalog Feller (Kurzform T13, T23), siehe ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 5"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto hast du die Zigarettenanzünder-Steckdose und einen anderen Stecker für den Anhänger. Der Stecker passt zur Leistung.",
+          "elektro": "Im Haus passt der Steckdosentyp zur Belastung und zur Zahl der Leiter."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Typ 12: L+N+PE, 10 A, die einzige Steckdose ohne Schutzkragen. Für Neumontagen seit 31.12.2016 nicht mehr zulässig.",
+            "Typ 13: L+N+PE, 10 A, im Haushalt üblich.",
+            "Typ 15: 3L+N+PE, 10 A, dreiphasig.",
+            "Typ 21: L+N, 16 A, zweipolig ohne Schutzleiter.",
+            "Typ 23: L+N+PE, 16 A.",
+            "Typ 25: 3L+N+PE, 16 A, dreiphasig."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Im Handel stehen Kurzformen wie T13, T23, T15 und T25. Sie meinen Typ 13, Typ 23 und so weiter. Die Norm ist SN 441011 und ersetzt die frühere SN SEV 1011."
+        },
+        {
+          "typ": "merke",
+          "text": "Typ 13 ist ein 10-A-System, Typ 23 ein 16-A-System. Typ 12 ohne Schutzkragen darfst du für neue Installationen nicht mehr einbauen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau dir in einer Wohnung Steckdosen an und bestimme den Typ nach der Liste. Du fasst nichts an und baust nichts aus. Arbeiten an Steckdosen machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m6-l1-q1",
+          "frage": "Welcher Steckdosentyp hat L+N+PE und 10 A und ist im Haushalt üblich?",
+          "optionen": [
+            "Typ 13",
+            "Typ 25",
+            "Typ 15",
+            "Typ 21"
+          ],
+          "richtig": 0,
+          "erklaerung": "Typ 13 ist das 10-A-System mit L+N+PE."
+        },
+        {
+          "id": "m6-l1-q2",
+          "frage": "Welche Steckdose ist dreiphasig (3L+N+PE) mit 16 A?",
+          "optionen": [
+            "Typ 13",
+            "Typ 23",
+            "Typ 15",
+            "Typ 25"
+          ],
+          "richtig": 3,
+          "erklaerung": "Typ 25 hat 3L+N+PE mit 16 A. Typ 15 hat 10 A."
+        },
+        {
+          "id": "m6-l1-q3",
+          "frage": "Was gilt für die Steckdose Typ 12 ohne Schutzkragen?",
+          "optionen": [
+            "Sie ist für Neumontagen seit 31.12.2016 nicht mehr zulässig",
+            "Sie ist der neue Standard",
+            "Sie ist nur für 400 V",
+            "Sie ist nur für Kinderzimmer"
+          ],
+          "richtig": 0,
+          "erklaerung": "Typ 12 ist die einzige Steckdose ohne Schutzkragen und darf für neue Installationen nicht mehr eingebaut werden."
+        },
+        {
+          "id": "m6-l1-q4",
+          "frage": "Welche Leiter hat Typ 21?",
+          "optionen": [
+            "L+N ohne Schutzleiter, 16 A",
+            "L+N+PE, 10 A",
+            "3L+N+PE, 16 A",
+            "Nur PE"
+          ],
+          "richtig": 0,
+          "erklaerung": "Typ 21 ist eine zweipolige 16-A-Steckdose ohne PE."
+        },
+        {
+          "id": "m6-l1-q5",
+          "frage": "Was ist mit T23 im Handel gemeint?",
+          "optionen": [
+            "Steckdose Typ 23 mit L+N+PE und 16 A",
+            "Ein Transformator mit 23 W",
+            "Ein Kabel mit 23 mm²",
+            "Eine Lampe mit 23 V"
+          ],
+          "richtig": 0,
+          "erklaerung": "T23 ist die handelsübliche Kurzform für Typ 23."
+        }
+      ]
+    },
+    {
+      "id": "m6-l2",
+      "titel": "Stromkreise für Geräte",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Schmucki, Leitungen richtig planen und verlegen, bulletin.ch 5/2017 (NIN 5.2.4, Bemessung nach vorgeschaltetem Überstromorgan)",
+        "ESTI-Info SN 441011 (Stand 28.09.2025)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 4 (Rechnung gegen Tabelle)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto hat das Licht eine Sicherung, die Scheibenheizung eine andere und die Einspritzung wieder eine andere. Wenn eine durchbrennt, geht nicht alles aus.",
+          "elektro": "Im Haus hängen Verbraucher an Stromkreisen mit eigenem LS. Ein Fehler bleibt so auf den Stromkreis begrenzt."
+        },
+        {
+          "typ": "text",
+          "text": "Ein Stromkreis besteht aus LS, Leitung und Steckdose oder Gerät. Leitungen für Steckdosen werden nach dem vorgeschalteten Überstromorgan bemessen, weil nicht bekannt ist, welches Gerät später angeschlossen wird."
+        },
+        {
+          "typ": "text",
+          "text": "Rechenbeispiel zur Grössenordnung: Backofen, Waschmaschine, Geschirrspüler oder Tumbler mit 13 bis 16 A passen zu 2.5 mm². 2.5 mm² im Rohr hat bei zwei belasteten Adern 23 A. Welche Geräte einen eigenen Stromkreis bekommen, legen Planung und Typenschild fest."
+        },
+        {
+          "typ": "merke",
+          "text": "Die Leitung richtet sich nach dem LS davor. Geräte mit hohem Strom plant die Fachperson auf einen eigenen Stromkreis, wenn Typenschild und Planung das verlangen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau im Verteiler, welche Beschriftungen auf den LS stehen (Backofen, Waschmaschine ...). Du liest nur die Beschriftungen und öffnest nichts. Arbeiten im Verteiler machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m6-l2-q1",
+          "frage": "Woraus besteht ein Stromkreis?",
+          "optionen": [
+            "LS, Leitung und Steckdose oder Gerät",
+            "Nur aus einer Lampe",
+            "Nur aus dem Zähler",
+            "Nur aus einem Rohr"
+          ],
+          "richtig": 0,
+          "erklaerung": "Zum Stromkreis gehören der LS, die Leitung und die Steckdose oder das Gerät."
+        },
+        {
+          "id": "m6-l2-q2",
+          "frage": "Wonach wird die Leitung für eine Steckdose bemessen?",
+          "optionen": [
+            "Nach dem vorgeschalteten Überstromorgan",
+            "Nach der Farbe der Steckdose",
+            "Nach dem Gewicht des Geräts",
+            "Nach dem Preis"
+          ],
+          "richtig": 0,
+          "erklaerung": "Bei Steckdosen ist das spätere Gerät unbekannt, darum zählt der LS davor."
+        },
+        {
+          "id": "m6-l2-q3",
+          "frage": "Welcher Querschnitt passt im Rechenbeispiel zu Geräten mit 13 bis 16 A?",
+          "optionen": [
+            "2.5 mm²",
+            "0.5 mm²",
+            "1.5 mm² mit 16 A in jedem Fall",
+            "16 mm²"
+          ],
+          "richtig": 0,
+          "erklaerung": "2.5 mm² hat im Rohr bei zwei belasteten Adern 23 A und deckt 13 bis 16 A."
+        },
+        {
+          "id": "m6-l2-q4",
+          "frage": "Wer legt fest, welche Geräte einen eigenen Stromkreis bekommen?",
+          "optionen": [
+            "Planung und Typenschild",
+            "Der Zufall",
+            "Die Mantelfarbe",
+            "Niemand"
+          ],
+          "richtig": 0,
+          "erklaerung": "Eine einheitliche Norm dazu fanden wir nicht. Planung und Typenschild entscheiden."
+        }
+      ]
+    },
+    {
+      "id": "m6-l3",
+      "titel": "Backofen und Herd",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Electrosuisse, Corrigendum zur NIN 2025, 11.2025, Kapitel 5.2.1.10 .3 (flexible Anschlussleitung für Kochgeräte)",
+        "Müller PE, NIN-Arbeitsblätter Auflage 12, Blatt 27.2 (Belastbarkeit)",
+        "WV BE/JU/SO, Werkvorschriften, Dezember 2016, Tabelle 8.22 (Herd)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 4 und Offene Frage Nr. 8 b"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Die Heckscheibenheizung zieht im Auto viel Strom und hat darum ihre eigene Sicherung und ein dickes Kabel.",
+          "elektro": "Backofen und Herd sind Wärmegeräte mit hoher Leistung. Sie brauchen passenden Querschnitt und die richtige Absicherung."
+        },
+        {
+          "typ": "text",
+          "text": "Rechenbeispiel Backofen: Ein Einbau-Backofen mit 3.6 kW an 230 V zieht rund 15.7 A. Ein LS mit 16 A und 3x2.5 mm² passen dazu."
+        },
+        {
+          "typ": "text",
+          "text": "Rechenbeispiel Kochherd 400 V: 3x16 A ergibt rund 11.1 kW. Dazu passt ein Kabel 5x2.5 mm² (Belastbarkeit 20 A im Rohr bei drei belasteten Adern). Bei einem grossen Herd rechnet die Fachperson mit 5x4 mm² oder 5x6 mm². Bei 5x4 mm² wären 3x20 A oder 3x25 A denkbar, bei 5x6 mm² 3x32 A."
+        },
+        {
+          "typ": "text",
+          "text": "Ein Herd mit drei Phasen braucht fünf Adern: drei Aussenleiter, Neutralleiter und Schutzleiter. Nach der NIN 2025 müssen ortsfeste Geräte, die zum Anschliessen oder Reinigen vorübergehend bewegt werden, zum Beispiel Kochgeräte, mit flexiblen Kabeln angeschlossen werden. Der Netzbetreiber legt fest, ab welcher Leistung ein Herd dreiphasig anzuschliessen ist. Nach den Werkvorschriften Bern/Jura/Solothurn (Ausgabe 2016) gilt das für Herd mit Backofen ab 10 kW."
+        },
+        {
+          "typ": "merke",
+          "text": "Backofen 3.6 kW: rund 15.7 A, 16 A mit 3x2.5 mm². Kochherd 3x16 A: 5x2.5 mm². Das sind Rechenbeispiele, Typenschild und Netzbetreiber gelten."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau auf dem Typenschild eines Backofens nach Spannung und Leistung. Rechne mit der Fachperson nach, welcher Stromkreis dazu passt. Den Anschluss macht die Fachperson, du hilfst nur unter Anleitung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m6-l3-q1",
+          "frage": "Welches Kabel passt im Beispiel zu einem Backofen mit 3.6 kW an 230 V und 16 A?",
+          "optionen": [
+            "3x2.5 mm²",
+            "3x0.75 mm²",
+            "5x16 mm²",
+            "2x10 mm²"
+          ],
+          "richtig": 0,
+          "erklaerung": "Rund 15.7 A mit 16 A Absicherung passen zu 3x2.5 mm²."
+        },
+        {
+          "id": "m6-l3-q2",
+          "frage": "Welches Kabel passt im Beispiel zu einem Kochherd mit 3x16 A?",
+          "optionen": [
+            "5x2.5 mm²",
+            "3x1.5 mm²",
+            "3x2.5 mm²",
+            "2x1 mm²"
+          ],
+          "richtig": 0,
+          "erklaerung": "3x16 A braucht drei Aussenleiter, N und PE. 2.5 mm² verträgt im Rohr 20 A."
+        },
+        {
+          "id": "m6-l3-q3",
+          "frage": "Warum hat ein Drehstromherd ein Fünfleiterkabel?",
+          "optionen": [
+            "Drei Aussenleiter, Neutralleiter und Schutzleiter",
+            "Fünf Aussenleiter",
+            "Zwei Neutralleiter und drei Schutzleiter",
+            "Damit es dicker aussieht"
+          ],
+          "richtig": 0,
+          "erklaerung": "Fünf Adern: L1, L2, L3, N und PE."
+        },
+        {
+          "id": "m6-l3-q4",
+          "frage": "Wie müssen Kochgeräte nach NIN 2025 angeschlossen werden, die zum Reinigen bewegt werden?",
+          "optionen": [
+            "Mit flexiblen Kabeln",
+            "Mit starren Einzeladern ohne Mantel",
+            "Über eine Mehrfachsteckdose",
+            "Ohne Schutzleiter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Geräte, die zum Anschliessen oder Reinigen vorübergehend bewegt werden, bekommen flexible Kabel."
+        },
+        {
+          "id": "m6-l3-q5",
+          "frage": "Was wird bei einem grossen Herd geprüft?",
+          "optionen": [
+            "Ob 5x4 mm² oder 5x6 mm² nötig ist",
+            "Ob der Herd eine Lampe hat",
+            "Ob das Kabel gelb ist",
+            "Ob eine Steckdose daneben steht"
+          ],
+          "richtig": 0,
+          "erklaerung": "Bei grossen Herden rechnet die Fachperson mit 5x4 mm² oder 5x6 mm²."
+        }
+      ]
+    },
+    {
+      "id": "m6-l4",
+      "titel": "Boiler anschliessen",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "WV BE/JU/SO, Werkvorschriften, Dezember 2016, Tabellen 8.13, 8.24, 8.242 und 8.243",
+        "WV-CH 2021 mit den TAB der Verteilnetzbetreiber, Kapitel 8.4 (Boiler)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 4 und Offene Frage Nr. 8 c (eigene Rechnung)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Die Standheizung im Auto hat eine eigene Zuleitung und eine eigene Sicherung, weil sie viel Leistung zieht.",
+          "elektro": "Der Boiler ist ein grosser Wärmeverbraucher. Sein Anschluss richtet sich nach Leistung und Vorgaben des Netzbetreibers."
+        },
+        {
+          "typ": "text",
+          "text": "Rechenbeispiele für den Strom: 3 kW an 230 V sind 13 A. 6 kW an 3x400 V sind 8.7 A je Phase (Leistung geteilt durch Wurzel 3 mal 400 V). 10 kW an 3x400 V sind 14.4 A je Phase. 10 kW einphasig an 230 V wären 43.5 A, das ist ein theoretischer Wert und kommt bei einem normalen Boiler nicht vor."
+        },
+        {
+          "typ": "text",
+          "text": "Ab etwa 4 kW ist 3x400 V üblich. Bei den Werkvorschriften ist einphasig nur bis 3.6 kW (Raum Bern, Ausgabe 2016) beziehungsweise 3.7 kVA (Aargau, Ausgabe 2021) erlaubt. Es gelten die Vorgaben des Netzbetreibers."
+        },
+        {
+          "typ": "text",
+          "text": "Nach den Werkvorschriften Bern/Jura/Solothurn (Ausgabe 2016) werden Boiler ab 100 Litern hinter Schaltapparaten angeschlossen (Niedertarif, Sperrzeiten). Das Klemmbrett und die Steuerung sehen deshalb anders aus als bei einer normalen Steckdose. Die Aargauer Werkvorschriften (2021) verlangen eine allpolige Trennstelle mit der Bezeichnung Hauptschalter Boiler. Was beim eigenen Auftrag gilt, steht in den Werkvorschriften des zuständigen Netzbetreibers. Beispiel Leistungsreihe: 200 Liter 4000 W, 300 Liter 6000 W."
+        },
+        {
+          "typ": "merke",
+          "text": "Boiler: Strom aus Leistung rechnen, ab etwa 4 kW dreiphasig, Netzbetreiber-Vorgaben beachten. Querschnitt und Absicherung nach Typenschild und Fachperson."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lies das Typenschild eines Boilers (Leistung und Spannung). Rechne den Strom aus und besprich mit der Fachperson, was der Netzbetreiber verlangt. Am Boiler arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m6-l4-q1",
+          "frage": "Wie gross ist der Strom je Phase bei 6 kW an 3x400 V?",
+          "optionen": [
+            "Rund 8.7 A",
+            "Rund 26 A",
+            "Rund 15 A",
+            "Rund 3 A"
+          ],
+          "richtig": 0,
+          "erklaerung": "6000 W geteilt durch (Wurzel 3 mal 400 V) ergibt rund 8.7 A."
+        },
+        {
+          "id": "m6-l4-q2",
+          "frage": "Warum wird ein 10-kW-Boiler nicht einphasig angeschlossen?",
+          "optionen": [
+            "Es wären rund 43.5 A und die Netzbetreiber erlauben einphasig nur kleine Leistungen",
+            "Weil Wasser nur dreiphasig heiss wird",
+            "Weil 230 V gefährlicher sind",
+            "Das ist nur eine Farbfrage"
+          ],
+          "richtig": 0,
+          "erklaerung": "10 kW durch 230 V sind rund 43.5 A. Einphasig sind nur kleine Leistungen erlaubt, ab etwa 4 kW üblicherweise 3x400 V."
+        },
+        {
+          "id": "m6-l4-q3",
+          "frage": "Wer legt die Anschlussbedingungen für den Boiler fest?",
+          "optionen": [
+            "Der Netzbetreiber nach seinen Werkvorschriften",
+            "Der Hersteller der Wasserleitung",
+            "Der Zufall",
+            "Niemand"
+          ],
+          "richtig": 0,
+          "erklaerung": "Leistungsreihe, Freigabezeit und Anschluss legt der Netzbetreiber fest."
+        },
+        {
+          "id": "m6-l4-q4",
+          "frage": "Wie hängt ein Boiler ab 100 Litern nach den Werkvorschriften am Netz?",
+          "optionen": [
+            "Hinter Schaltapparaten des Netzbetreibers",
+            "Direkt an der Lampenleitung",
+            "An einer Steckdosenleiste",
+            "Ohne Trennstelle"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nachtenergie und Sperrzeiten werden über Schaltapparate gesteuert. Dazu kommt eine allpolige Trennstelle Hauptschalter Boiler."
+        }
+      ]
+    },
+    {
+      "id": "m6-l5",
+      "titel": "Verteilerfeld: Aufbau und Aussenleiter",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "Electrosuisse, Corrigendum zur NIN 2025, 11.2025, Kapitel 5.1.4.3.4 (Aussenleiterfarben)",
+        "WV BE/JU/SO, Werkvorschriften, Dezember 2016, Tabelle 8.13 (Anschlusswerte)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 1.1 und 4"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto sitzt der Sicherungskasten an einem Ort, und alle Kreise gehen von dort aus. Du findest Sicherungen dort.",
+          "elektro": "Der Verteiler im Haus ist der Sicherungskasten. Von dort gehen alle Stromkreise ab."
+        },
+        {
+          "typ": "text",
+          "text": "Im Verteiler findest du unter anderem FI-LS und LS. Dazu kommen Klemmen und Verdrahtung. Die Aussenleiter sind nach NIN 2025 braun, schwarz oder grau. Die Zuordnung L1 braun, L2 schwarz, L3 grau nennen die Aargauer Werkvorschriften für die Zuleitung. Als allgemeine Regel für jede Ader ist sie nicht gesichert."
+        },
+        {
+          "typ": "text",
+          "text": "Ein Anschluss kann dreiphasig (3x400/230 V) oder einphasig sein. Bis zu welcher Leistung einphasig angeschlossen werden darf, legt der Netzbetreiber fest. Bei drei Aussenleitern werden die Verbraucher möglichst gleichmässig auf die drei verteilt. Sonst entsteht Unsymmetrie im Netz."
+        },
+        {
+          "typ": "merke",
+          "text": "Verbraucher möglichst gleichmässig auf die drei Aussenleiter verteilen. Aussenleiter sind braun, schwarz und grau."
+        },
+        {
+          "typ": "text",
+          "text": "Am Verteiler arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau dir einen Verteiler an und zeichne eine einfache Skizze: Einspeisung, FI, LS, Abgänge. Zähle, auf welchen Aussenleiter jeder Stromkreis geht. Du öffnest den Verteiler nicht selbst."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m6-l5-q1",
+          "frage": "Welche Farben haben die Aussenleiter?",
+          "optionen": [
+            "Braun, schwarz und grau",
+            "Blau und grüngelb",
+            "Rot und weiss",
+            "Nur orange"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nach NIN 2025 sind Aussenleiter braun, schwarz oder grau."
+        },
+        {
+          "id": "m6-l5-q2",
+          "frage": "Wie verteilst du die Verbraucher auf die Aussenleiter?",
+          "optionen": [
+            "Alle auf L1",
+            "Möglichst gleichmässig auf alle drei",
+            "Nur auf L3",
+            "Zufällig ohne Plan"
+          ],
+          "richtig": 1,
+          "erklaerung": "Gleichmässige Verteilung verhindert Unsymmetrie im Netz."
+        },
+        {
+          "id": "m6-l5-q3",
+          "frage": "Was kann bei ungleicher Verteilung auf die Aussenleiter entstehen?",
+          "optionen": [
+            "Unsymmetrie im Netz",
+            "Ein hellerer Zähler",
+            "Ein lauterer Kühlschrank",
+            "Nichts"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ungleich verteilte Last führt zu Unsymmetrie im Netz."
+        },
+        {
+          "id": "m6-l5-q4",
+          "frage": "Wer legt die Grenze für einphasige Anschlüsse fest?",
+          "optionen": [
+            "Der Netzbetreiber",
+            "Du selbst",
+            "Der Kunde",
+            "Der Lieferant"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Anschlusswerte stehen in den Werkvorschriften des Netzbetreibers."
+        }
+      ]
+    },
+    {
+      "id": "m6-l6",
+      "titel": "CEE-Steckdosen und IP55-System",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Electrosuisse SNG 491000-3060, Januar 2021, Punkte 3 und 9 (IP55-System, CEE IP44)",
+        "itwissen.info, CEE-Stecker (EN 60309-2), Herstellerlisten",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 5"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Ein Anhänger hat einen anderen Stecker als dein Handy. Der Stecker zeigt, wie viel Strom fliesst.",
+          "elektro": "CEE-Steckdosen sind Industriesteckdosen. Die Farbe zeigt die Spannung: blau 230 V, rot 400 V. Die Grösse zeigt den Strom, üblich sind 16 und 32 A."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "CEE nach SN EN 60309 mit Schutzart IP44 ist als Alternative zum IP55-System zugelassen.",
+            "5-polig heisst 3L+N+PE.",
+            "IP55-System: Steckdosen mit IP55 überall dort, wo IP21 nicht genügt, zum Beispiel Baustelle, Autowaschplatz, Camping, Bootsanlegestelle, Jahrmarkt.",
+            "Für das IP55-System sind Mehrfachadapter nicht zulässig. In eine Mehrfachsteckdose gehört nur ein IP55-Stecker."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "CEE: blau 230 V, rot 400 V, 5-polig heisst 3L+N+PE. Zuleitung und Absicherung richten sich nach dem Auftrag."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau dir eine CEE-Steckdose an und zähle die Pole. Frage die Fachperson, wofür sie auf dieser Baustelle gebraucht wird. Du schaust nur, angeschlossen wird nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m6-l6-q1",
+          "frage": "Welche Spannung zeigt die Farbe rot bei CEE?",
+          "optionen": [
+            "400 V",
+            "230 V",
+            "12 V",
+            "24 V"
+          ],
+          "richtig": 0,
+          "erklaerung": "Rot steht für 400 V, blau für 230 V."
+        },
+        {
+          "id": "m6-l6-q2",
+          "frage": "Was bedeutet 5-polig bei einer CEE-Steckdose?",
+          "optionen": [
+            "3L+N+PE",
+            "Fünf Aussenleiter",
+            "Fünf Neutralleiter",
+            "Zwei Phasen und drei Schutzleiter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Fünf Pole sind drei Aussenleiter, Neutralleiter und Schutzleiter."
+        },
+        {
+          "id": "m6-l6-q3",
+          "frage": "Welche Schutzart hat die CEE-Steckvorrichtung nach SN EN 60309 als Alternative zum IP55-System?",
+          "optionen": [
+            "IP44",
+            "IP00",
+            "IP10",
+            "IP99"
+          ],
+          "richtig": 0,
+          "erklaerung": "CEE-Steckvorrichtungen mit IP44 sind als Alternative zum IP55-System zugelassen."
+        },
+        {
+          "id": "m6-l6-q4",
+          "frage": "Was gilt für Mehrfachadapter im IP55-System?",
+          "optionen": [
+            "Sie sind nicht zulässig",
+            "Sie sind Pflicht",
+            "Sie sind nur auf dem Jahrmarkt verboten",
+            "Sie sind gelb markiert"
+          ],
+          "richtig": 0,
+          "erklaerung": "Im IP55-System sind Mehrfachadapter nicht zulässig."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m6-p1",
+      "titel": "Steckdosen und Stromkreise einer Küche",
+      "stufe": "Anfänger",
+      "ziel": "Du ordnest die Geräte einer Küche den passenden Stromkreisen und Steckdosen zu. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du nennst, welche Geräte laut Typenschild viel Strom ziehen.",
+        "Du ordnest Backofen und Herd mit einer Rechnung den passenden Kabeln zu.",
+        "Du unterscheidest Typ 13, Typ 23 und eine dreiphasige Dose.",
+        "Du fragst die Fachperson, wo die Unterlagen für den Anschluss liegen."
+      ]
+    },
+    {
+      "id": "m6-p2",
+      "titel": "Verteiler skizzieren und Aussenleiter zuordnen",
+      "stufe": "Anfänger",
+      "ziel": "Du zeichnest einen Verteiler und verteilst die Stromkreise gleichmässig auf die drei Aussenleiter. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du zeichnest Einspeisung, FI und LS.",
+        "Du ordnest jeden Abgang einem Aussenleiter zu.",
+        "Du begründest die gleichmässige Verteilung mit der Unsymmetrie im Netz.",
+        "Du lässt die Skizze von der Fachperson prüfen."
+      ]
+    },
+    {
+      "id": "m6-p3",
+      "titel": "Boiler: Strom rechnen",
+      "stufe": "Anfänger",
+      "ziel": "Du rechnest für drei Boilerleistungen den Strom je Phase und erklärst, warum ab etwa 4 kW dreiphasig üblich ist. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du rechnest 3 kW bei 230 V und 6 kW bei 3x400 V korrekt.",
+        "Du erklärst den Faktor Wurzel 3 bei dreiphasig.",
+        "Du nennst den Netzbetreiber als Instanz für die Anschlussbedingungen."
+      ]
+    }
+  ],
+  "schaltungen": []
+}

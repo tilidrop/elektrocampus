@@ -1,0 +1,617 @@
+{
+  "id": "modul-2",
+  "nummer": 2,
+  "titel": "Material und Werkzeug",
+  "beschreibung": "Kabel lesen, Kabeltypen, Adernfarben nach NIN 2025, Klemmen, Rohre und Kanäle sowie das wichtigste Werkzeug mit dem zweipoligen Spannungsprüfer.",
+  "minutenGesamt": 23,
+  "lektionen": [
+    {
+      "id": "m2-l1",
+      "titel": "Vom Kabelbaum zur Installation",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "Keine Norm gefunden: Schreibweise 3x1.5 ist Grundwissen aus der Berufspraxis",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 1.3 (isolierte Aderleitungen, NIN 2025 COR1 Auszug, 5.2.1.11)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto liegt der Kabelbaum. Er bringt Strom von der Batterie zu Licht, Radio und Scheibenwischer. Jedes Kabel hat eine Farbe und einen Zweck.",
+          "elektro": "Im Haus ist die Installation dein Kabelbaum. Kabel bringen den Strom vom Verteiler zu Lampen, Steckdosen und Geräten. Auch hier hat jede Ader eine Farbe und einen Zweck."
+        },
+        {
+          "typ": "text",
+          "text": "Ein Kabel ist ein Bündel aus mehreren Adern. Jede Ader ist ein Kupferdraht mit eigener Isolation. Aussen liegt ein Mantel, der alle Adern zusammenhält und schützt."
+        },
+        {
+          "typ": "text",
+          "text": "Auf der Materialliste eines Lehrauftrags stehen zum Beispiel Kabel 3x1.5 und 5x1.5. Die erste Zahl sagt, wie viele Adern im Kabel stecken. Die zweite Zahl ist der Querschnitt jeder Ader in mm²."
+        },
+        {
+          "typ": "text",
+          "text": "Es gibt auch Einzeladern ohne Mantel. Solche isolierten Aderleitungen liegen in der festen Installation in Rohren, Kabelkanälen oder Kabeltrassen."
+        },
+        {
+          "typ": "merke",
+          "text": "3x1.5 heisst: drei Adern mit je 1.5 mm². 5x1.5 heisst: fünf Adern mit je 1.5 mm²."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Nimm auf dem nächsten Werkplatz ein Kabelstück in die Hand. Lies die Aufschrift auf dem Mantel. Zähle die Adern und vergleiche mit der Zahl vor dem x. Das Kabelstück muss spannungsfrei und nicht angeschlossen sein."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m2-l1-q1",
+          "frage": "Was bedeutet die Angabe 3x1.5 auf einem Kabel?",
+          "optionen": [
+            "Drei Adern mit je 1.5 mm²",
+            "Eine Ader mit 4.5 mm²",
+            "1.5 Adern mit je 3 mm²",
+            "Drei Meter Kabel mit 1.5 A"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die erste Zahl zählt die Adern, die zweite ist der Querschnitt jeder Ader in mm²."
+        },
+        {
+          "id": "m2-l1-q2",
+          "frage": "Welches Teil im Auto entspricht am ehesten der Kabelinstallation im Haus?",
+          "optionen": [
+            "Der Kabelbaum",
+            "Der Auspuff",
+            "Die Lichtmaschine",
+            "Der Ölfilter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Kabelbaum verteilt wie die Hausinstallation den Strom an alle Verbraucher."
+        },
+        {
+          "id": "m2-l1-q3",
+          "frage": "Woraus besteht eine Ader?",
+          "optionen": [
+            "Kupferdraht mit eigener Isolation",
+            "Nur aus dem äusseren Mantel",
+            "Aus Kunststoffrohr",
+            "Aus Klemmen und Schrauben"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Kupferdraht leitet den Strom, die Isolation hält ihn in der Ader."
+        },
+        {
+          "id": "m2-l1-q4",
+          "frage": "Wo liegen isolierte Aderleitungen ohne Mantel in der festen Installation?",
+          "optionen": [
+            "In Rohren, Kabelkanälen oder Kabeltrassen",
+            "Frei in der Wand ohne Schutz",
+            "Lose auf dem Boden",
+            "Nur im Verteilerkasten"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nach NIN 2025 müssen ummantelungslose Aderleitungen in Rohren, Kanälen oder Trassen liegen."
+        }
+      ]
+    },
+    {
+      "id": "m2-l6",
+      "titel": "Kabeltypen: TT, FE0 und Td",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Steffen AG, Katalog Niederspannungskabel (Filterwerte, abgeleitet)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 1.1 und 1.2",
+        "LEONI Studer AG, Schweizer Brandschutzkabel für die Bauproduktenverordnung, 12.2016 (zitiert Electrosuisse Bulletin 6/2015)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto gibt es Kabel für den Innenraum und Kabel für den heissen Motorraum. Der Typ passt zum Einsatz.",
+          "elektro": "Im Haus gibt es ebenfalls Kabeltypen für verschiedene Einsätze. Die Kurzbezeichnung auf dem Mantel sagt dir, was für ein Kabel du in der Hand hast."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "TT: PVC-Installationskabel für die feste Verlegung.",
+            "FE0: halogenfreie Installationsleitung mit geringer Rauchbildung, ebenfalls für feste Verlegung.",
+            "Td: Anschluss- und Steuerleitung, beweglich einsetzbar. Sie ist keine Leitung für die feste Verlegung."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Die Bezeichnungen stammen aus Schweizer Katalogen. Welches Kabel in einem Raum erlaubt ist, hängt vom Brandschutz und vom Einbauort ab (nächstes Modul)."
+        },
+        {
+          "typ": "merke",
+          "text": "TT und FE0 sind für feste Verlegung gebaut. Td ist laut Katalog eine bewegliche Anschluss- und Steuerleitung. Ob eine flexible Leitung trotzdem fest verlegt werden darf, entscheidet die Elektro-Fachperson nach NIN 2025."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Suche auf der Baustelle drei verschiedene Kabel und lies die Bezeichnung auf dem Mantel. Ordne sie TT, FE0 oder Td zu. Du machst das nur im Beisein deines Meisters, an Kabelstücken ohne Spannung."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m2-l6-q1",
+          "frage": "Welcher Typ ist das PVC-Installationskabel für die feste Verlegung?",
+          "optionen": [
+            "TT",
+            "Td",
+            "FE180",
+            "Motorflex"
+          ],
+          "richtig": 0,
+          "erklaerung": "TT ist in der Schweiz das übliche PVC-Installationskabel für feste Verlegung."
+        },
+        {
+          "id": "m2-l6-q2",
+          "frage": "Was kennzeichnet ein FE0-Kabel?",
+          "optionen": [
+            "Halogenfrei mit geringer Rauchbildung",
+            "Es ist für den Einsatz im Wasser gedacht",
+            "Es hat keinen Mantel",
+            "Es ist immer gelb"
+          ],
+          "richtig": 0,
+          "erklaerung": "FE0 ist die halogenfreie Installationsleitung."
+        },
+        {
+          "id": "m2-l6-q3",
+          "frage": "Wofür ist eine Td-Leitung gedacht?",
+          "optionen": [
+            "Als bewegliche Anschluss- und Steuerleitung",
+            "Für die feste Verlegung in der Wand",
+            "Als Erdkabel",
+            "Als Schutzleiter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Td ist laut Katalog eine Anschluss- und Steuerleitung für bewegten Einsatz."
+        },
+        {
+          "id": "m2-l6-q4",
+          "frage": "Wer entscheidet im Zweifel, ob eine flexible Leitung für eine feste Verdrahtung passt?",
+          "optionen": [
+            "Die Elektro-Fachperson, nach den Anforderungen der NIN 2025",
+            "Du selbst, nach Gefühl",
+            "Der Lieferant am Telefon",
+            "Niemand, es ist immer erlaubt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Eine flexible Leitung darf nach NIN 2025 für feste Verdrahtung genutzt werden, wenn die Norm sonst erfüllt ist. Das beurteilt die Fachperson."
+        }
+      ]
+    },
+    {
+      "id": "m2-l2",
+      "titel": "Adern und ihre Farben",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Electrosuisse, Corrigendum zur NIN 2025 (SN 411000:2025), 11.2025, Kapitel 5.1.4.3.4 und 5.1.4.3.5",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 1.1"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto ist Plus meist rot und Masse braun oder schwarz. Wer die Farben kennt, verwechselt nichts.",
+          "elektro": "In der Installation gilt Ähnliches. Die Farbe ist eine Orientierung, die Messung entscheidet. In alten oder fremden Installationen kann eine Ader anders verwendet sein."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Grüngelb (über die ganze Länge) ist der Schutzleiter (PE).",
+            "Blau (im Katalog oft hellblau) ist der Neutralleiter (N).",
+            "Braun, schwarz und grau sind die Aussenleiter.",
+            "Grün allein oder gelb allein sind als Einzelfarben verboten."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Ein Kabel 3x1.5 hat drei Adern. Das passt zu Aussenleiter, Neutralleiter und Schutzleiter. Ein Kabel mit fünf Adern kommt bei dreiphasigen Anschlüssen vor: drei Aussenleiter, Neutralleiter und Schutzleiter."
+        },
+        {
+          "typ": "merke",
+          "text": "Grüngelb ist nur für den Schutz da. Verwende diese Farbe nie für etwas anderes, und verlass dich nie allein auf eine Farbe."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lege ein 5x1.5 Kabelstück vor dich hin. Benenne jede Ader nach ihrer Farbe und ihrer Aufgabe. Frag deinen Meister, wenn eine Farbe nicht in deiner Liste steht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m2-l2-q1",
+          "frage": "Welche Farbe hat der Schutzleiter?",
+          "optionen": [
+            "Grüngelb",
+            "Blau",
+            "Rot",
+            "Schwarz"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Schutzleiter ist grüngelb über die ganze Länge."
+        },
+        {
+          "id": "m2-l2-q2",
+          "frage": "Welche Farbe hat der Neutralleiter?",
+          "optionen": [
+            "Blau",
+            "Grüngelb",
+            "Orange",
+            "Violett"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Neutralleiter N ist blau. Im Katalog steht oft hellblau."
+        },
+        {
+          "id": "m2-l2-q3",
+          "frage": "Welche Farben haben die Aussenleiter?",
+          "optionen": [
+            "Braun, schwarz und grau",
+            "Nur grün und gelb",
+            "Nur blau",
+            "Rot, weiss und orange"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nach NIN 2025 sind Braun, Schwarz und Grau die Aussenleiterfarben."
+        },
+        {
+          "id": "m2-l2-q4",
+          "frage": "Wofür wird ein Kabel mit fünf Adern typischerweise gebraucht?",
+          "optionen": [
+            "Für dreiphasige Anschlüsse mit drei Aussenleitern, N und PE",
+            "Nur für Klingeln",
+            "Nur für Radioantennen",
+            "Für Lampen mit 5 V"
+          ],
+          "richtig": 0,
+          "erklaerung": "Drei Aussenleiter, Neutralleiter und Schutzleiter ergeben fünf Adern."
+        },
+        {
+          "id": "m2-l2-q5",
+          "frage": "Was gilt für eine einzelne grüne oder eine einzelne gelbe Ader?",
+          "optionen": [
+            "Diese Einzelfarben sind verboten",
+            "Sie sind der Neutralleiter",
+            "Sie sind Aussenleiter",
+            "Sie sind nur im Freien erlaubt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nur die Kombination grüngelb ist erlaubt, und zwar als Schutzleiter."
+        }
+      ]
+    },
+    {
+      "id": "m2-l3",
+      "titel": "Klemmen und Verbinder",
+      "minuten": 3,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "Keine Normquelle gefunden, Grundwissen aus der Berufspraxis",
+        "Hersteller der Klemme: Angaben zu Querschnitt, Leiterart und Abisolierlänge sind massgebend"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Am Auto schraubst du Kabelschuhe an oder quetschst Flachstecker. Ein loser Kontakt wird heiss oder fällt aus.",
+          "elektro": "Im Haus verbinden Klemmen die Adern. Auch hier gilt: Ein loser oder schlechter Kontakt wird heiss und kann einen Brand auslösen."
+        },
+        {
+          "typ": "text",
+          "text": "Auf der Materialliste stehen Wago-Klemmen, zum Beispiel Mikro-Wagos sowie 3er und 5er Wagos. Das sind Verbindungsklemmen mit Hebel oder Druckfeder. Die Zahl nennt, wie viele Adern die Klemme aufnehmen kann."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Ader auf die richtige Länge abisolieren, nicht zu viel Kupfer frei lassen.",
+            "Ader bis zum Anschlag einführen.",
+            "Leicht ziehen. Hält die Ader nicht, sitzt die Klemme schlecht.",
+            "Klemme nur für den vorgesehenen Querschnitt und die vorgesehene Leiterart verwenden. Die Abisolierlänge steht in den Herstellerangaben."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Eine Verbindung ist erst gut, wenn die Zugprobe besteht."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Verbinde drei Aderenden in einer 3er Klemme. Ziehe an jeder Ader. Wenn eine nachgibt, löse sie und setze sie neu. Das machst du nur an spannungsfreiem Übungsmaterial und im Beisein deines Meisters."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m2-l3-q1",
+          "frage": "Was bedeutet eine 5er Wago?",
+          "optionen": [
+            "Fünf Adern lassen sich in der Klemme verbinden",
+            "Sie hält 5 A aus",
+            "Sie ist für 5 mm² Querschnitt",
+            "Sie hat fünf Hebel für fünf Meter Kabel"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Zahl nennt die Anzahl der Anschlüsse in der Klemme."
+        },
+        {
+          "id": "m2-l3-q2",
+          "frage": "Was ist die Folge eines losen Kontakts?",
+          "optionen": [
+            "Er wird heiss und kann einen Brand auslösen",
+            "Der Strom wird kleiner und alles bleibt kalt",
+            "Das Kabel wird dicker",
+            "Es passiert nichts"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ein schlechter Kontakt hat hohen Widerstand und erwärmt sich stark."
+        },
+        {
+          "id": "m2-l3-q3",
+          "frage": "Woran erkennst du eine gut gesetzte Klemmverbindung?",
+          "optionen": [
+            "Die Ader hält bei leichtem Zug",
+            "Die Ader hat viel blankes Kupfer ausserhalb der Klemme",
+            "Die Klemme ist heiss",
+            "Die Ader wurde ohne Abisolieren eingeführt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Zugprobe zeigt, ob der Kontakt sitzt."
+        },
+        {
+          "id": "m2-l3-q4",
+          "frage": "Wo steht, für welchen Querschnitt und welche Leiterart eine Klemme geeignet ist?",
+          "optionen": [
+            "In den Herstellerangaben",
+            "Auf der Farbe des Kabels",
+            "Im Wetterbericht",
+            "Das ist bei allen Klemmen gleich"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nicht jede Klemme passt für jeden Leiter. Die Herstellerangaben sind massgebend."
+        }
+      ]
+    },
+    {
+      "id": "m2-l4",
+      "titel": "Dosen, Rohre und Kanäle",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Electrosuisse, Corrigendum zur NIN 2025, 11.2025, Kapitel 5.2.1.11 .1 und 5.2.1.10 .1",
+        "Electrosuisse, Corrigendum zur NIN 2025, Teil 2 Raumarten (Wohnküche und Bad als trockene Räume)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 1.3"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto liegen Kabel in Schläuchen und Kanälen am Blech. Sie sind gegen Scheuern und Hitze geschützt.",
+          "elektro": "Auf der Baustelle schützen Rohre und Kanäle die Kabel. Dosen sind die Stellen, an denen Kabel verbunden oder Geräte angeschlossen werden."
+        },
+        {
+          "typ": "text",
+          "text": "Aus der Materialliste eines Auftrags: Kanal 40x60, Rohr 20er, ca. 3 Dosen, 1 Schwachstromdose, 20er Plastikbriden und Schrauben. Das ist ein typisches Set für eine einfache Installation."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Rohr 20er: Kabel verlaufen geschützt, unter oder auf Putz.",
+            "Kanal 40x60: Kabel liegen sichtbar an der Wand und lassen sich später nachziehen.",
+            "Dose: Verbindungsstelle oder Geräteanschluss.",
+            "Schwachstromdose: für Netzwerk, Telefon oder Sonnerie.",
+            "Briden: Halter für Rohr und Kabel an der Wand."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Isolierte Aderleitungen ohne Mantel müssen in Rohren, Kabelkanälen oder Kabeltrassen liegen. Eine Küche oder ein Bad in einer Wohnung gilt nach NIN 2025 als trockener Raum, weil dort nur selten Feuchtigkeit auftritt."
+        },
+        {
+          "typ": "merke",
+          "text": "Aderleitungen ohne Mantel gehören immer in Rohr, Kanal oder Trasse."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau dir eine Wand mit Aufputzinstallation an. Zeige auf Rohr, Kanal und Dose. Erkläre in einem Satz, wozu jedes dient. Du schaust nur, öffne keine Dose ohne Anweisung."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m2-l4-q1",
+          "frage": "Wozu dient ein Installationsrohr?",
+          "optionen": [
+            "Es schützt die Kabel und führt sie",
+            "Es macht den Strom stärker",
+            "Es ersetzt den Schutzleiter",
+            "Es misst die Spannung"
+          ],
+          "richtig": 0,
+          "erklaerung": "Das Rohr führt und schützt die Kabel mechanisch."
+        },
+        {
+          "id": "m2-l4-q2",
+          "frage": "Wo müssen isolierte Aderleitungen ohne Mantel liegen?",
+          "optionen": [
+            "In Rohr, Kanal oder Trasse",
+            "Frei in der Wand",
+            "Direkt im Putz",
+            "Lose am Boden"
+          ],
+          "richtig": 0,
+          "erklaerung": "So verlangt es die NIN 2025 für ortsfeste Installationen."
+        },
+        {
+          "id": "m2-l4-q3",
+          "frage": "Was ist ein Vorteil eines Kanals 40x60?",
+          "optionen": [
+            "Kabel bleiben sichtbar und lassen sich leicht nachziehen",
+            "Er ersetzt alle Dosen",
+            "Er macht Kabel dünner",
+            "Er isoliert gegen Spannung"
+          ],
+          "richtig": 0,
+          "erklaerung": "Im Aufputzkanal liegen die Kabel offen und zugänglich."
+        },
+        {
+          "id": "m2-l4-q4",
+          "frage": "Wie gilt eine Wohnküche nach NIN 2025?",
+          "optionen": [
+            "Als trockener Raum",
+            "Als Feuchtraum mit Spezialkabel",
+            "Als Aussenbereich",
+            "Als Explosionszone"
+          ],
+          "richtig": 0,
+          "erklaerung": "Küche und Bad in Wohnungen gelten als trockene Räume. Für sich allein verlangt eine Wohnküche kein Feuchtraumkabel."
+        }
+      ]
+    },
+    {
+      "id": "m2-l5",
+      "titel": "Werkzeug und Spannungsprüfer",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Electrosuisse, Merkblatt Sicherheitsrisiko Phasenprüfer, 2025",
+        "ESTI-Mitteilungen zu Spannungsprüfern (10/2018, 02/2019)",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11), F1.7, F1.8 und F2.10",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11), Abschnitt D"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Als Automechaniker hast du Ratschenkasten und Drehmomentschlüssel. Falsches Werkzeug macht Schrauben rund.",
+          "elektro": "Als Hilfselektriker brauchst du Abisolierzange, Seitenschneider, Schraubenzieher und einen Spannungsprüfer. Falsches Werkzeug beschädigt Adern und kann gefährlich werden."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Abisolierzange: nimmt die Aderisolation ab, ohne das Kupfer einzuritzen. Den Kabelmantel entfernst du mit Abmantler oder Kabelmesser.",
+            "Seitenschneider: schneidet Adern sauber ab.",
+            "Isolierte Schraubenzieher: Griff und Klinge sind für Elektroarbeiten ausgelegt. Isoliertes Werkzeug erlaubt keine Arbeit unter Spannung.",
+            "Zweipoliger Spannungsprüfer nach SN EN 61243-3: nur damit stellst du Spannungsfreiheit fest.",
+            "Kabelmesser nur vorsichtig und vom Körper weg."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Phasenprüfer mit einem Pol, berührungslose Prüfer, Multimeter und Installationstester erfüllen diese Norm nicht. Ein Phasenprüfer ist nur für Funktionsprüfungen zugelassen, zum Beispiel um eine geschaltete Steckdose zu testen. Den Spannungsprüfer testest du unmittelbar vor der Messung und nach Möglichkeit auch danach an einer bekannten Spannung."
+        },
+        {
+          "typ": "text",
+          "text": "Als Hilfskraft arbeitest du nur unter Anleitung und Aufsicht einer Elektro-Fachperson. Was du selbst arbeiten darfst, bestimmt dein Meister."
+        },
+        {
+          "typ": "merke",
+          "text": "Spannungsfreiheit nur mit zweipoligem Spannungsprüfer, vorher und nachher am Funktionstest. Beschädigtes Werkzeug aussortieren."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Sieh dir dein Werkzeug an. Kontrolliere Griffe, Schneiden und Isolation. Suche den zweipoligen Spannungsprüfer und lies die Norm auf dem Gerät. Notiere, was fehlt, und besprich es mit deinem Meister."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m2-l5-q1",
+          "frage": "Wozu dient eine Abisolierzange?",
+          "optionen": [
+            "Sie nimmt die Isolation ab, ohne das Kupfer einzuritzen",
+            "Sie schneidet Rohre",
+            "Sie misst Spannung",
+            "Sie verbindet Adern"
+          ],
+          "richtig": 0,
+          "erklaerung": "Beschädigtes Kupfer wirkt wie ein Engpass und kann heiss werden."
+        },
+        {
+          "id": "m2-l5-q2",
+          "frage": "Womit stellst du Spannungsfreiheit fest?",
+          "optionen": [
+            "Mit einem zweipoligen Spannungsprüfer nach SN EN 61243-3",
+            "Mit einem einpoligen Phasenprüfer",
+            "Mit einem berührungslosen Prüfer",
+            "Mit dem Multimeter im Durchgangsmodus"
+          ],
+          "richtig": 0,
+          "erklaerung": "Nur der zweipolige Spannungsprüfer nach SN EN 61243-3 ist dafür geeignet."
+        },
+        {
+          "id": "m2-l5-q3",
+          "frage": "Was machst du mit einem Schraubenzieher mit beschädigter Griffisolation?",
+          "optionen": [
+            "Aussortieren",
+            "Mit Klebeband weiterverwenden",
+            "Nur an 400 V verwenden",
+            "Er ist für Elektroarbeiten besser"
+          ],
+          "richtig": 0,
+          "erklaerung": "Beschädigte Isolation schützt nicht mehr."
+        },
+        {
+          "id": "m2-l5-q4",
+          "frage": "Wann testest du den Spannungsprüfer an einer bekannten Spannung?",
+          "optionen": [
+            "Unmittelbar vor der Messung und nach Möglichkeit auch danach",
+            "Nie",
+            "Nur einmal im Jahr",
+            "Nur wenn er kaputt aussieht"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Funktionstest vor und nach der Messung zeigt, dass der Prüfer wirklich anzeigt."
+        },
+        {
+          "id": "m2-l5-q5",
+          "frage": "Wie arbeitest du als Hilfskraft auf der Baustelle?",
+          "optionen": [
+            "Unter Anleitung und Aufsicht einer Elektro-Fachperson",
+            "Allein, wenn es schnell gehen muss",
+            "Nach Anweisung des Kunden",
+            "Ohne Aufsicht, wenn die Anlage ausgeschaltet ist"
+          ],
+          "richtig": 0,
+          "erklaerung": "Installationsarbeiten von Hilfskräften erfolgen nur unter Anleitung und Aufsicht der Fachperson."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m2-p1",
+      "titel": "Kabel lesen und Adern benennen",
+      "stufe": "Anfänger",
+      "ziel": "Aufschriften lesen und Aderfarben zuordnen. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Aderzahl und Querschnitt vom Kabelmantel korrekt ablesen",
+        "Schutzleiter und Neutralleiter an der Farbe erkennen",
+        "Jede Ader mit ihrer Aufgabe benennen",
+        "Kabeltyp (TT, FE0 oder Td) von der Aufschrift ablesen"
+      ]
+    },
+    {
+      "id": "m2-p2",
+      "titel": "Materialliste für eine einfache Installation",
+      "stufe": "Anfänger",
+      "ziel": "Aus Dosen, Rohr, Kanal, Klemmen und Kabel eine Materialliste zusammenstellen. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Kabeltyp und Aderzahl passend zum Auftrag gewählt",
+        "Klemmen mit passender Anzahl Anschlüsse gelistet",
+        "Rohr, Kanal, Dosen und Befestigung vollständig erfasst"
+      ]
+    }
+  ],
+  "schaltungen": []
+}

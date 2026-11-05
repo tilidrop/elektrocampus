@@ -1,0 +1,890 @@
+{
+  "id": "modul-0",
+  "nummer": 0,
+  "titel": "Sicherheit",
+  "beschreibung": "Warum Strom gefährlich ist, Erste Hilfe, die 5+5 lebenswichtigen Regeln der Suva, die fünf Sicherheitsregeln und wer als Hilfskraft was darf.",
+  "minutenGesamt": 36,
+  "lektionen": [
+    {
+      "id": "m0-l1",
+      "titel": "Warum Strom gefährlich ist",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Suva Magazin, Stromschlag: So wirkt Strom im Körper (26.06.2026)",
+        "ESTI Weisung 100 (Version 0619), Begriffe Kleinspannung und Niederspannung",
+        "ESTI Weisung 407 (Version 0526) Kap. 11",
+        "StV SR 734.2 Art. 54",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F3.1 bis F3.5)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Du kennst die 12-V-Batterie im Auto. Die Pole kannst du anfassen und spürst nichts. 12 V liegen weit unter der Kleinspannungsgrenze von 50 V Wechselspannung bzw. 120 V Gleichspannung. Die Steckdose hat 230 V. Dort gilt dein Autowissen nicht mehr."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "12 V: Diese Spannung liegt weit unter der Kleinspannungsgrenze. Was du an der Autobatterie erlebst, lässt sich nicht auf höhere Spannungen übertragen.",
+          "elektro": "230 V: Schon 230 V Wechselspannung können tödlich sein (Suva). Hier gibt es kein Anfassen ohne Schutzmassnahmen."
+        },
+        {
+          "typ": "text",
+          "text": "Gefährlich ist der Strom, der durch deinen Körper fliesst. Die Suva nennt diese Richtwerte:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Ab 1 mA ist Strom spürbar, ab 5 mA kribbelt es.",
+            "Ab etwa 15 mA verkrampfen die Muskeln so stark, dass du die Leitung nicht mehr loslassen kannst (Loslassgrenze).",
+            "Ab 50 mA besteht Lebensgefahr mit Atemproblemen und hohem Risiko für Herzkammerflimmern.",
+            "Ab 80 mA endet der Unfall meist tödlich. Nach 0,3 bis 1 Sekunde Einwirkzeit ist Kammerflimmern sehr wahrscheinlich."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Wie schwer die Verletzung ist, hängt von Stromstärke, Dauer und Grösse der Berührungsfläche ab. Mögliche Folgen: Muskelverkrampfung, Herzrhythmusstörungen bis Kammerflimmern, Atemstillstand, äussere und innere Verbrennungen. Gleichspannung kann dieselben Schäden machen wie Wechselspannung (ESTI 407). Bei einem Erdschluss in einer Starkstromanlage darf die Berührungsspannung dauernd 50 V Wechselspannung bzw. 120 V Gleichspannung nicht überschreiten (StV Art. 54)."
+        },
+        {
+          "typ": "merke",
+          "text": "Du siehst, hörst und riechst Strom nicht. Ein Elektrounfall endet laut Suva etwa viermal häufiger tödlich als andere Unfälle. Behandle jede Anlage als unter Spannung, bis die Spannungsfreiheit richtig festgestellt ist."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Denk an deine Werkstatt oder Wohnung. Wo gibt es Teile, die du berühren kannst und die unter Spannung stehen könnten (Steckdosen, Verlängerungskabel, Lampenfassungen, offene Dosen)? Das ist eine reine Denkübung. An echten Anlagen arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l1-q1",
+          "frage": "Was macht Strom im Körper gefährlich?",
+          "optionen": [
+            "Die Farbe des Kabels",
+            "Der Strom, der durch den Körper fliesst",
+            "Das Gewicht des Kabels",
+            "Die Länge des Kabels"
+          ],
+          "richtig": 1,
+          "erklaerung": "Entscheidend ist der Strom durch den Körper, seine Stärke, seine Dauer und die Berührungsfläche."
+        },
+        {
+          "id": "m0-l1-q2",
+          "frage": "Ab etwa welcher Stromstärke kannst du eine Leitung nicht mehr loslassen?",
+          "optionen": [
+            "Ab 1 mA",
+            "Ab etwa 15 mA",
+            "Ab 500 mA",
+            "Ab 5 A"
+          ],
+          "richtig": 1,
+          "erklaerung": "Die Suva nennt etwa 15 mA als Loslassgrenze. Ab 50 mA besteht Lebensgefahr."
+        },
+        {
+          "id": "m0-l1-q3",
+          "frage": "Die 12 V im Auto liegen weit unter der Kleinspannungsgrenze. Was folgt daraus für die Steckdose mit 230 V?",
+          "optionen": [
+            "Nichts, 230 V können tödlich sein",
+            "Auch 230 V sind ungefährlich",
+            "230 V sind nur bei Nässe gefährlich",
+            "230 V sind nur als Gleichspannung gefährlich"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Kleinspannung endet bei 50 V Wechselspannung. Die Steckdose liegt weit darüber, und schon 230 V Wechselspannung können tödlich sein (Suva)."
+        },
+        {
+          "id": "m0-l1-q4",
+          "frage": "Ist Gleichspannung für den Körper ungefährlich?",
+          "optionen": [
+            "Ja, nur Wechselspannung ist gefährlich",
+            "Nein, sie kann ebenfalls Herzkammerflimmern und Verbrennungen verursachen",
+            "Ja, sie ist immer ungefährlich",
+            "Nur unter 5 V"
+          ],
+          "richtig": 1,
+          "erklaerung": "Nach ESTI 407 kann Gleichspannung Kammerflimmern, Herz- und Atemstillstand und Verbrennungen auslösen."
+        }
+      ]
+    },
+    {
+      "id": "m0-l2",
+      "titel": "Stromunfall: Erste Hilfe",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Suva Magazin, Stromschlag: Was tun? (26.05.2026)",
+        "Suva Magazin, Stromschlag: So wirkt Strom im Körper (26.06.2026)",
+        "StV SR 734.2 Art. 12",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F3.7 bis F3.9)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Bei einem Pannenunfall sicherst du zuerst die Stelle ab, bevor du hilfst.",
+          "elektro": "Bei einem Elektrounfall schaltest du zuerst den Strom ab, bevor du die Person anfasst. Sonst wirst du selbst zum Unfallopfer."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Eigenschutz zuerst: Strom abschalten (Sicherung, Stecker). Fasse die Person nicht direkt an, solange sie Strom führen könnte.",
+            "Aus dem Gefahrenbereich holen: Bei Niederspannung (Haushaltsstrom) trennst du die Person mit einem nicht leitenden Gegenstand wie Holzstiel oder Besen vorsichtig vom Stromkreis. Bei Hochspannung hältst du Abstand, bis Fachkräfte die Spannungsfreiheit sichergestellt haben.",
+            "Kontrollieren und Notruf: Bewusstsein und Atmung prüfen, 144 wählen. Keine Atmung oder kein Puls: sofort Herzdruckmassage und Beatmung bis zum Eintreffen der Hilfe.",
+            "Bewusstlos mit Atmung: stabile Seitenlage. Verbrennungen kühlen."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Auch wenn es der Person gut zu gehen scheint, muss sie zur Ärztin, zum Arzt oder ins Spital. Herzprobleme können bis zu 24 Stunden später auftreten. Bei Herzrasen, Herzstolpern, Atemnot oder Krampfgefühl in der Brust rufst du sofort die 144."
+        },
+        {
+          "typ": "text",
+          "text": "Elektrounfälle sind dem ESTI zu melden. Dem ESTI werden jährlich rund 900 gemeldet, fast alle als Berufsunfälle. Laut ESTI liesse sich etwa die Hälfte durch konsequentes Einhalten der Sicherheitsregeln vermeiden. Betriebsinhaber von Starkstromanlagen müssen die Personen, die an den Anlagen arbeiten, periodisch instruieren, unter anderem über Sofortmassnahmen bei Unfällen, Fluchtwege und Notrufstellen (StV Art. 12)."
+        },
+        {
+          "typ": "merke",
+          "text": "Eigenschutz vor Hilfe. Du hilfst erst, wenn für dich keine Gefahr mehr besteht."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Finde in deinem Betrieb heraus: Wo hängt der Notfallplan, welche Notrufnummer gilt, wer ist Ersthelfer, wo ist die Erste-Hilfe-Ausrüstung? Frag die Elektro-Fachperson und notiere dir die Antworten."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l2-q1",
+          "frage": "Ein Kollege hängt noch an einer Leitung. Was machst du zuerst?",
+          "optionen": [
+            "Ich packe ihn am Arm und ziehe",
+            "Ich schalte den Strom ab, wenn das ohne Gefahr für mich geht",
+            "Ich warte, bis er loslässt",
+            "Ich giesse Wasser über ihn"
+          ],
+          "richtig": 1,
+          "erklaerung": "Eigenschutz zuerst: Strom abschalten, dann helfen."
+        },
+        {
+          "id": "m0-l2-q2",
+          "frage": "Welche Notrufnummer wählst du für den Rettungsdienst?",
+          "optionen": [
+            "117",
+            "118",
+            "144",
+            "1414"
+          ],
+          "richtig": 2,
+          "erklaerung": "Der Rettungsdienst hat die Nummer 144."
+        },
+        {
+          "id": "m0-l2-q3",
+          "frage": "Womit trennst du bei Haushaltsstrom eine Person vom Stromkreis, wenn du nicht abschalten kannst?",
+          "optionen": [
+            "Mit einem Metallrohr",
+            "Mit einem nicht leitenden Gegenstand wie Holzstiel oder Besen",
+            "Mit blossen Händen",
+            "Mit einem nassen Tuch"
+          ],
+          "richtig": 1,
+          "erklaerung": "Ein nicht leitender Gegenstand schützt dich. Bei Hochspannung hältst du Abstand."
+        },
+        {
+          "id": "m0-l2-q4",
+          "frage": "Nach einem Stromschlag geht es der Person gut. Was gilt?",
+          "optionen": [
+            "Nichts mehr nötig",
+            "Sie muss trotzdem ärztlich untersucht werden, Herzprobleme können bis zu 24 Stunden später auftreten",
+            "Sie muss nur trinken",
+            "Sie muss nur schlafen"
+          ],
+          "richtig": 1,
+          "erklaerung": "Herzprobleme können mit Verzögerung auftreten. Darum gehört jede Elektrisierung in ärztliche Kontrolle."
+        }
+      ]
+    },
+    {
+      "id": "m0-l3",
+      "titel": "Die 5+5 lebenswichtigen Regeln der Suva",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Suva Faltprospekt 84042.d, 5+5 lebenswichtige Regeln im Umgang mit Elektrizität (überarbeitete Ausgabe März 2022)",
+        "Suva Instruktionshilfe 88814.d, Regeln 1, 2 und 4",
+        "ESTI Weisung 407 (Version 0526) Kap. 12.1",
+        "StV SR 734.2 Art. 68",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F1.4, F1.5, F1.6, F3.10, F3.11)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die Suva hat zusammen mit Electrosuisse und weiteren Organisationen der Elektrobranche die 5+5 lebenswichtigen Regeln erarbeitet. Die Regeln lauten sinngemäss so:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "1. Wir arbeiten mit klarem Auftrag und wissen, wer die Verantwortung trägt.",
+            "2. Wir führen Arbeiten nur aus, wenn wir dafür geschult und berechtigt sind.",
+            "3. Wir arbeiten mit sicheren und intakten Arbeitsmitteln.",
+            "4. Wir tragen die persönliche Schutzausrüstung.",
+            "5. Wir nehmen Anlagen nur in Betrieb, wenn die vorgeschriebenen Kontrollen vorgenommen wurden.",
+            "+5: Wir wenden konsequent die fünf Sicherheitsregeln für spannungsfreies Arbeiten an (nächste Lektion)."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "STOPP: Bei Gefahr für Leben und Gesundheit haben alle das Recht und die Pflicht, die Arbeit zu unterbrechen. Sicherheitsmängel werden sofort behoben oder dem Vorgesetzten gemeldet. Als Hilfskraft meldest du sie sofort und warnst die Kollegen. Bei Unklarheiten fragst du nach. Aufträge werden grundsätzlich schriftlich erteilt. Mündlich geht es ausnahmsweise bei Arbeiten an Niederspannungsanlagen, bei einfachen Arbeiten und beim Beheben von Betriebsstörungen."
+        },
+        {
+          "typ": "text",
+          "text": "Schutzausrüstung (PSA): Sie muss intakt und für die Arbeit geeignet sein. Jede Person benützt ihre eigene PSA, und der Arbeitgeber stellt sie zur Verfügung. Die Suva verlangt sie zum Beispiel bei Messungen, Abdeckarbeiten und beim Herstellen der Spannungsfreiheit. Defekte oder abgenutzte PSA wird umgehend ersetzt."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto ist der Gurt Pflicht, bevor du losfährst.",
+          "elektro": "Auf der Anlage ist die PSA Pflicht, bevor du misst oder abdeckst. Der Gurt schützt dich beim Unfall, die PSA schützt dich vor Durchströmung und Störlichtbogen."
+        },
+        {
+          "typ": "merke",
+          "text": "Für dich als Hilfskraft sind Regel 1 und 2 zentral: Du arbeitest nur mit klarem Auftrag und nur an dem, wofür du geschult und berechtigt bist. Sonst sagst du STOPP und informierst den Vorgesetzten."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lies mit der Elektro-Fachperson die Regeln im Betrieb durch. Frag, wer dir die Aufträge erteilt, wer die Verantwortung trägt und welche PSA du erhältst. Notiere dir die Antworten. Du führst das nur unter Anleitung und Aufsicht der Elektro-Fachperson aus."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l3-q1",
+          "frage": "Was verlangt Regel 2 der Suva?",
+          "optionen": [
+            "Wir arbeiten möglichst schnell",
+            "Wir führen Arbeiten nur aus, wenn wir dafür geschult und berechtigt sind",
+            "Wir arbeiten ohne Schutzausrüstung, wenn es eilt",
+            "Wir arbeiten immer allein"
+          ],
+          "richtig": 1,
+          "erklaerung": "Regel 2: Nur arbeiten, wofür man geschult und berechtigt ist."
+        },
+        {
+          "id": "m0-l3-q2",
+          "frage": "Du bist unsicher, ob du eine Arbeit ausführen darfst. Was tust du?",
+          "optionen": [
+            "Ich probiere es vorsichtig",
+            "Ich sage STOPP und informiere den Vorgesetzten",
+            "Ich mache es schnell fertig",
+            "Ich frage den Kunden"
+          ],
+          "richtig": 1,
+          "erklaerung": "Wer nicht geschult und berechtigt ist, sagt STOPP und informiert den Vorgesetzten."
+        },
+        {
+          "id": "m0-l3-q3",
+          "frage": "Wer stellt die persönliche Schutzausrüstung zur Verfügung?",
+          "optionen": [
+            "Du selbst",
+            "Der Arbeitgeber",
+            "Der Kunde",
+            "Der Lieferant"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Arbeitgeber stellt die PSA zur Verfügung. Du trägst sie und meldest Mängel."
+        },
+        {
+          "id": "m0-l3-q4",
+          "frage": "Was verlangt die fünfte lebenswichtige Regel?",
+          "optionen": [
+            "Anlagen nur in Betrieb nehmen, wenn die vorgeschriebenen Kontrollen vorgenommen wurden",
+            "Anlagen sofort einschalten",
+            "Aufträge nur mündlich erteilen",
+            "Messgeräte nie prüfen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Regel 5: Nur geprüfte Anlagen werden in Betrieb genommen."
+        }
+      ]
+    },
+    {
+      "id": "m0-l4",
+      "titel": "Die fünf Sicherheitsregeln im Überblick",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ESTI Weisung 407 (Version 0526) Kap. 10.1 und 10.2.1",
+        "NIV SR 734.27 Art. 22 Abs. 1",
+        "StV SR 734.2 Art. 72",
+        "Suva Instruktionshilfe 88814.d, Abschnitt 5 Sicherheitsregeln",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F1.1 bis F1.3, F1.9, F1.11)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Arbeiten an Installationen dürfen in der Regel nur ausgeführt werden, wenn sie nicht unter Spannung stehen (NIV Art. 22). Dafür gibt es einen festen Ablauf, die fünf Sicherheitsregeln:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "1. Freischalten und allseitig trennen",
+            "2. Gegen Wiedereinschalten sichern",
+            "3. Auf Spannungslosigkeit prüfen (die NIV sagt Spannungsfreiheit, gemeint ist dasselbe)",
+            "4. Erden und kurzschliessen",
+            "5. Gegen benachbarte, unter Spannung stehende Teile schützen"
+          ]
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Beim Auto klemmst du die Batterie ab. Im Haus gibt es mehrere Zuleitungen und manchmal Rückspeisung, darum reicht Abklemmen nicht. Es braucht fünf feste Schritte.",
+          "elektro": "Anlage ausschalten und trennen, sichern, messen, wenn nötig erden und kurzschliessen, benachbarte Teile abdecken."
+        },
+        {
+          "typ": "text",
+          "text": "Die Suva nennt die Anwendung die Fünf-Fingerregel. Wer die Regeln ausführt, muss nach ESTI 407 eine Elektrofachkraft, eine sachverständige Person oder eine elektrotechnisch unterwiesene bzw. instruierte Person sein. Die ESTI-Weisung kennt vier Arbeitsverfahren. Für dich zählt das erste: Arbeiten im spannungsfreien Zustand."
+        },
+        {
+          "typ": "merke",
+          "text": "Die Reihenfolge gilt. Regel 1 bis 3 lässt du nie weg. Regel 4 darf in Niederspannungsanlagen nur entfallen, wenn keine Gefahr von Spannungsübertragung oder Rückeinspeisung besteht. Regel 5 brauchst du, wenn benachbarte Teile unter Spannung bleiben."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schreib die fünf Regeln aus dem Gedächtnis auf einen Zettel und vergleiche mit der Liste. Frag die Elektro-Fachperson, welche Schritte du in eurem Betrieb unter ihrer Anleitung und Aufsicht übernimmst. Das legt der Betrieb fest."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l4-q1",
+          "frage": "Wie viele Sicherheitsregeln gibt es?",
+          "optionen": [
+            "Drei",
+            "Vier",
+            "Fünf",
+            "Sieben"
+          ],
+          "richtig": 2,
+          "erklaerung": "Es sind fünf Sicherheitsregeln in fester Reihenfolge."
+        },
+        {
+          "id": "m0-l4-q2",
+          "frage": "Welche Regel kommt zuerst?",
+          "optionen": [
+            "Erden und kurzschliessen",
+            "Auf Spannungslosigkeit prüfen",
+            "Freischalten und allseitig trennen",
+            "Benachbarte Teile schützen"
+          ],
+          "richtig": 2,
+          "erklaerung": "Zuerst wird freigeschaltet und allseitig getrennt."
+        },
+        {
+          "id": "m0-l4-q3",
+          "frage": "Welche Regel steht an dritter Stelle?",
+          "optionen": [
+            "Gegen Wiedereinschalten sichern",
+            "Auf Spannungslosigkeit prüfen",
+            "Erden und kurzschliessen",
+            "Freischalten"
+          ],
+          "richtig": 1,
+          "erklaerung": "Regel 3 ist das Prüfen auf Spannungslosigkeit (in der NIV: Spannungsfreiheit)."
+        },
+        {
+          "id": "m0-l4-q4",
+          "frage": "Welche Aussage zu Regel 4 stimmt?",
+          "optionen": [
+            "Sie darf immer weggelassen werden",
+            "Sie darf in Niederspannung entfallen, wenn keine Gefahr von Spannungsübertragung oder Rückeinspeisung besteht",
+            "Sie gilt nur bei Hochspannung",
+            "Sie steht an erster Stelle"
+          ],
+          "richtig": 1,
+          "erklaerung": "So steht es in NIV Art. 22 und ESTI 407. Regel 1 bis 3 entfallen nie."
+        },
+        {
+          "id": "m0-l4-q5",
+          "frage": "Welches Arbeitsverfahren ist für dich als Hilfskraft am wichtigsten?",
+          "optionen": [
+            "Arbeiten unter Spannung",
+            "Arbeiten im spannungsfreien Zustand",
+            "Arbeiten in der Annäherungszone",
+            "Arbeiten ohne Gefährdungsbeurteilung"
+          ],
+          "richtig": 1,
+          "erklaerung": "Du arbeitest im spannungsfreien Zustand, nach den fünf Sicherheitsregeln."
+        }
+      ]
+    },
+    {
+      "id": "m0-l5",
+      "titel": "Freischalten, sichern, Spannungsfreiheit feststellen",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Suva Instruktionshilfe 88814.d, Regel +5",
+        "ESTI Weisung 407 (Version 0526) Kap. 10.2.1 und 10.2.1.1",
+        "Electrosuisse, Sicherheitsrisiko Phasenprüfer (2025)",
+        "ESTI, Aus Elektrounfällen lernen 10/2018, Sicheres Messen beim Prüfen der Spannungsfreiheit",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F1.3, F1.7, F1.8), ElektroCampus-Recherche Messen und Pruefen (2026-11) (D1, D2)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Regel 1 bis 3 gehören zusammen. Die Elektro-Fachperson trennt die Anlage, sichert sie und stellt fest, dass wirklich nichts anliegt. Du kennst die Schritte, benennst sie und beobachtest, ob sie eingehalten werden."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Freischalten und allseitig trennen: allpolig von spannungsführenden Teilen trennen, zum Beispiel Anlage ausschalten und Sicherungen entfernen. Denk an mögliche Rückspeisung, etwa durch Solaranlage oder Notstromanlage.",
+            "Sichern: Sicherung mitnehmen, Schalter oder Trennstelle abschliessen, Verbotsschild anbringen.",
+            "Feststellen: nur mit einem zweipoligen Spannungsprüfer nach SN EN 61243-3, Messkategorie III oder IV. Geprüft wird allpolig, die Aussenleiter untereinander und gegen Erde.",
+            "Nicht zugelassen: Phasenprüfer, berührungslose Prüfer, Multimeter und Installationstester. Ein Phasenprüfer ist nur für Funktionsprüfungen erlaubt, zum Beispiel an einer geschalteten Steckdose."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Prüfen, messen, prüfen: Teste den Prüfer zuerst an einem Stromkreis, der sicher Spannung führt. Dann prüfst du den Zielstromkreis. Danach kontrollierst du nochmals, dass der Prüfer richtig anzeigt, bevor du etwas berührst. Der Prüfer wird unmittelbar vor und nach Möglichkeit auch nach dem Gebrauch auf Funktion geprüft."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto reicht oft eine Prüflampe oder das Multimeter. Im Haus reicht das nicht. Für die Spannungsfreiheit ist nur der zweipolige Prüfer nach EN 61243-3 zugelassen, kein Multimeter.",
+          "elektro": "Zweipoliger Prüfer vor und nach der Messung an bekannter Spannung testen."
+        },
+        {
+          "typ": "merke",
+          "text": "Ein Schalter in Aus-Stellung ist kein Beweis. Laut ESTI entstehen 15 Prozent der Elektrounfälle, weil die Spannungsfreiheit nicht oder nicht korrekt geprüft wurde."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Am Lehrbrett siehst du zu, wie die Elektro-Fachperson freischaltet, sichert und die Spannungsfreiheit feststellt. Benenne jeden Schritt laut und prüfe anhand der Checkliste, ob sie ihn einhält: Sicherung ausgeschaltet, Schloss oder Schild angebracht, Spannungsprüfer an bekannter Spannung getestet, Zielkreis gemessen, Prüfer nochmals getestet. Freischalten, Sichern und Feststellen der Spannungsfreiheit macht die Elektro-Fachperson. Was du im Betrieb selbst tun darfst, legt der Betrieb fest."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l5-q1",
+          "frage": "Was machst du beim Sichern gegen Wiedereinschalten?",
+          "optionen": [
+            "Ich sage es dem Kollegen",
+            "Ich nehme die Sicherung mit oder schliesse die Trennstelle ab und bringe ein Verbotsschild an",
+            "Ich stelle das Radio laut",
+            "Ich warte ab"
+          ],
+          "richtig": 1,
+          "erklaerung": "Mitnehmen, abschliessen und kennzeichnen verhindert das irrtümliche Einschalten."
+        },
+        {
+          "id": "m0-l5-q2",
+          "frage": "Mit welchem Gerät stellst du die Spannungsfreiheit fest?",
+          "optionen": [
+            "Mit einem Multimeter",
+            "Mit einem Phasenprüfer",
+            "Mit einem zweipoligen Spannungsprüfer nach EN 61243-3",
+            "Mit einem berührungslosen Prüfer"
+          ],
+          "richtig": 2,
+          "erklaerung": "Nur der zweipolige Prüfer nach EN 61243-3 ist dafür zugelassen."
+        },
+        {
+          "id": "m0-l5-q3",
+          "frage": "Wofür darf ein Phasenprüfer genutzt werden?",
+          "optionen": [
+            "Für das Feststellen der Spannungsfreiheit",
+            "Nur für Funktionsprüfungen, zum Beispiel an einer geschalteten Steckdose",
+            "Für die Erstprüfung",
+            "Für Hochspannung"
+          ],
+          "richtig": 1,
+          "erklaerung": "Nach Electrosuisse nur für Funktionsprüfungen, nicht als Nachweis der Spannungsfreiheit."
+        },
+        {
+          "id": "m0-l5-q4",
+          "frage": "Wie lautet die Reihenfolge der Prüfer-Kontrolle?",
+          "optionen": [
+            "Zielstromkreis, dann bekannte Spannung",
+            "An bekannter Spannung testen, Zielstromkreis prüfen, nochmals an bekannter Spannung testen",
+            "Nur einmal am Zielstromkreis prüfen",
+            "Erst arbeiten, dann prüfen"
+          ],
+          "richtig": 1,
+          "erklaerung": "Prüfen, messen, prüfen. So weisst du, dass der Prüfer richtig arbeitet."
+        },
+        {
+          "id": "m0-l5-q5",
+          "frage": "Ein Kollege sagt: Die Anlage ist aus, ich habe den Schalter gedrückt. Was tust du?",
+          "optionen": [
+            "Ich glaube ihm",
+            "Ich arbeite erst, wenn die Spannungsfreiheit an der Arbeitsstelle mit dem zweipoligen Spannungsprüfer festgestellt ist",
+            "Ich arbeite sofort",
+            "Ich ziehe Handschuhe an und fertig"
+          ],
+          "richtig": 1,
+          "erklaerung": "Du verlässt dich nie auf Aussagen. Die Spannungsfreiheit wird festgestellt."
+        }
+      ]
+    },
+    {
+      "id": "m0-l6",
+      "titel": "Erden, kurzschliessen und abdecken",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ESTI Weisung 407 (Version 0526) Kap. 10.2.1 mit Fussnote zu Punkt 4",
+        "NIV SR 734.27 Art. 22 Abs. 1 Bst. d und e",
+        "StV SR 734.2 Art. 72 Abs. 4",
+        "Suva Instruktionshilfe 88814.d, Regel +5",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F1.1 bis F1.3, Offene Frage 9)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Regel 4 und 5 schützen dich, wenn trotz Freischalten Spannung auftauchen kann oder wenn neben der Arbeitsstelle etwas unter Spannung bleibt."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Erden und kurzschliessen: Alle spannungsführenden Teile werden mit kurzschlussfesten Vorrichtungen verbunden. In Niederspannungsanlagen darf das entfallen, wenn keine Gefahr von Spannungsübertragung oder Rückspeisung besteht. Die Suva warnt bei Rückspeisung und nennt Solaranlagen, Ringschaltungen und Notstromanlagen.",
+            "Schützen: Teile, die nicht ausgeschaltet werden können, werden abgedeckt oder isoliert, zum Beispiel mit Isoliermatten, Isolierschläuchen oder Isolierplatten."
+          ]
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto deckst du offene Klemmen ab, damit du nichts berührst.",
+          "elektro": "Im Verteiler ist es dasselbe Prinzip, aber mit Isoliermaterial, das für diese Spannung gebaut ist."
+        },
+        {
+          "typ": "merke",
+          "text": "Ob erden und kurzschliessen nötig ist, entscheidet die für die Arbeit verantwortliche Person aufgrund der Gefährdungsbeurteilung. Du entscheidest das nicht allein."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau dir mit der Elektro-Fachperson einen Verteiler an. Welche Teile bleiben unter Spannung, wenn ein Stromkreis freigeschaltet ist? Wie würden sie abgedeckt? Du führst das nur unter Anleitung und Aufsicht der Elektro-Fachperson aus."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l6-q1",
+          "frage": "Was ist Regel 5?",
+          "optionen": [
+            "Messen",
+            "Gegen benachbarte, unter Spannung stehende Teile schützen",
+            "Freischalten",
+            "Sichern"
+          ],
+          "richtig": 1,
+          "erklaerung": "Regel 5 schützt dich vor Teilen, die in der Nähe unter Spannung bleiben."
+        },
+        {
+          "id": "m0-l6-q2",
+          "frage": "Wann darf Regel 4 in einer Niederspannungsanlage entfallen?",
+          "optionen": [
+            "Wenn es eilt",
+            "Wenn keine Gefahr von Spannungsübertragung oder Rückspeisung besteht",
+            "Immer",
+            "Nie"
+          ],
+          "richtig": 1,
+          "erklaerung": "So steht es in NIV Art. 22 und StV Art. 72."
+        },
+        {
+          "id": "m0-l6-q3",
+          "frage": "Welche Anlage kann Rückspeisung verursachen?",
+          "optionen": [
+            "Eine Solaranlage",
+            "Eine Türklingel ohne Netzanschluss",
+            "Ein Kabel ohne Last",
+            "Ein Wasserhahn"
+          ],
+          "richtig": 0,
+          "erklaerung": "Solaranlagen, Ringschaltungen und Notstromanlagen nennt die Suva als Gefahr."
+        },
+        {
+          "id": "m0-l6-q4",
+          "frage": "Was machst du mit Teilen neben deiner Arbeitsstelle, die unter Spannung bleiben?",
+          "optionen": [
+            "Ich ignoriere sie",
+            "Ich decke sie ab oder isoliere sie",
+            "Ich berühre sie kurz zur Probe",
+            "Ich schalte sie wieder ein"
+          ],
+          "richtig": 1,
+          "erklaerung": "Abdecken oder isolieren gehört zu den fünf Regeln."
+        }
+      ]
+    },
+    {
+      "id": "m0-l7",
+      "titel": "Wer darf was",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "NIV SR 734.27 Art. 5, 6, 8, 9, 10a, 22, 24 und 42",
+        "StV SR 734.2 Art. 3, 11 und 67",
+        "ESTI Weisung 407 (Version 0526) Kap. 8.2 und 8.4",
+        "ESTI Weisung 221 und ESTI FAQ Periodische Kontrollen, Sicherheitsnachweise",
+        "ESTI Unfallbericht 2026-0301 (2. März 2026)",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F2.1 bis F2.12, F2.19)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die Begriffe kommen aus drei Regelwerken. Die NIV kennt fachkundige Person, kontrollberechtigte Person, Elektroinstallateur EFZ, Montage-Elektriker EFZ sowie Lernende und Hilfskräfte. Die StV kennt sachverständige und instruierte Personen. Der Begriff Laie stammt aus der Norm EN 50110-1 und der ESTI Weisung 407, nicht aus der NIV. Elektrofachperson ist in keinem dieser Texte definiert. In dieser App heisst Elektro-Fachperson die Person, die dich anleitet und beaufsichtigt: eine fachkundige Person oder ein Elektroinstallateur EFZ bzw. Montage-Elektriker EFZ (NIV Art. 10a)."
+        },
+        {
+          "typ": "text",
+          "text": "Als Hilfskraft gilt nach NIV:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Du führst Installationsarbeiten nur unter Anleitung und Aufsicht aus (Art. 10a). Eine beaufsichtigende Person darf höchstens fünf Lernende oder Hilfskräfte beaufsichtigen.",
+            "Keine Erstprüfung ohne Anleitung und Aufsicht und kein Unterzeichnen des Erstprüfungsprotokolls.",
+            "Die Schlusskontrolle machen nur fachkundige oder kontrollberechtigte Personen (Art. 24).",
+            "Arbeiten unter Spannung dürfen nur Elektroinstallateure EFZ oder Personen mit gleichwertiger Ausbildung ausführen, die dafür speziell ausgebildet und ausgerüstet sind, immer zu zweit (Art. 22).",
+            "Wer ohne eigene Bewilligung selbständig installiert, macht sich strafbar (Art. 6 und 42). Du arbeitest deshalb im Rahmen der Bewilligung deines Betriebs."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Anleitung heisst nach ESTI physische Anwesenheit am Arbeitsort. Die Verantwortung ist verteilt: Der Eigentümer sorgt für den sicheren Zustand der Installation (Art. 5), der Betrieb trägt über den fachkundigen Leiter die technische Aufsicht (Art. 9), und auf der Arbeitsstelle bezeichnet der Betriebsinhaber eine verantwortliche Person (StV Art. 67)."
+        },
+        {
+          "typ": "merke",
+          "text": "Die Aussage, die Elektro-Fachperson trage die Verantwortung, ist nur teilweise richtig. Bei Zweifel fragst du, bevor du etwas tust."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Frag die Elektro-Fachperson, wer in eurem Betrieb deine Anleitung und Aufsicht übernimmt und wer Erstprüfungsprotokolle unterzeichnet. Notiere dir die Antworten."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l7-q1",
+          "frage": "Wie darfst du als Hilfskraft Installationsarbeiten ausführen?",
+          "optionen": [
+            "Selbständig, wenn es einfach ist",
+            "Nur unter Anleitung und Aufsicht",
+            "Nur nachts",
+            "Ohne Bewilligung des Betriebs"
+          ],
+          "richtig": 1,
+          "erklaerung": "NIV Art. 10a: Lernende und Hilfskräfte arbeiten nur unter Anleitung und Aufsicht."
+        },
+        {
+          "id": "m0-l7-q2",
+          "frage": "Darfst du als Hilfskraft ein Erstprüfungsprotokoll unterzeichnen?",
+          "optionen": [
+            "Ja, wenn du es allein geprüft hast",
+            "Nein, kein Unterzeichnen des Protokolls",
+            "Ja, wenn der Kunde es verlangt",
+            "Ja, nach einem Jahr"
+          ],
+          "richtig": 1,
+          "erklaerung": "Hilfskräfte machen keine Erstprüfung ohne Anleitung und Aufsicht und unterzeichnen das Protokoll nicht."
+        },
+        {
+          "id": "m0-l7-q3",
+          "frage": "Wie viele Lernende oder Hilfskräfte darf eine beaufsichtigende Person höchstens beaufsichtigen?",
+          "optionen": [
+            "Zwei",
+            "Fünf",
+            "Zehn",
+            "Zwanzig"
+          ],
+          "richtig": 1,
+          "erklaerung": "NIV Art. 10a Abs. 5 nennt höchstens fünf."
+        },
+        {
+          "id": "m0-l7-q4",
+          "frage": "Woher stammt der Begriff Laie?",
+          "optionen": [
+            "Aus der NIV",
+            "Aus der Norm EN 50110-1 und der ESTI Weisung 407",
+            "Aus dem Strafgesetz",
+            "Aus dem Obligationenrecht"
+          ],
+          "richtig": 1,
+          "erklaerung": "Die NIV kennt den Begriff Laie nicht."
+        },
+        {
+          "id": "m0-l7-q5",
+          "frage": "Wer sorgt dafür, dass eine Installation ständig sicher ist?",
+          "optionen": [
+            "Der Eigentümer der Installation",
+            "Der Hilfselektriker",
+            "Der Lieferant",
+            "Niemand"
+          ],
+          "richtig": 0,
+          "erklaerung": "NIV Art. 5: Der Eigentümer sorgt für den sicheren Zustand. Der Betrieb trägt die technische Aufsicht."
+        }
+      ]
+    },
+    {
+      "id": "m0-l8",
+      "titel": "Erst messen, dann einschalten",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ESTI Unfallbericht 2026-0301 (2. März 2026), Durchströmung beim Installieren von LED-Leuchten",
+        "NIV SR 734.27 Art. 24, 35 bis 37 und Anhang (Kontrollperioden)",
+        "ESTI Wegleitung Prüfung Art. 13 NIV (15. September 2025)",
+        "Suva Instruktionshilfe 88814.d, Regel 5",
+        "ESTI FAQ Periodische Kontrollen, Sicherheitsnachweise",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F2.11, F2.13, F2.18), ElektroCampus-Recherche Messen und Pruefen (2026-11) (B1, B2)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Ein Unfallbeispiel des ESTI: Zwei Hilfskräfte schalteten eine Beleuchtungsinstallation wieder ein, ohne dass eine Erstprüfung gemacht wurde. Ein Aussenleiter war mit dem Schutzleiter vertauscht. Eine Hilfskraft wurde durchströmt und musste reanimiert werden. Das ESTI hält fest: Bei der Prüfung der Leitfähigkeit des Schutzleiters werden fehlerhafte Anschlüsse festgestellt."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Nach einer Reparatur am Auto machst du eine Probefahrt mit Vorsicht.",
+          "elektro": "Nach der Installation gibt es keine Probe mit 230 V. Zuerst kommt die Erstprüfung, erst danach wird eingeschaltet, und nur auf Anweisung der Elektro-Fachperson."
+        },
+        {
+          "typ": "text",
+          "text": "Vor der Inbetriebnahme ist eine baubegleitende Erstprüfung durchzuführen und zu protokollieren (NIV Art. 24). Das ESTI nennt als Prüfstoff unter anderem Sichtprüfung, Abschaltzeit der Überstromschutzorgane, Kurzschlussstrom, RCD, Schutzleiter und Potentialausgleichsleiter, Funktionsprüfung und Protokollierung. Die Suva fasst es als Besichtigen, Erproben und Messen zusammen."
+        },
+        {
+          "typ": "text",
+          "text": "Danach folgt die Schlusskontrolle vor der Übergabe. Ihre Ergebnisse stehen im Sicherheitsnachweis (SiNa). Später kommen periodische Kontrollen. Die Kontrollperioden im Anhang der NIV sind 1, 3, 5, 10 und 20 Jahre. Je nach Anlage gilt zum Beispiel:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "1 Jahr: Baustellen und Märkte",
+            "3 Jahre: explosionsgefährdete Bereiche der Zonen 0, 20, 1 und 21, ausgenommen Tankstellen und Fahrzeugreparaturwerkstätten",
+            "5 Jahre: Schulhäuser, Hotels, Heime, Spitäler, öffentliche Ladestationen",
+            "10 Jahre: Bürogebäude, gewerbliche Werkstätten, landwirtschaftliche Betriebe",
+            "20 Jahre: alle übrigen Installationen, damit insbesondere Wohnungen und Einfamilienhäuser"
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Erst prüfen, messen, protokollieren, dann einschalten. Das Einschalten einer neuen Installation machst du nie auf eigene Faust."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lass dir von der Elektro-Fachperson ein Erstprüfungsprotokoll zeigen und schau bei einer Erstprüfung zu. Du schaltest nicht selbst ein und unterzeichnest nichts. Du führst das nur unter Anleitung und Aufsicht der Elektro-Fachperson aus."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m0-l8-q1",
+          "frage": "Was war beim ESTI-Unfall die Ursache der Durchströmung?",
+          "optionen": [
+            "Ein Aussenleiter war mit dem Schutzleiter vertauscht und es wurde ohne Erstprüfung eingeschaltet",
+            "Ein defektes Multimeter",
+            "Ein Blitzschlag",
+            "Zu dünne Handschuhe"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Erstprüfung des Schutzleiters hätte den Fehler gezeigt."
+        },
+        {
+          "id": "m0-l8-q2",
+          "frage": "Wann wird eine neue Installation eingeschaltet?",
+          "optionen": [
+            "Sofort nach dem Verdrahten",
+            "Nach der Erstprüfung und auf Anweisung der Elektro-Fachperson",
+            "Wenn der Kunde es wünscht",
+            "Nach einem Jahr"
+          ],
+          "richtig": 1,
+          "erklaerung": "Vor der Inbetriebnahme steht die protokollierte Erstprüfung."
+        },
+        {
+          "id": "m0-l8-q3",
+          "frage": "Welche Kontrollperiode gilt für Wohnungen und Einfamilienhäuser?",
+          "optionen": [
+            "1 Jahr",
+            "5 Jahre",
+            "10 Jahre",
+            "20 Jahre"
+          ],
+          "richtig": 3,
+          "erklaerung": "Alle übrigen Installationen, insbesondere Wohnungen und Einfamilienhäuser, haben 20 Jahre."
+        },
+        {
+          "id": "m0-l8-q4",
+          "frage": "Wo werden die Ergebnisse der Schlusskontrolle festgehalten?",
+          "optionen": [
+            "Im Sicherheitsnachweis (SiNa)",
+            "Auf einem Zettel am Verteiler",
+            "Nirgends",
+            "In der Rechnung"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Ergebnisse der Schlusskontrolle stehen im Sicherheitsnachweis."
+        },
+        {
+          "id": "m0-l8-q5",
+          "frage": "Welche Kontrollperiode gilt für Baustellen und Märkte?",
+          "optionen": [
+            "1 Jahr",
+            "3 Jahre",
+            "10 Jahre",
+            "20 Jahre"
+          ],
+          "richtig": 0,
+          "erklaerung": "Baustellen und Märkte werden jährlich durch ein unabhängiges Kontrollorgan kontrolliert."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m0-p1",
+      "titel": "Fünf Regeln am Lehrbrett",
+      "stufe": "Anfänger",
+      "ziel": "Die fünf Sicherheitsregeln in der richtigen Reihenfolge benennen und am Lehrbrett beobachten, ob die Elektro-Fachperson sie einhält. Du machst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson. Freischalten, Sichern und Feststellen der Spannungsfreiheit macht sie.",
+      "kriterien": [
+        "Du benennst alle fünf Regeln in der richtigen Reihenfolge.",
+        "Du beobachtest und benennst, dass die Anlage mit Schloss oder Schild gesichert wird.",
+        "Du beobachtest und erklärst, dass der zweipolige Spannungsprüfer vor und nach der Messung an einer bekannten Spannung getestet wird.",
+        "Du beobachtest und erklärst, dass allpolig an der Arbeitsstelle geprüft wird und nicht nur am Verteiler.",
+        "Du prüfst anhand einer Checkliste, ob die Elektro-Fachperson alle Schritte einhält."
+      ]
+    },
+    {
+      "id": "m0-p2",
+      "titel": "Verteiler beurteilen",
+      "stufe": "Anfänger",
+      "ziel": "Mit der Elektro-Fachperson einen Verteiler anschauen und beschreiben, welche Teile unter Spannung bleiben. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du zeigst, welche Teile beim Freischalten eines Stromkreises noch Spannung haben.",
+        "Du schlägst vor, wie sie abgedeckt werden.",
+        "Du fragst die Elektro-Fachperson, was du in diesem Verteiler tun darfst."
+      ]
+    },
+    {
+      "id": "m0-p3",
+      "titel": "Erstprüfung beobachten",
+      "stufe": "Anfänger",
+      "ziel": "Bei einer Erstprüfung zuschauen und die Schritte benennen, ohne selbst einzuschalten oder zu unterzeichnen. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du nennst, was vor dem Einschalten geprüft und protokolliert wird.",
+        "Du erklärst, warum erst geprüft und dann eingeschaltet wird.",
+        "Du schaltest nicht ein und unterzeichnest kein Protokoll."
+      ]
+    }
+  ],
+  "schaltungen": []
+}

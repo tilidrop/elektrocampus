@@ -1,0 +1,37 @@
+{
+  "id": "serie",
+  "titel": "Serieschaltung",
+  "schema": "Sch1",
+  "beschreibung": "Zwei Lampengruppen werden unabhängig von einem Ort geschaltet. Vereinfachung: der Serieschalter ist als zwei Ausschalter S1 und S2 mit gemeinsamem Eingang dargestellt. N und PE werden in der Abzweigdose über je eine Verbindungsklemme verteilt (D1 für N, D2 für PE). Aderfarben nach NIN 2025 Teil 5.1.4.3: Aussenleiter braun, schwarz oder grau (in der App L braun), N blau, PE gelb-grün. Schalterdrähte sind Aussenleiter (braun, schwarz oder grau). Empfehlung aus Kursunterlagen, keine Normpflicht: die zwei Lampendrähte in zwei verschiedenen Farben.",
+  "teile": [
+    {"id":"L","typ":"quelle","pol":"L","x":30,"y":60},
+    {"id":"N","typ":"quelle","pol":"N","x":30,"y":150},
+    {"id":"PE","typ":"quelle","pol":"PE","x":30,"y":240},
+    {"id":"S1","typ":"ausschalter","x":180,"y":40},
+    {"id":"S2","typ":"ausschalter","x":180,"y":110},
+    {"id":"D1","typ":"dose","x":300,"y":180},
+    {"id":"D2","typ":"dose","x":300,"y":250},
+    {"id":"E1","typ":"lampe","x":470,"y":70},
+    {"id":"E2","typ":"lampe","x":470,"y":200}
+  ],
+  "soll": [
+    ["L","S1.in"],
+    ["S1.in","S2.in"],
+    ["S1.out","E1.l"],
+    ["S2.out","E2.l"],
+    ["N","D1.1"],
+    ["D1.2","E1.n"],
+    ["D1.3","E2.n"],
+    ["PE","D2.1"],
+    ["D2.2","E1.pe"],
+    ["D2.3","E2.pe"]
+  ],
+  "tabelle": [
+    {"S1":"aus","S2":"aus","E1":false,"E2":false},
+    {"S1":"aus","S2":"ein","E1":false,"E2":true},
+    {"S1":"ein","S2":"aus","E1":true,"E2":false},
+    {"S1":"ein","S2":"ein","E1":true,"E2":true}
+  ],
+  "farben": {"L":"braun","N":"blau","PE":"gelb-gruen"},
+  "fehler": null
+}

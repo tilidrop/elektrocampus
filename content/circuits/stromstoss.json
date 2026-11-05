@@ -1,0 +1,35 @@
+{
+  "id": "stromstoss",
+  "titel": "Stromstossschalter mit Tastern",
+  "beschreibung": "Vereinfachte Darstellung: Der Stromstossschalter ist nur als Kontakt K1 mit Stellung aus oder ein abgebildet (Teiletyp ausschalter), seine Spule wird nicht simuliert. Die Taster T1 und T2 sind parallel an L angeschlossen und dienen nur als Eingabe. In Wirklichkeit führen ihre Ausgänge zur Spule A1/A2 (Finder Serie 20, Quelle MITTEL), jeder Tastendruck schaltet K1 um. Auf die Lampe wirkt nur K1. Aderfarben nach NIN 2025 Teil 5.1.4.3: Aussenleiter braun, schwarz oder grau (in der App L braun), N blau, PE gelb-grün. Steuerleitungen: Farbe nach NIN 2025 Teil 5.1.4.3 und nach Anweisung der Fachperson, hier ohne Angabe.",
+  "teile": [
+    {"id":"L","typ":"quelle","pol":"L","x":30,"y":60},
+    {"id":"N","typ":"quelle","pol":"N","x":30,"y":150},
+    {"id":"PE","typ":"quelle","pol":"PE","x":30,"y":240},
+    {"id":"T1","typ":"taster","x":160,"y":40},
+    {"id":"T2","typ":"taster","x":160,"y":110},
+    {"id":"K1","typ":"ausschalter","x":320,"y":60},
+    {"id":"E1","typ":"lampe","x":480,"y":150}
+  ],
+  "soll": [
+    ["L","T1.in"],
+    ["T1.in","T2.in"],
+    ["T1.out","T2.out"],
+    ["L","K1.in"],
+    ["K1.out","E1.l"],
+    ["N","E1.n"],
+    ["PE","E1.pe"]
+  ],
+  "tabelle": [
+    {"T1":"aus","T2":"aus","K1":"aus","E1":false},
+    {"T1":"aus","T2":"aus","K1":"ein","E1":true},
+    {"T1":"aus","T2":"ein","K1":"aus","E1":false},
+    {"T1":"aus","T2":"ein","K1":"ein","E1":true},
+    {"T1":"ein","T2":"aus","K1":"aus","E1":false},
+    {"T1":"ein","T2":"aus","K1":"ein","E1":true},
+    {"T1":"ein","T2":"ein","K1":"aus","E1":false},
+    {"T1":"ein","T2":"ein","K1":"ein","E1":true}
+  ],
+  "farben": {"L":"braun","N":"blau","PE":"gelb-gruen"},
+  "fehler": null
+}

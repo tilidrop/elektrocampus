@@ -1,0 +1,30 @@
+{
+  "id": "fehler-n-fehlt",
+  "titel": "Fehlersuche: Ausschaltung ohne N",
+  "schema": "Sch0",
+  "beschreibung": "Ausschaltung mit fehlendem Neutralleiter. Aderfarben nach NIN 2025 Teil 5.1.4.3: Aussenleiter braun, schwarz oder grau (in der App L braun), N blau, PE gelb-grün. Der Schalterdraht ist ein geschalteter Aussenleiter und bekommt als Einzelader braun, schwarz oder grau. Empfehlung aus Kursunterlagen, keine Normpflicht: Lampendraht in einer anderen Farbe als die Einspeisung.",
+  "teile": [
+    {"id":"L","typ":"quelle","pol":"L","x":30,"y":60},
+    {"id":"N","typ":"quelle","pol":"N","x":30,"y":150},
+    {"id":"PE","typ":"quelle","pol":"PE","x":30,"y":240},
+    {"id":"S1","typ":"ausschalter","x":200,"y":60},
+    {"id":"E1","typ":"lampe","x":450,"y":150}
+  ],
+  "soll": [
+    ["L","S1.in"],
+    ["S1.out","E1.l"],
+    ["N","E1.n"],
+    ["PE","E1.pe"]
+  ],
+  "tabelle": [
+    {"S1":"aus","E1":false},
+    {"S1":"ein","E1":true}
+  ],
+  "farben": {"L":"braun","N":"blau","PE":"gelb-gruen"},
+  "fehler": {
+    "beschreibung": "Der Neutralleiter N ist an der Lampe nicht angeschlossen.",
+    "ort": "E1.n",
+    "wires": [["L","S1.in"],["S1.out","E1.l"],["PE","E1.pe"]],
+    "symptom": "Die Lampe brennt nie, egal wie der Schalter steht."
+  }
+}

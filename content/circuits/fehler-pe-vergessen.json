@@ -1,0 +1,30 @@
+{
+  "id": "fehler-pe-vergessen",
+  "titel": "Fehlersuche: Steckdose ohne PE",
+  "schema": "Sch0",
+  "beschreibung": "Geschaltete Steckdose, bei der der Schutzleiter fehlt. Aderfarben nach NIN 2025 Teil 5.1.4.3: Aussenleiter braun, schwarz oder grau (in der App L braun), N blau, PE gelb-grün. Der Schalterdraht ist ein geschalteter Aussenleiter (braun, schwarz oder grau).",
+  "teile": [
+    {"id":"L","typ":"quelle","pol":"L","x":30,"y":60},
+    {"id":"N","typ":"quelle","pol":"N","x":30,"y":150},
+    {"id":"PE","typ":"quelle","pol":"PE","x":30,"y":240},
+    {"id":"S1","typ":"ausschalter","x":200,"y":60},
+    {"id":"X1","typ":"steckdose","x":450,"y":150}
+  ],
+  "soll": [
+    ["L","S1.in"],
+    ["S1.out","X1.l"],
+    ["N","X1.n"],
+    ["PE","X1.pe"]
+  ],
+  "tabelle": [
+    {"S1":"aus","X1":false},
+    {"S1":"ein","X1":true}
+  ],
+  "farben": {"L":"braun","N":"blau","PE":"gelb-gruen"},
+  "fehler": {
+    "beschreibung": "Der Schutzleiter PE ist an der Steckdose nicht angeschlossen.",
+    "ort": "X1.pe",
+    "wires": [["L","S1.in"],["S1.out","X1.l"],["N","X1.n"]],
+    "symptom": "Die Steckdose funktioniert normal. Der Fehler fällt erst bei der Prüfung auf, im Fehlerfall fehlt der Schutz."
+  }
+}

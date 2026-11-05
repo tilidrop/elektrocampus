@@ -1,0 +1,1726 @@
+{
+  "id": "modul-4",
+  "nummer": 4,
+  "titel": "Schemas lesen und Grundschaltungen",
+  "beschreibung": "Schemaarten, Schalterschemas der Schweiz, Aderfarben nach NIN 2025 und die Grundschaltungen von der Ausschaltung bis zur Stromstossschaltung. Dazu Dimmer, Treppenhausautomat, Herdanschluss und Schütz als Theorie sowie die häufigsten Fehler und wie du sie logisch eingrenzt.",
+  "minutenGesamt": 65,
+  "lektionen": [
+    {
+      "id": "m4-l1",
+      "titel": "Wofür Schemas da sind",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F18, F19)",
+        "EIT.swiss Sektion Freiburg, Kursunterlagen 3 Installationsarbeiten (Sammelmappe 3): Lageplan, Stromlaufschema, Wirkschaltschema",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (Hilfskraft-Regel)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Ein Schema ist die Bauanleitung der Installation. Es zeigt, welches Teil mit welchem verbunden ist. So verdrahtest du, ohne zu raten."
+        },
+        {
+          "typ": "text",
+          "text": "In der Schweiz hörst du je nach Betrieb verschiedene Namen für dieselben Pläne. Diese vier Begriffe kommen vor. Die Quellen sind eine Schweizer Kursunterlage (Stufe MITTEL) und deutsche Fachseiten (Stufe NIEDRIG bis MITTEL). Eine verbindliche Schweizer Liste haben wir nicht gefunden."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Lageplan (auch Installationsplan): zeigt im Grundriss, wo Schalter, Dosen und Lampen sitzen. In Kursunterlagen sind die Rohre der Lichtinstallation blau eingezeichnet, die Zahl am Rohr ist die Anzahl Drähte.",
+            "Stromlaufschema (auch Stromlaufplan): zeigt die Funktion und die Verdrahtung. Wie fliesst der Strom, was schaltet was. Das ist die Arbeitsunterlage für Montage und Prüfung.",
+            "Wirkschaltschema: so heisst in einer Kursunterlage die Darstellung mit Farben, zum Beispiel bei der Sonnerie-Aufgabe.",
+            "Anschlussplan: zeigt die Klemmen und Verbindungen an einem Gerät oder im Schaltschrank."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Lageplan: wo. Stromlaufschema: wie es funktioniert und welche Ader wohin. Wie die Pläne in deinem Betrieb heissen, sagt dir die Elektro-Fachperson."
+        },
+        {
+          "typ": "text",
+          "text": "Nicht verwechseln: Sch0, Sch3 und so weiter sind keine Planarten. Das sind die Schemanummern der Schalter. Sie stehen in der Lektion Schalterschemas der Schweiz."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Schaltplan im Reparaturleitfaden: Du folgst dem Strom von Plus über Sicherung und Relais bis zur Masse.",
+          "elektro": "Stromlaufschema: Du folgst dem Strom von L über den Schalter zur Lampe und über N zurück. Der Rückleiter ist ein echtes Kabel, keine Karosserie."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Nimm ein Schema aus der App. Zeige mit dem Finger den Weg von L bis zur Lampe und von der Lampe zurück zu N. Sage laut, welche Planart du vor dir hast und wie sie in deinem Betrieb heisst."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l1-q1",
+          "frage": "Welcher Plan zeigt, wo im Raum die Schalter und Dosen sitzen?",
+          "optionen": [
+            "Stromlaufschema",
+            "Lageplan",
+            "Anschlussplan",
+            "Sitzplan"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Lageplan (auch Installationsplan) ist der Grundriss mit den Teilen."
+        },
+        {
+          "id": "m4-l1-q2",
+          "frage": "Welcher Plan hilft dir, die Funktion einer Schaltung zu verstehen?",
+          "optionen": [
+            "Stromlaufschema",
+            "Lageplan",
+            "Sitzplan",
+            "Lieferschein"
+          ],
+          "richtig": 0,
+          "erklaerung": "Das Stromlaufschema zeigt den Stromweg und die Logik."
+        },
+        {
+          "id": "m4-l1-q3",
+          "frage": "Welcher Plan zeigt die Klemmen und Verbindungen an einem Gerät oder im Schaltschrank?",
+          "optionen": [
+            "Lageplan",
+            "Stromlaufschema",
+            "Anschlussplan",
+            "Grundrissplan"
+          ],
+          "richtig": 2,
+          "erklaerung": "Der Anschlussplan beschreibt Klemmen und Verbindungen am Gerät."
+        },
+        {
+          "id": "m4-l1-q4",
+          "frage": "Beim Auto ist die Masse der Rückleiter. Was übernimmt diese Aufgabe in der Hausinstallation?",
+          "optionen": [
+            "Der Schutzleiter PE allein",
+            "Der Neutralleiter N",
+            "Der Schalter",
+            "Die Lampe"
+          ],
+          "richtig": 1,
+          "erklaerung": "Im Haus gibt es keine Karosserie als Rückleiter. Der Strom kommt über N zurück."
+        }
+      ]
+    },
+    {
+      "id": "m4-l2",
+      "titel": "Symbole der Teile in Worten",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F7, F9, F20)",
+        "Feller AG Katalog 2024 (FLF), Taster: Arbeitskontakt A, Ruhekontakt R",
+        "content/circuits/wechsel.json",
+        "content/circuits/kreuz.json",
+        "src/engine/teile.js"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die App kennt acht Teile. Du liest sie im Schema so."
+        },
+        {
+          "typ": "text",
+          "text": "Achtung: Die Symbole der App sind vereinfacht und nicht normgerecht. Die europäische Norm für Schaltplan-Symbole heisst EN 60617 (Quelle MITTEL, Normtext nicht gelesen). Die Klemmennamen com, a, b, a1, a2, b1, b2, l, n, pe sind Bezeichnungen der App. In den Schweizer Quellen sind sie nicht als Standard belegt."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Quelle: Einspeisung mit L, N und PE.",
+            "Ausschalter: zwei Klemmen, in und out. Aus: getrennt. Ein: verbunden.",
+            "Taster: wie ein Ausschalter, aber nur solange du drückst. Feller nennt den Arbeitskontakt (Schliesser) A und den Ruhekontakt (Öffner) R. Der Lampendraht gehört an den Arbeitskontakt.",
+            "Wechsler: drei Klemmen, com, a und b. Der gemeinsame Kontakt com ist immer entweder mit a oder mit b verbunden.",
+            "Kreuzschalter: vier Klemmen, a1, a2, b1, b2. Gerade: a1 mit b1 und a2 mit b2. Gekreuzt: a1 mit b2 und a2 mit b1.",
+            "Lampe: Klemmen l, n und pe. Der Strom fliesst zwischen l und n.",
+            "Steckdose: gleiche Klemmen wie die Lampe, l, n, pe.",
+            "Dose: Die App stellt eine Verbindungsklemme dar. Alle Adern an dieser Klemme sind miteinander verbunden. Die Abzweigdose selbst ist nur das Gehäuse."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Wechsler: com ist die Wurzel, a und b sind die zwei Wege. Kreuzschalter: zwei Adern laufen durch, entweder gerade oder gekreuzt."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Doppelschalter am Fensterheber: eine Taste kann zwei Stromwege umpolen.",
+          "elektro": "Kreuzschalter: ein Schalter, der zwei Adern entweder gerade durchlässt oder vertauscht."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Zeichne die acht Symbole aus dem Kopf auf ein Blatt. Beschrifte bei jedem die Klemmen. Vergleiche mit der App."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l2-q1",
+          "frage": "Wie viele Klemmen hat ein Wechsler?",
+          "optionen": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "richtig": 1,
+          "erklaerung": "Ein Wechsler hat com, a und b."
+        },
+        {
+          "id": "m4-l2-q2",
+          "frage": "Wie viele Klemmen hat ein Kreuzschalter?",
+          "optionen": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "richtig": 1,
+          "erklaerung": "Ein Kreuzschalter hat a1, a2, b1 und b2."
+        },
+        {
+          "id": "m4-l2-q3",
+          "frage": "Zwischen welchen Klemmen fliesst bei Lampe und Steckdose der Laststrom?",
+          "optionen": [
+            "l und pe",
+            "n und pe",
+            "l und n",
+            "alle drei"
+          ],
+          "richtig": 2,
+          "erklaerung": "Die Last liegt zwischen l und n. PE ist nur Schutz."
+        },
+        {
+          "id": "m4-l2-q4",
+          "frage": "Was bewirkt ein Taster im Unterschied zum Ausschalter?",
+          "optionen": [
+            "Er schaltet nur während des Drückens",
+            "Er hat drei Klemmen",
+            "Er schützt vor Kurzschluss",
+            "Er ist immer eingeschaltet"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ein Taster schliesst nur solange man drückt."
+        },
+        {
+          "id": "m4-l2-q5",
+          "frage": "Welcher Kontakt eines Tasters schaltet die Lampe beim Drücken ein?",
+          "optionen": [
+            "Arbeitskontakt A (Schliesser)",
+            "Ruhekontakt R (Öffner)",
+            "Beide",
+            "Keiner"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Lampendraht gehört bei einem Taster an den Arbeitskontakt A."
+        }
+      ]
+    },
+    {
+      "id": "m4-l3",
+      "titel": "Aderfarben im Schema",
+      "minuten": 3,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Electrosuisse NIN 2025 COR1 (SN 411000:2025/COR1:2025) Teil 5.1.4.3.1 bis 5.1.4.3.5",
+        "CENELEC HD 308 S2:2001 (Tabellen 1 und 2)",
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F10 bis F16, Offene Fragen 1 und 2)",
+        "EIT.swiss Sektion Freiburg, Kursunterlagen 3 Installationsarbeiten (Sammelmappe 3), Aderfarben der Korrespondierenden",
+        "content/circuits/ausschaltung.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die Aderfarben stehen in der NIN 2025 im Teil 5.1.4.3. Das ist der Normtext (Stufe HOCH)."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Aussenleiter L: braun, schwarz oder grau, über die ganze Länge. Für alle Aussenleiter eines Stromkreises darf eine dieser Farben verwendet werden. In den Schaltungen der App ist L braun.",
+            "Neutralleiter N: blau, über die ganze Länge. Im Alltag hörst du oft hellblau. Der Normtext sagt blau.",
+            "Schutzleiter PE: gelb-grün. Diese Farbkombination darf für nichts anderes verwendet werden.",
+            "Die Einzelfarben grün und gelb sind bei einadrigen Leitern nicht erlaubt."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Bei mehradrigen Kabeln gilt HD 308. Ein 3-adriges Kabel hat gelb-grün, blau und braun. Ein 5-adriges Kabel hat gelb-grün, blau, braun, schwarz und grau."
+        },
+        {
+          "typ": "text",
+          "text": "Schalterdraht und Korrespondierende führen einen geschalteten Aussenleiter. Als Einzelader sind sie deshalb braun, schwarz oder grau. Empfehlung aus Schweizer Kursunterlagen, keine Normpflicht (Stufe MITTEL): Korrespondierende in gleicher Farbe, Lampendraht in einer anderen Farbe. Bei der Kreuzschaltung die Korrespondierenden vor und nach dem Kreuzschalter in verschiedenen Farben, bei der Serieschaltung die zwei Lampendrähte in zwei Farben."
+        },
+        {
+          "typ": "text",
+          "text": "Blau gehört dem N. Ob eine blaue Ader in einem Kabel ohne N als Schalterdraht dienen darf, ist in den gelesenen Quellen nicht geklärt (Stufe MITTEL). Bis das geklärt ist, gilt die strenge Regel: blau nur für N. Frage im Zweifel die Elektro-Fachperson."
+        },
+        {
+          "typ": "merke",
+          "text": "Gelb-grün ist nur PE. Blau ist N. Aussenleiter sind braun, schwarz oder grau. Nie umgekehrt verwenden."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Auto: Die Farben sind oft Gewohnheit des Herstellers.",
+          "elektro": "Elektro: Farben sind Norm und helfen bei der Orientierung. In älteren Anlagen kann der Neutralleiter oder PEN gelb gekennzeichnet sein, auch andere Farben kommen vor. Ob ein Leiter Spannung führt, zeigt nur die Messung. Frage die Elektro-Fachperson, wenn du unsicher bist."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Nimm Kabelstücke mit braunen, schwarzen, grauen, blauen und gelb-grünen Adern. Sortiere sie in Aussenleiter, N und PE. Sage, was du bei einer unerwarteten Farbe tun würdest: nicht raten, die Elektro-Fachperson fragen und messen lassen."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l3-q1",
+          "frage": "Welche Farbe hat der Schutzleiter PE?",
+          "optionen": [
+            "blau",
+            "braun",
+            "gelb-grün",
+            "grau"
+          ],
+          "richtig": 2,
+          "erklaerung": "PE ist gelb-grün. Diese Farbkombination ist für nichts anderes erlaubt."
+        },
+        {
+          "id": "m4-l3-q2",
+          "frage": "Welche Farbe hat der Neutralleiter N?",
+          "optionen": [
+            "schwarz",
+            "blau",
+            "gelb-grün",
+            "rot"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Normtext sagt blau, über die ganze Länge."
+        },
+        {
+          "id": "m4-l3-q3",
+          "frage": "Welche Farbe hat L in den Schaltungen der App?",
+          "optionen": [
+            "braun",
+            "gelb-grün",
+            "weiss",
+            "blau"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die App verwendet braun. Die NIN lässt auch schwarz und grau zu."
+        },
+        {
+          "id": "m4-l3-q4",
+          "frage": "Welche Farben darf ein Aussenleiter als Einzelader haben?",
+          "optionen": [
+            "braun, schwarz oder grau",
+            "gelb oder grün",
+            "blau oder gelb-grün",
+            "nur braun"
+          ],
+          "richtig": 0,
+          "erklaerung": "Einzeladern der Aussenleiter sind braun, schwarz oder grau."
+        },
+        {
+          "id": "m4-l3-q5",
+          "frage": "In einer älteren Anlage ist der Neutralleiter gelb gekennzeichnet. Was gilt?",
+          "optionen": [
+            "Das gibt es in bestehenden Anlagen. Du fragst und lässt messen.",
+            "Gelb ist immer PE.",
+            "Das ist unmöglich.",
+            "Die Ader darf als Schalterdraht dienen."
+          ],
+          "richtig": 0,
+          "erklaerung": "Die NIN kennt gelb gekennzeichnete Neutralleiter in bestehenden Anlagen. Die Farbe ersetzt die Messung nicht."
+        }
+      ]
+    },
+    {
+      "id": "m4-l11",
+      "titel": "Schalterschemas der Schweiz",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F1 bis F6)",
+        "Feller AG Katalog 2024 (FLF), Seiten 4 und 6",
+        "EIT.swiss Sektion Freiburg, Kursunterlagen 3 Installationsarbeiten (Sammelmappe 3), Schema 0, 1, 3, 6",
+        "Hager Schweiz, Einsätze Schema 1 (3+3) und Schema 6",
+        "ElektroCampus-Quellensammlung (2026-11), Modul 2 (Materialliste 2x Sch3 und 1x Sch6)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "In der Schweiz hat jeder Schalter eine Schemanummer. Sie sagt, welche Schaltfunktion er hat. Du findest sie in Katalogen von Feller und Hager und in Materiallisten, zum Beispiel 2x Sch3 und 1x Sch6."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Sch0, Ausschalter: eine oder mehrere Lampen von einer Stelle (Stufe HOCH).",
+            "Sch1, Serieschalter: zwei Lampengruppen von einer Stelle. Der Schalter besteht aus zwei Wippen und heisst auch 3+3 (Stufe HOCH).",
+            "Sch3, Wechselschalter: eine Lampe von zwei Stellen. Zwei Korrespondierende verbinden die Schalter (Stufe HOCH).",
+            "Sch6, Kreuzschalter: eine Lampe von drei oder mehr Stellen. Er sitzt immer zwischen zwei Sch3-Schaltern (Stufe HOCH).",
+            "Sch2, Umschalter: verdrahtet wie Sch1, aber es kann immer nur eine der beiden Lampen brennen, zum Beispiel bei einer Boilersteuerung (Quelle nur MITTEL).",
+            "Sch5, Mehrfachumschalter: ein Drehschalter mit mehreren Stellungen laut Feller-Katalog. Die Zuordnung ergibt sich aus der Typenschreibweise (Quelle nur MITTEL)."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Es gibt weitere Schemanummern. Eine vollständige Liste ist in den gelesenen Quellen nicht frei veröffentlicht. Hier stehen nur die belegten."
+        },
+        {
+          "typ": "merke",
+          "text": "Sch0 Aus, Sch1 Serie, Sch3 Wechsel, Sch6 Kreuz. Die Schemanummer ist etwas anderes als die Planart."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schlage im Katalog von Feller oder Hager drei Schalter nach und notiere die Schemanummer. Ordne jeden einer Schaltung aus der App zu."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l11-q1",
+          "frage": "Welche Schemanummer hat der Wechselschalter?",
+          "optionen": [
+            "Sch0",
+            "Sch1",
+            "Sch3",
+            "Sch6"
+          ],
+          "richtig": 2,
+          "erklaerung": "Wechselschalter sind Schema 3."
+        },
+        {
+          "id": "m4-l11-q2",
+          "frage": "Welcher Schalter gehört zu Schema 6?",
+          "optionen": [
+            "Ausschalter",
+            "Serieschalter",
+            "Wechselschalter",
+            "Kreuzschalter"
+          ],
+          "richtig": 3,
+          "erklaerung": "Schema 6 ist der Kreuzschalter, immer zwischen zwei Schema-3-Schaltern."
+        },
+        {
+          "id": "m4-l11-q3",
+          "frage": "Serieschaltung (Sch1): S1 ein, S2 aus. Was brennt?",
+          "optionen": [
+            "E1",
+            "E2",
+            "beide",
+            "keine"
+          ],
+          "richtig": 0,
+          "erklaerung": "Tabelle der Serieschaltung: E1 an, E2 aus."
+        },
+        {
+          "id": "m4-l11-q4",
+          "frage": "Die Materialliste nennt 2x Sch3 und 1x Sch6. Welche Schaltung ist das?",
+          "optionen": [
+            "Ausschaltung",
+            "Kreuzschaltung mit drei Schaltstellen",
+            "Serieschaltung",
+            "Stromstossschaltung"
+          ],
+          "richtig": 1,
+          "erklaerung": "In der Kreuzschaltung sind S1 und S3 Wechselschalter und S2 der Kreuzschalter."
+        },
+        {
+          "id": "m4-l11-q5",
+          "frage": "Wie viele Zeilen hat die Tabelle der Kreuzschaltung (Sch3, Sch6, Sch3)?",
+          "optionen": [
+            "4",
+            "6",
+            "8",
+            "16"
+          ],
+          "richtig": 2,
+          "erklaerung": "Drei Schalter mit je zwei Stellungen ergeben acht Zeilen."
+        }
+      ]
+    },
+    {
+      "id": "m4-l4",
+      "titel": "Ausschaltung",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F3, F17)",
+        "EIT.swiss Sektion Freiburg, Kursunterlagen 3 Installationsarbeiten (Sammelmappe 3), Schema 0",
+        "Feller AG Katalog 2024 (FLF), Ausschalter 0/1 L",
+        "BauNetz Wissen, Ausschaltung (Regel Schalter im Aussenleiter, deutsche Quelle)",
+        "content/circuits/ausschaltung.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die Ausschaltung ist die einfachste Schaltung. Ein Schalter schaltet eine Lampe von einem Ort."
+        },
+        {
+          "typ": "text",
+          "text": "In der Schweiz heisst das Schema 0 (Ausschalter). Der Schalter hat zwei Anschlüsse: einen für den Aussenleiter, einen für den Lampendraht. In der Praxis wird oft ein Schema-3-Schalter verwendet, ein Kontakt bleibt dann unbenutzt (Stufe HOCH)."
+        },
+        {
+          "typ": "text",
+          "text": "Der Schalter liegt im Polleiter L. L geht zum Schalter, vom Schalter zur Lampe. N geht direkt zur Lampe. PE geht an das PE der Lampe."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "S1 aus: Lampe aus.",
+            "S1 ein: Lampe an."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Aderfarben: L braun, N blau, PE gelb-grün. Der Schalterdraht ist ein Aussenleiter und braun, schwarz oder grau."
+        },
+        {
+          "typ": "merke",
+          "text": "Der Schalter gehört in den Aussenleiter L, nicht in den N. Quelle: BauNetz Wissen, deutsche Quelle (Stufe MITTEL), eine Schweizer NIN-Fundstelle haben wir nicht gelesen. Dann ist der Polleiter an der Lampe in Stellung aus unterbrochen. Spannungsfrei ist die Lampe damit nicht. Vor jeder Arbeit gelten die fünf Sicherheitsregeln: freischalten, sichern, Spannungsfreiheit an der Arbeitsstelle feststellen."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Auto: Der Schalter kann im Plus oder in der Masse liegen. Beides funktioniert.",
+          "elektro": "Elektro: Der Schalter muss im L liegen. Im N schaltet die Lampe zwar, aber L bleibt an der Lampe. Gefahr beim Lampenwechsel. Auch mit Schalter im L gilt: Vor dem Lampenwechsel freischalten und messen."
+        },
+        {
+          "typ": "text",
+          "text": "12 V liegen weit unter der Kleinspannungsgrenze. Schon 230 V Wechselspannung können tödlich sein (Suva). Arbeite nur nach den Sicherheitsregeln aus Modul 0. Der Meister bestimmt, was du arbeiten darfst."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Am Übungsbrett verdrahtest du spannungsfrei nach Schema, unter Anleitung und Aufsicht der Elektro-Fachperson. Vor dem Einschalten misst die Fachperson die Durchgängigkeit des Schutzleiters und den Isolationswiderstand (siehe Modul 7). Einschalten macht ausschliesslich die Fachperson. Du beobachtest, benennst, was in welcher Schalterstellung passieren muss, und liest das Ergebnis ab. Verdrahte die Ausschaltung nach Schema. Benenne für beide Stellungen von S1, was die Lampe tun muss, und prüfe in der App beide Stellungen."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l4-q1",
+          "frage": "Wie steht die Lampe in der Ausschaltung bei S1 ein?",
+          "optionen": [
+            "aus",
+            "an",
+            "flackert",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: S1 ein, E1 an."
+        },
+        {
+          "id": "m4-l4-q2",
+          "frage": "Wie steht die Lampe bei S1 aus?",
+          "optionen": [
+            "an",
+            "aus",
+            "dunkel",
+            "halb"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: S1 aus, E1 aus."
+        },
+        {
+          "id": "m4-l4-q3",
+          "frage": "In welchen Leiter gehört der Schalter?",
+          "optionen": [
+            "N",
+            "PE",
+            "L",
+            "in alle drei"
+          ],
+          "richtig": 2,
+          "erklaerung": "Schalter im L, sonst bleibt L an der Lampe."
+        },
+        {
+          "id": "m4-l4-q4",
+          "frage": "Wohin geht N in der Ausschaltung?",
+          "optionen": [
+            "Zum Schalter",
+            "Direkt zur Lampe",
+            "Zu PE",
+            "Nirgends"
+          ],
+          "richtig": 1,
+          "erklaerung": "N geht direkt an die Klemme n der Lampe."
+        }
+      ]
+    },
+    {
+      "id": "m4-l5",
+      "titel": "Geschaltete Steckdose",
+      "minuten": 3,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F3, F17)",
+        "content/circuits/steckdose_geschaltet.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die geschaltete Steckdose funktioniert wie die Ausschaltung (Schema 0). Statt der Lampe sitzt eine Steckdose. Die Simulation nimmt an, dass ein Verbraucher eingesteckt ist."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "S1 aus: Polleiter unterbrochen, kein Strom zum Verbraucher.",
+            "S1 ein: Steckdose unter Spannung.",
+            "PE geht an die Klemme pe der Steckdose."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Auch hier: Schalter im L. PE nie vergessen. Man sieht ihn im Betrieb nicht, er schützt im Fehlerfall."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Auto: Die 12-V-Steckdose schaltet oft mit der Zündung.",
+          "elektro": "Elektro: Eine geschaltete Steckdose hat 230 V und PE. Auch ausgeschaltet ist die Steckdose nicht spannungsfrei im Sinne der Sicherheitsregeln. Gearbeitet wird nur nach Freischalten und Messen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Am Übungsbrett verdrahtest du spannungsfrei nach Schema, unter Anleitung und Aufsicht der Elektro-Fachperson. Vor dem Einschalten misst die Fachperson die Durchgängigkeit des Schutzleiters und den Isolationswiderstand (siehe Modul 7). Einschalten macht ausschliesslich die Fachperson. Du beobachtest, benennst, was in welcher Schalterstellung passieren muss, und liest das Ergebnis ab. Verdrahte eine geschaltete Steckdose nach Schema und kontrolliere alle Klemmen mit einer Sichtkontrolle. Benenne, was X1 bei S1 ein und aus liefern muss, und lies den Funktionstest ab."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l5-q1",
+          "frage": "Wie steht X1 bei S1 ein?",
+          "optionen": [
+            "spannungslos",
+            "unter Spannung",
+            "kurzgeschlossen",
+            "defekt"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: S1 ein, X1 an."
+        },
+        {
+          "id": "m4-l5-q2",
+          "frage": "Wie steht X1 bei S1 aus (in der Simulation)?",
+          "optionen": [
+            "unter Spannung",
+            "spannungslos",
+            "gesperrt",
+            "nur PE"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: S1 aus, X1 aus. Der Polleiter ist unterbrochen. Spannungsfrei im Sinne der Sicherheitsregeln ist die Steckdose damit nicht."
+        },
+        {
+          "id": "m4-l5-q3",
+          "frage": "Was ist der Unterschied zur Ausschaltung im Aufbau?",
+          "optionen": [
+            "Der Schalter liegt im N",
+            "Statt der Lampe sitzt eine Steckdose",
+            "Es braucht zwei Schalter",
+            "Es gibt keinen PE"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Aufbau ist gleich. Nur die Last ist eine Steckdose."
+        },
+        {
+          "id": "m4-l5-q4",
+          "frage": "Welche Klemme der Steckdose bekommt PE?",
+          "optionen": [
+            "l",
+            "n",
+            "pe",
+            "keine"
+          ],
+          "richtig": 2,
+          "erklaerung": "PE gehört an pe."
+        }
+      ]
+    },
+    {
+      "id": "m4-l6",
+      "titel": "Serieschaltung",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F4)",
+        "EIT.swiss Sektion Freiburg, Kursunterlagen 3 Installationsarbeiten (Sammelmappe 3), Schema 1",
+        "Feller AG Katalog 2024 (FLF), Serie, Wechsel-Wechsel 1/3+3/1 L",
+        "Hager Schweiz, Einsatz Schema 1 (3+3)",
+        "content/circuits/serie.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die Serieschaltung ist in der Schweiz das Schema 1. Sie schaltet zwei Lampengruppen unabhängig von einem Ort. Der Schalter besteht aus zwei Wippen und heisst bei Feller Schema 3+3, mit eingebauter Brücke für den gemeinsamen Aussenleiter. In der App sind das zwei Ausschalter S1 und S2 mit gemeinsamem Eingang."
+        },
+        {
+          "typ": "text",
+          "text": "N und PE werden in der Abzweigdose über Verbindungsklemmen verteilt (D1 für N, D2 für PE). Die Abzweigdose selbst ist nur das Gehäuse."
+        },
+        {
+          "typ": "text",
+          "text": "Du brauchst einen zusätzlichen Lampendraht. Der Schutzleiter der zweiten Lampe wird ohne Unterbruch geführt. Empfehlung aus der Kursunterlage, keine Normpflicht: die zwei Lampendrähte in zwei verschiedenen Farben (braun, schwarz oder grau)."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "S1 aus, S2 aus: E1 aus, E2 aus.",
+            "S1 aus, S2 ein: E1 aus, E2 an.",
+            "S1 ein, S2 aus: E1 an, E2 aus.",
+            "S1 ein, S2 ein: beide an."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Jede Wippe schaltet genau eine Lampe. Der gemeinsame Eingang ist L."
+        },
+        {
+          "typ": "text",
+          "text": "Achtung: Die Serieschaltung bei Widerständen ist etwas anderes. Dort teilt sich die Spannung auf. Hier ist es nur der Name des Doppelschalters."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Am Übungsbrett verdrahtest du spannungsfrei nach Schema, unter Anleitung und Aufsicht der Elektro-Fachperson. Vor dem Einschalten misst die Fachperson die Durchgängigkeit des Schutzleiters und den Isolationswiderstand (siehe Modul 7). Einschalten macht ausschliesslich die Fachperson. Du beobachtest, benennst, was in welcher Schalterstellung passieren muss, und liest das Ergebnis ab. Verdrahte die Serieschaltung nach Schema. Benenne für alle vier Stellungen, welche Lampe brennen muss, und notiere beim Funktionstest, was du abliest."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l6-q1",
+          "frage": "S1 ein, S2 aus. Was brennt?",
+          "optionen": [
+            "E1",
+            "E2",
+            "beide",
+            "keine"
+          ],
+          "richtig": 0,
+          "erklaerung": "Tabelle: E1 an, E2 aus."
+        },
+        {
+          "id": "m4-l6-q2",
+          "frage": "S1 aus, S2 ein. Was brennt?",
+          "optionen": [
+            "E1",
+            "E2",
+            "beide",
+            "keine"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: E1 aus, E2 an."
+        },
+        {
+          "id": "m4-l6-q3",
+          "frage": "S1 ein, S2 ein. Was brennt?",
+          "optionen": [
+            "nur E1",
+            "nur E2",
+            "beide",
+            "keine"
+          ],
+          "richtig": 2,
+          "erklaerung": "Tabelle: beide Lampen an."
+        },
+        {
+          "id": "m4-l6-q4",
+          "frage": "Wie viele Zeilen hat die Tabelle der Serieschaltung?",
+          "optionen": [
+            "2",
+            "3",
+            "4",
+            "8"
+          ],
+          "richtig": 2,
+          "erklaerung": "Zwei Schalter mit je zwei Stellungen ergeben vier Zeilen."
+        }
+      ]
+    },
+    {
+      "id": "m4-l7",
+      "titel": "Wechselschaltung",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F1)",
+        "EIT.swiss Sektion Freiburg, Kursunterlagen 3 Installationsarbeiten (Sammelmappe 3), Schema 3",
+        "Feller AG Katalog 2024 (FLF), Aus/Wechsel 3/1 L",
+        "Philipp unter Strom, Schema 0, 1, 2, 3 und 6 anhand der Feller-Schalter",
+        "content/circuits/wechsel.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die Wechselschaltung ist in der Schweiz das Schema 3. Sie schaltet eine Lampe von zwei Orten. Du brauchst zwei Wechsler S1 und S2. Jeder Schalter hat nur einen Kontakt (Wechsler)."
+        },
+        {
+          "typ": "text",
+          "text": "So wird verdrahtet. L geht auf den gemeinsamen Kontakt com von S1. Die beiden Korrespondierenden verbinden a mit a und b mit b zwischen S1 und S2. Vom com von S2 geht der Schalterdraht zur Lampe. N und PE gehen direkt zur Lampe. Die Namen com, a und b sind Bezeichnungen der App."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "S1 a, S2 a: Lampe an.",
+            "S1 a, S2 b: Lampe aus.",
+            "S1 b, S2 a: Lampe aus.",
+            "S1 b, S2 b: Lampe an."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Die Lampe ist an, wenn beide Schalter auf der gleichen Seite stehen. Bei verschiedenen Seiten ist sie aus."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Auto: Das Innenlicht geht oft über mehrere Türkontakte an. Das ist eine Parallelschaltung, keine Wechselschaltung.",
+          "elektro": "Elektro: Zwei Wechsler mit zwei Korrespondierenden. Jeder Schalter ändert den Zustand der Lampe, egal wo der andere steht."
+        },
+        {
+          "typ": "text",
+          "text": "Sicher arbeiten: spannungsfrei schalten, prüfen, und nur das arbeiten, was der Meister bestimmt."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Am Übungsbrett verdrahtest du spannungsfrei nach Schema, unter Anleitung und Aufsicht der Elektro-Fachperson. Vor dem Einschalten misst die Fachperson die Durchgängigkeit des Schutzleiters und den Isolationswiderstand (siehe Modul 7). Einschalten macht ausschliesslich die Fachperson. Du beobachtest, benennst, was in welcher Schalterstellung passieren muss, und liest das Ergebnis ab. Verdrahte die Wechselschaltung nach Schema. Benenne für alle vier Stellungen, was die Lampe tun muss, und lies den Funktionstest ab. Kriterien: richtige Adern, Farben (Aussenleiter braun, schwarz oder grau, N blau, PE gelb-grün), beide Stellungen benannt."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l7-q1",
+          "frage": "S1 a, S2 a. Lampe?",
+          "optionen": [
+            "an",
+            "aus",
+            "Kurzschluss",
+            "unbestimmt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Tabelle: S1 a, S2 a, E1 an."
+        },
+        {
+          "id": "m4-l7-q2",
+          "frage": "S1 a, S2 b. Lampe?",
+          "optionen": [
+            "an",
+            "aus",
+            "flackert",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: S1 a, S2 b, E1 aus."
+        },
+        {
+          "id": "m4-l7-q3",
+          "frage": "S1 b, S2 b. Lampe?",
+          "optionen": [
+            "aus",
+            "an",
+            "dunkel",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: S1 b, S2 b, E1 an."
+        },
+        {
+          "id": "m4-l7-q4",
+          "frage": "Wohin geht L in der Wechselschaltung?",
+          "optionen": [
+            "Auf com von S1",
+            "Auf a von S1",
+            "Direkt zur Lampe",
+            "Auf b von S2"
+          ],
+          "richtig": 0,
+          "erklaerung": "L liegt am gemeinsamen Kontakt com von S1."
+        },
+        {
+          "id": "m4-l7-q5",
+          "frage": "Was verbindet S1 und S2?",
+          "optionen": [
+            "Nur N",
+            "Zwei Korrespondierende, a mit a und b mit b",
+            "PE",
+            "Nichts"
+          ],
+          "richtig": 1,
+          "erklaerung": "Die zwei Korrespondierenden verbinden die Schalter."
+        }
+      ]
+    },
+    {
+      "id": "m4-l8",
+      "titel": "Kreuzschaltung",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F2)",
+        "EIT.swiss Sektion Freiburg, Kursunterlagen 3 Installationsarbeiten (Sammelmappe 3), Schema 6",
+        "Feller AG Katalog 2024 (FLF), Kreuz 6/1 L",
+        "Hager Schweiz, Einsatz Schema 6 (Zwischenschalter, Kreuz)",
+        "content/circuits/kreuz.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Die Kreuzschaltung schaltet eine Lampe von drei oder mehr Orten. Du brauchst zwei Wechsler (S1 und S3, Schema 3) und dazwischen einen Kreuzschalter S2 (Schema 6). Der Schema-6-Schalter sitzt immer zwischen zwei Schema-3-Schaltern. Für mehr Orte kommen weitere Kreuzschalter dazwischen. Typische Anwendung: Treppenhäuser und Gänge."
+        },
+        {
+          "typ": "text",
+          "text": "Jeder Schalter ändert den Zustand der Lampe. Die Tabelle hat acht Zeilen."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "S1 a, S2 gerade, S3 a: an",
+            "S1 a, S2 gerade, S3 b: aus",
+            "S1 a, S2 gekreuzt, S3 a: aus",
+            "S1 a, S2 gekreuzt, S3 b: an",
+            "S1 b, S2 gerade, S3 a: aus",
+            "S1 b, S2 gerade, S3 b: an",
+            "S1 b, S2 gekreuzt, S3 a: an",
+            "S1 b, S2 gekreuzt, S3 b: aus"
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Jede Änderung eines einzelnen Schalters kippt die Lampe. Das gilt für alle drei."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Fensterheber mit Doppelschalter: Die Leitungen werden umgepolt.",
+          "elektro": "Kreuzschalter: Er vertauscht zwei Adern oder lässt sie gerade. So kann man an jedem Ort umschalten."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Am Übungsbrett verdrahtest du spannungsfrei nach Schema, unter Anleitung und Aufsicht der Elektro-Fachperson. Vor dem Einschalten misst die Fachperson die Durchgängigkeit des Schutzleiters und den Isolationswiderstand (siehe Modul 7). Einschalten macht ausschliesslich die Fachperson. Du beobachtest, benennst, was in welcher Schalterstellung passieren muss, und liest das Ergebnis ab. Verdrahte die Kreuzschaltung nach Schema. Benenne, dass jede Änderung eines Schalters die Lampe umschalten muss, lies den Funktionstest ab und notiere die Tabelle."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l8-q1",
+          "frage": "S1 a, S2 gerade, S3 a. Lampe?",
+          "optionen": [
+            "an",
+            "aus",
+            "Kurzschluss",
+            "unbestimmt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Tabelle: an."
+        },
+        {
+          "id": "m4-l8-q2",
+          "frage": "S1 a, S2 gekreuzt, S3 a. Lampe?",
+          "optionen": [
+            "an",
+            "aus",
+            "flackert",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: aus."
+        },
+        {
+          "id": "m4-l8-q3",
+          "frage": "S1 b, S2 gekreuzt, S3 a. Lampe?",
+          "optionen": [
+            "aus",
+            "an",
+            "dunkel",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: an."
+        },
+        {
+          "id": "m4-l8-q4",
+          "frage": "Was passiert, wenn du nur einen Schalter umlegst?",
+          "optionen": [
+            "Nichts",
+            "Die Lampe wechselt den Zustand",
+            "Es gibt Kurzschluss",
+            "PE fällt aus"
+          ],
+          "richtig": 1,
+          "erklaerung": "In der Kreuzschaltung kippt jeder Schalter die Lampe."
+        },
+        {
+          "id": "m4-l8-q5",
+          "frage": "Wo sitzt der Kreuzschalter?",
+          "optionen": [
+            "Vor S1",
+            "Zwischen den beiden Wechslern",
+            "Nach der Lampe",
+            "Im N"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Kreuzschalter sitzt zwischen S1 und S3."
+        }
+      ]
+    },
+    {
+      "id": "m4-l9",
+      "titel": "Stromstossschaltung (vereinfacht)",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F21, F22)",
+        "Finder Serie 20 Stromstossschalter, Datenblatt IV-2026",
+        "content/circuits/stromstoss.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Ein Stromstossschalter ist ein Relais, das bei jedem Tastendruck umschaltet. Du kannst mehrere Taster parallel setzen. Bei beleuchteten Tastern ist die Zahl begrenzt, siehe die Lektion Stromstossschalter in Wirklichkeit."
+        },
+        {
+          "typ": "text",
+          "text": "In der App ist das vereinfacht. Der Stromstossschalter ist nur als Kontakt K1 mit den Stellungen aus oder ein dargestellt. Seine Spule A1/A2 wird nicht simuliert. Die Taster sind nur Eingaben."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "K1 aus: Lampe aus, egal wie die Taster stehen.",
+            "K1 ein: Lampe an, egal wie die Taster stehen."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Auf die Lampe wirkt nur K1. Jeder Tastendruck schaltet K1 um. Das sieht man in der Tabelle nicht, nur den Zustand."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Auto: Ein Relais schaltet mit einem kleinen Strom einen grossen Verbraucher.",
+          "elektro": "Elektro: Der Stromstossschalter wirkt wie ein Relais, das seinen Zustand behält. Die Taster geben nur den Impuls."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Zeichne die Schaltung mit K1 in einen Plan. Erkläre mit eigenen Worten, wie zwei Taster dieselbe Lampe umschalten."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l9-q1",
+          "frage": "K1 ein. Lampe?",
+          "optionen": [
+            "an",
+            "aus",
+            "dunkel",
+            "unbestimmt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Tabelle: K1 ein, E1 an."
+        },
+        {
+          "id": "m4-l9-q2",
+          "frage": "In der Simulation steht K1 fest auf aus, die Taster sind nur Eingaben. Beide Taster sind gedrückt. Lampe?",
+          "optionen": [
+            "an",
+            "aus",
+            "flackert",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: K1 aus, E1 aus, egal wie die Taster stehen."
+        },
+        {
+          "id": "m4-l9-q3",
+          "frage": "Was wirkt in der Simulation direkt auf die Lampe?",
+          "optionen": [
+            "Taster T1",
+            "Taster T2",
+            "Kontakt K1",
+            "PE"
+          ],
+          "richtig": 2,
+          "erklaerung": "Nur K1 schaltet die Lampe."
+        },
+        {
+          "id": "m4-l9-q4",
+          "frage": "Warum ist die Simulation vereinfacht?",
+          "optionen": [
+            "Die Lampe fehlt",
+            "Die Spule wird nicht simuliert",
+            "Es gibt keinen N",
+            "Es gibt keinen Schalter"
+          ],
+          "richtig": 1,
+          "erklaerung": "Die Spule des Stromstossschalters ist nicht abgebildet."
+        }
+      ]
+    },
+    {
+      "id": "m4-l10",
+      "titel": "Typische Fehler und Eingrenzen",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F17, Prüfung der Schaltungsdateien)",
+        "BauNetz Wissen, Ausschaltung (deutsche Quelle)",
+        "content/circuits/fehler-kurzschluss.json",
+        "content/circuits/fehler-l-direkt.json",
+        "content/circuits/fehler-n-fehlt.json",
+        "content/circuits/fehler-pe-vergessen.json",
+        "content/circuits/fehler-schalter-im-n.json",
+        "content/circuits/fehler-wechsel-vertauscht.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Fehler suchst du wie beim Auto: Symptom beachten, dann logisch eingrenzen."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Sicherung fällt beim Einschalten: Schalterdraht an der falschen Lampenklemme. Kurzschluss zwischen L und N.",
+            "Lampe brennt immer: L geht am Schalter vorbei direkt an die Lampe.",
+            "Lampe brennt nie: N fehlt an der Lampe.",
+            "Steckdose geht, aber PE fehlt: fällt erst bei der Prüfung auf.",
+            "Schalter im N: Die Lampe schaltet, aber L liegt immer an. Gefahr beim Lampenwechsel.",
+            "Wechselschaltung brennt nur bei a und a: L sitzt an a statt an com."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Zuerst spannungsfrei, dann Sichtkontrolle, dann Klemme für Klemme gegen das Schema. Nur einen Fehler auf einmal beheben."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Auto: Kein Licht? Sicherung, Masse, Lampe prüfen. Drei Stellen.",
+          "elektro": "Elektro: Gleiche Idee. Erst L bis zum Schalter, dann zur Lampe, dann N und PE. 230 V sind lebensgefährlich. Der Meister bestimmt, was du arbeiten darfst."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Öffne in der App einen Fehlerfall. Lies das Symptom, nenne die vermutete Ursache, prüfe sie am Schema. Wiederhole mit zwei weiteren Fällen."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l10-q1",
+          "frage": "Die Sicherung fällt beim Einschalten, die Lampe brennt nie. Ursache?",
+          "optionen": [
+            "N fehlt",
+            "Schalterdraht an der Klemme n statt l",
+            "PE fehlt",
+            "Schalter im N"
+          ],
+          "richtig": 1,
+          "erklaerung": "Schalterdraht an E1.n: Kurzschluss L zu N in Stellung ein."
+        },
+        {
+          "id": "m4-l10-q2",
+          "frage": "Die Lampe brennt immer, der Schalter ändert nichts. Ursache?",
+          "optionen": [
+            "L geht direkt an die Lampe",
+            "N fehlt",
+            "PE fehlt",
+            "Die Lampe ist kaputt"
+          ],
+          "richtig": 0,
+          "erklaerung": "L ist am Schalter vorbei an E1.l angeschlossen."
+        },
+        {
+          "id": "m4-l10-q3",
+          "frage": "Die Lampe brennt nie, egal wie der Schalter steht. Ursache?",
+          "optionen": [
+            "PE fehlt",
+            "N ist an der Lampe nicht angeschlossen",
+            "Schalter im N",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Ohne N ist der Stromkreis offen."
+        },
+        {
+          "id": "m4-l10-q4",
+          "frage": "Die Lampe schaltet normal, aber L liegt ausgeschaltet an. Ursache?",
+          "optionen": [
+            "Schalter im N",
+            "N fehlt",
+            "PE fehlt",
+            "Kurzschluss"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Schalter sitzt im N, L liegt immer an."
+        },
+        {
+          "id": "m4-l10-q5",
+          "frage": "Die Steckdose funktioniert, der Fehler fällt erst bei der Prüfung auf. Ursache?",
+          "optionen": [
+            "N fehlt",
+            "PE fehlt",
+            "L fehlt",
+            "Der Schalter fehlt"
+          ],
+          "richtig": 1,
+          "erklaerung": "PE ist nicht angeschlossen, es fehlt der Schutz im Fehlerfall."
+        }
+      ]
+    },
+    {
+      "id": "m4-l12",
+      "titel": "Stromstossschalter in Wirklichkeit",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F21, F22, Offene Frage 15)",
+        "Finder Serie 20 Stromstossschalter, Datenblatt IV-2026",
+        "content/circuits/stromstoss.json"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Der Stromstossschalter ist ein Relais, das nach jedem Impuls die Stellung wechselt und behält. Die Angaben stammen vom Datenblatt der Finder Serie 20. Das ist ein Hersteller, also Stufe MITTEL. Andere Typen können abweichen."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Die Spulenklemmen heissen A1 und A2.",
+            "Es gibt Typen mit 1 Schliesser, 2 Schliessern oder 1 Schliesser und 1 Öffner.",
+            "Die Spule gibt es für AC (8 bis 240 V) und DC (12 bis 110 V). Sie darf eine andere Spannung haben als die Last. Beispiel im Datenblatt: Ansteuerung 24 V DC, Lampe 230 V AC.",
+            "Nach dem Abschalten der Versorgung bleibt er in der letzten Stellung.",
+            "Zulässige Last bei 230 V: Glühlampen 2000 W, LED 400 W, Kompaktleuchtstofflampen 400 W."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Mehrere Taster werden parallel zueinander geschaltet. Zusammen liegen sie in Reihe mit der Spule A1-A2. Das ist Grundwissen und im Datenblatt nur indirekt belegt."
+        },
+        {
+          "typ": "text",
+          "text": "Beleuchtete Taster (Glimmlampe) brauchen bei 230 V AC am Finder einen Kondensator parallel zur Spule. Er ist für bis zu 15 Glimmlampen-Leuchttaster nötig (je höchstens 1 mA). Bei Hager haben wir keinen Wert gefunden."
+        },
+        {
+          "typ": "merke",
+          "text": "Mit beleuchteten Tastern ist die Zahl der Taster begrenzt. Der Wert steht im Datenblatt des Typs."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lies das Datenblatt eines Stromstossschalters. Suche die Spulenklemmen, die Spulenspannung und die zulässige Last. Als Hilfskraft arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Erstprüfung, Schlusskontrolle, Arbeiten unter Spannung und das Einschalten einer neuen Installation macht oder verantwortet die Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l12-q1",
+          "frage": "Wie heissen die Spulenklemmen des Finder-Stromstossschalters?",
+          "optionen": [
+            "A1 und A2",
+            "L und N",
+            "13 und 14",
+            "com und a"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Spule ist A1 und A2."
+        },
+        {
+          "id": "m4-l12-q2",
+          "frage": "Darf die Spulenspannung von der Lastspannung abweichen?",
+          "optionen": [
+            "Ja, zum Beispiel 24 V DC Spule und 230 V AC Lampe",
+            "Nein, immer gleich",
+            "Nur bei Steckdosen",
+            "Nur bei LED"
+          ],
+          "richtig": 0,
+          "erklaerung": "Das Datenblatt nennt 24 V DC an A1-A2 und eine Lampe an 230 V AC."
+        },
+        {
+          "id": "m4-l12-q3",
+          "frage": "Was bleibt nach dem Abschalten der Versorgung erhalten?",
+          "optionen": [
+            "Die letzte Schaltstellung",
+            "Nichts, er fällt auf aus",
+            "Die Spulenspannung",
+            "Die Zeit"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Stromstossschalter bleibt in der letzten Stellung."
+        },
+        {
+          "id": "m4-l12-q4",
+          "frage": "Was ist bei vielen beleuchteten Tastern zu beachten?",
+          "optionen": [
+            "Die Zahl ist begrenzt, am Finder braucht es einen Kondensator",
+            "Nichts",
+            "Man braucht einen zweiten N",
+            "Man braucht einen Kreuzschalter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Finder erlaubt bis zu 15 Leuchttaster mit Kondensator."
+        },
+        {
+          "id": "m4-l12-q5",
+          "frage": "In der App-Simulation steht K1 auf aus, T1 und T2 sind beide gedrückt. Lampe?",
+          "optionen": [
+            "an",
+            "aus",
+            "flackert",
+            "Kurzschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Tabelle: K1 aus, E1 aus, egal wie die Taster stehen."
+        }
+      ]
+    },
+    {
+      "id": "m4-l13",
+      "titel": "Treppenhausautomat",
+      "minuten": 3,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F24)",
+        "Finder 14.81 Treppenhaus-Lichtautomat, Beipackzettel 10/23"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Der Treppenhausautomat schaltet das Licht nach einem Tastendruck für eine eingestellte Zeit ein und danach selbst wieder aus. Die Angaben stammen vom Beipackzettel des Finder 14.81. Das ist ein Hersteller, also Stufe MITTEL."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Er ist für 3- und 4-Leiteranschluss geeignet. Seine Klemmen heissen A1, A2 und B1 (Taster).",
+            "Beim ersten Tastendruck erkennt er selbst, ob der Taster den Neutralleiter oder den Aussenleiter schaltet. Bei Leuchttastern mit Glimmlampe blinkt der Taster bis dahin.",
+            "Die Zeit ist einstellbar von 0.5 bis 20 Minuten. Die Service-Funktion schaltet bei einem Tastendruck von mindestens 5 s für 60 Minuten ein.",
+            "Der Kontakt ist ein Schliesser mit 16 A bei 230 V AC.",
+            "Die Leitungen zu den Steuerklemmen sollen kurz sein."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Die Klemmenbezeichnungen anderer Hersteller und Modelle haben wir nicht geprüft. Sie stehen im Datenblatt oder Beipackzettel des Typs. Zum Bewegungsmelder haben wir keine tragfähige Quelle gefunden. Darum gibt es dazu hier keine Lektion."
+        },
+        {
+          "typ": "merke",
+          "text": "Klemmen und Zeiten eines Automaten stehen im Beipackzettel des Typs, nie aus dem Gedächtnis."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lies den Beipackzettel eines Treppenhausautomaten. Notiere die Klemmen, die Zeiteinstellung und den Kontakt. Als Hilfskraft arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Erstprüfung, Schlusskontrolle, Arbeiten unter Spannung und das Einschalten einer neuen Installation macht oder verantwortet die Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l13-q1",
+          "frage": "Was macht der Treppenhausautomat nach dem Tastendruck?",
+          "optionen": [
+            "Er schaltet das Licht für eine eingestellte Zeit ein und danach aus",
+            "Er schaltet das Licht dauernd ein",
+            "Er dimmt das Licht",
+            "Er schaltet nur den N"
+          ],
+          "richtig": 0,
+          "erklaerung": "Er arbeitet als Zeitschalter."
+        },
+        {
+          "id": "m4-l13-q2",
+          "frage": "Was erkennt der Finder 14.81 beim ersten Tastendruck?",
+          "optionen": [
+            "Ob der Taster N oder den Aussenleiter schaltet",
+            "Die Lampenart",
+            "Die Netzspannung",
+            "Den Schutzleiter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Das steht im Beipackzettel des Finder 14.81."
+        },
+        {
+          "id": "m4-l13-q3",
+          "frage": "Wie sollen die Leitungen zu den Steuerklemmen sein?",
+          "optionen": [
+            "kurz",
+            "möglichst lang",
+            "grün-gelb",
+            "geschirmt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Beipackzettel verlangt kurze Leitungen."
+        },
+        {
+          "id": "m4-l13-q4",
+          "frage": "Wo stehen die Klemmenbezeichnungen eines Automaten?",
+          "optionen": [
+            "Im Beipackzettel oder Datenblatt des Typs",
+            "Sie sind bei allen Herstellern gleich",
+            "Auf der Lampe",
+            "In der NIN"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Bezeichnungen sind modellabhängig."
+        }
+      ]
+    },
+    {
+      "id": "m4-l14",
+      "titel": "Dimmer und Lastarten",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F23)",
+        "Feller AG Katalog 2024 (FLF), Dimmer (Seite 12)",
+        "BauNetz Wissen, Dimmer (Lastarten R, L, C)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Ein Dimmer verändert die Helligkeit. Es gibt zwei Verfahren, Phasenanschnitt und Phasenabschnitt. Der Dimmer muss zur Lastart passen: R ohmisch, L induktiv, C kapazitiv. Die Angaben stammen vom Feller-Katalog und einer allgemeinen Fachseite, also Stufe MITTEL bis HOCH."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Phasenanschnitt-Dimmer: für Glüh- und Niedervolthalogenlampen und konventionelle (induktive) Transformatoren. Nicht geeignet für elektronische Transformatoren.",
+            "Phasenabschnitt-Dimmer: für Glüh- und Niedervolthalogenlampen mit elektronischem Transformator (kapazitive Last). Nicht geeignet für konventionelle Transformatoren.",
+            "Universal-Dimmer: ohmisch, induktiv und kapazitiv. Mischlast aus elektronischen und konventionellen Transformatoren ist nicht möglich.",
+            "LED-Universal-Dimmer: für ohmsche Last und für dimmbare LED-Lampen. Für LED gilt eine tiefere Höchstlast als für ohmsche Last."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Jeder Dimmer hat eine Mindestlast und eine Höchstlast. Bei Feller liegt die Mindestlast je nach Typ zwischen 4 W und 60 W. Eine allgemeine Zahl gibt es nicht. Manche Dimmer haben einen Schaltkontakt für die Wechselschaltung, ein Typ erlaubt sie nicht."
+        },
+        {
+          "typ": "merke",
+          "text": "Lastart, Mindestlast und Höchstlast stehen im Datenblatt des Dimmers. Nie aus dem Gedächtnis wählen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Nimm das Datenblatt eines Dimmers. Suche die erlaubten Lastarten, die Mindest- und die Höchstlast und prüfe, ob eine bestimmte Lampe dazu passt. Als Hilfskraft arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Erstprüfung, Schlusskontrolle, Arbeiten unter Spannung und das Einschalten einer neuen Installation macht oder verantwortet die Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l14-q1",
+          "frage": "Welcher Dimmer ist für Lampen mit elektronischem Transformator gedacht?",
+          "optionen": [
+            "Phasenabschnitt-Dimmer",
+            "Phasenanschnitt-Dimmer",
+            "Ausschalter",
+            "Stromstossschalter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Phasenabschnitt ist für kapazitive Last mit elektronischem Transformator."
+        },
+        {
+          "id": "m4-l14-q2",
+          "frage": "Was verträgt ein Phasenanschnitt-Dimmer nach Feller nicht?",
+          "optionen": [
+            "Elektronische Transformatoren",
+            "Glühlampen",
+            "Konventionelle Transformatoren",
+            "Niedervolthalogenlampen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Er ist für elektronische Transformatoren nicht geeignet."
+        },
+        {
+          "id": "m4-l14-q3",
+          "frage": "Woher nimmst du die Mindestlast eines Dimmers?",
+          "optionen": [
+            "Aus dem Datenblatt des Typs",
+            "Es gilt immer 60 W",
+            "Aus der Wechselschaltung",
+            "Vom Schalter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Mindestlast hängt vom Typ ab."
+        },
+        {
+          "id": "m4-l14-q4",
+          "frage": "Kann ein Universal-Dimmer elektronische und konventionelle Transformatoren zusammen dimmen?",
+          "optionen": [
+            "Nein, Mischlast ist nicht möglich",
+            "Ja, immer",
+            "Nur mit LED",
+            "Nur bei Kreuzschaltung"
+          ],
+          "richtig": 0,
+          "erklaerung": "Das schliesst der Feller-Katalog aus."
+        }
+      ]
+    },
+    {
+      "id": "m4-l15",
+      "titel": "Herd im Drehstromanschluss",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F26)",
+        "Electrolux ZOU 233 Bedienungsanleitung Einbauherd (ein Gerät, Österreich)",
+        "CENELEC HD 308 S2:2001 (5 Adern)",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F2.10, F2.11, NIV Art. 10a)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Ein Herd wird je nach Gerät im Drehstromanschluss 3L+N+PE (400 V, 3N~) betrieben. Das Beispiel ist die Anleitung eines Einbauherds (Electrolux ZOU 233). Das ist ein Gerät aus Österreich, also Stufe MITTEL. Jedes Gerät hat sein eigenes Anschlussbild."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "400 V 3N~: fünf Adern L1, L2, L3, N und PE.",
+            "400 V 2N~: vier Adern L1, L2, N und PE.",
+            "230 V 1~: drei Adern L1, N und PE.",
+            "230 V 3~: vier Adern L1, L2, L3 und PE.",
+            "Die Klemmleiste hat die Klemmen 1 bis 5 und eine Schutzleiterklemme. Ab Werk sind die Brücken für 400 V mit Neutralleiter gesetzt."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Die Brücken legt man nach Anleitung und Typenschild des Geräts. Nach der Anleitung kann ein falscher Anschluss des Neutralleiters an einem 230-V-Ofen das Gerät zerstören. Ein 5-adriges Kabel hat nach HD 308 die Farben gelb-grün, blau, braun, schwarz und grau. Querschnitt und Absicherung stehen nicht in dieser Lektion."
+        },
+        {
+          "typ": "merke",
+          "text": "Als Hilfskraft arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Erstprüfung, Schlusskontrolle, Arbeiten unter Spannung und das Einschalten einer neuen Installation macht oder verantwortet die Elektro-Fachperson."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lies das Anschlussbild eines Herds im Datenblatt. Nenne die Adern für 3N~ und für 1~. Du schliesst keinen Herd an. Als Hilfskraft arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Erstprüfung, Schlusskontrolle, Arbeiten unter Spannung und das Einschalten einer neuen Installation macht oder verantwortet die Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l15-q1",
+          "frage": "Welche Adern hat ein Anschluss 400 V 3N~?",
+          "optionen": [
+            "L1, L2, L3, N und PE",
+            "L1, N und PE",
+            "L1, L2 und PE",
+            "nur L1, L2, L3"
+          ],
+          "richtig": 0,
+          "erklaerung": "3N~ heisst drei Aussenleiter, N und PE."
+        },
+        {
+          "id": "m4-l15-q2",
+          "frage": "Welche Adern hat ein Anschluss 230 V 1~?",
+          "optionen": [
+            "L1, N und PE",
+            "L1, L2, L3, N, PE",
+            "L1, L2, N, PE",
+            "nur L1 und N"
+          ],
+          "richtig": 0,
+          "erklaerung": "Einphasig sind es L1, N und PE."
+        },
+        {
+          "id": "m4-l15-q3",
+          "frage": "Wonach werden die Brücken der Klemmleiste gelegt?",
+          "optionen": [
+            "Nach Anleitung und Typenschild des Geräts",
+            "Nach Gefühl",
+            "Immer gleich",
+            "Nach der Kabelfarbe"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Anleitung bestimmt die Brückenlage."
+        },
+        {
+          "id": "m4-l15-q4",
+          "frage": "Welche Farben haben die drei Aussenleiter eines 5-adrigen Kabels nach HD 308?",
+          "optionen": [
+            "braun, schwarz, grau",
+            "blau, gelb, grün",
+            "rot, weiss, schwarz",
+            "alle braun"
+          ],
+          "richtig": 0,
+          "erklaerung": "Das 5-adrige Kabel hat gelb-grün, blau, braun, schwarz und grau."
+        },
+        {
+          "id": "m4-l15-q5",
+          "frage": "Wer macht das Einschalten einer neuen Installation?",
+          "optionen": [
+            "Die Elektro-Fachperson oder sie verantwortet es",
+            "Die Hilfskraft allein",
+            "Der Kunde",
+            "Niemand"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Hilfskraft arbeitet nur unter Anleitung und Aufsicht."
+        }
+      ]
+    },
+    {
+      "id": "m4-l16",
+      "titel": "Schütz mit Selbsthaltung",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "ElektroCampus-Recherche Schemas und Schaltungen (2026-11) (F27, F28)",
+        "Voltimum, Die gängigsten Schützschaltungen, Abschnitt Selbsthaltung",
+        "ABB, Klemmenbezeichnungen von Schützen (Suchtreffer, Norm EN 50005 nicht gelesen)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Ein Schütz ist ein Schalter mit Spule für grosse Ströme. Bei der Selbsthaltung hält sich das Schütz nach einem Start-Impuls selbst. Die Angaben stammen von einem Fachdokument, also Stufe MITTEL."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Der Start-Taster (Schliesser) schliesst. Die Spule zieht an.",
+            "Ein Hilfskontakt des Schützes liegt parallel zum Start-Taster und schliesst mit.",
+            "Du lässt den Start-Taster los. Das Schütz bleibt über den Hilfskontakt angezogen.",
+            "Der Aus-Taster (Öffner) liegt im Steuerstromkreis. Er trennt den Steuerstromkreis, das Schütz fällt ab.",
+            "Die Lampe zeigt den Schaltzustand."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Klemmenbezeichnungen (Quelle nur MITTEL bis NIEDRIG, immer am Schütz selbst prüfen): A1 und A2 sind die Spule. 13-14 ist ein Schliesser-Hilfskontakt, 21-22 ein Öffner-Hilfskontakt. Die erste Ziffer ist die Ordnungsnummer, die zweite die Funktion: 3 und 4 sind Schliesser, 1 und 2 Öffner. Beim Überlastrelais Siemens SIRIUS 3RU1.3 ist 95-96 der Öffner, den man in den Steuerstromkreis schaltet."
+        },
+        {
+          "typ": "merke",
+          "text": "Selbsthaltung: Hilfskontakt parallel zum Start-Taster. Ausschalten: Öffner im Steuerstromkreis."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Auto: Beim Anlasser musst du den Schlüssel halten, bis der Motor läuft.",
+          "elektro": "Elektro: Beim Schütz mit Selbsthaltung genügt ein kurzer Impuls, der Hilfskontakt hält das Schütz an."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Zeichne die Selbsthaltung auf: Start-Taster, Aus-Taster, Hilfskontakt 13-14 und Spule A1-A2. Erkläre mit eigenen Worten, warum das Schütz nach dem Loslassen angezogen bleibt. Als Hilfskraft arbeitest du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Erstprüfung, Schlusskontrolle, Arbeiten unter Spannung und das Einschalten einer neuen Installation macht oder verantwortet die Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m4-l16-q1",
+          "frage": "Wo liegt der Hilfskontakt der Selbsthaltung?",
+          "optionen": [
+            "Parallel zum Start-Taster",
+            "In Reihe zur Last",
+            "Im N",
+            "Am PE"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Hilfskontakt überbrückt den Start-Taster."
+        },
+        {
+          "id": "m4-l16-q2",
+          "frage": "Was trennt den Steuerstromkreis zum Ausschalten?",
+          "optionen": [
+            "Der Aus-Taster (Öffner)",
+            "Der Start-Taster",
+            "Die Lampe",
+            "Der Hilfskontakt 13-14"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Öffner trennt den Steuerstromkreis, das Schütz fällt ab."
+        },
+        {
+          "id": "m4-l16-q3",
+          "frage": "Wie heissen die Spulenklemmen am Schütz?",
+          "optionen": [
+            "A1 und A2",
+            "13 und 14",
+            "95 und 96",
+            "L und N"
+          ],
+          "richtig": 0,
+          "erklaerung": "A1 und A2 sind die Spule."
+        },
+        {
+          "id": "m4-l16-q4",
+          "frage": "Was ist 13-14?",
+          "optionen": [
+            "Ein Schliesser-Hilfskontakt",
+            "Ein Öffner-Hilfskontakt",
+            "Die Spule",
+            "Der Schutzleiter"
+          ],
+          "richtig": 0,
+          "erklaerung": "13-14 ist ein Schliesser, 21-22 ein Öffner."
+        },
+        {
+          "id": "m4-l16-q5",
+          "frage": "Was passiert, wenn du nach dem Anziehen den Start-Taster loslässt?",
+          "optionen": [
+            "Das Schütz hält sich selbst",
+            "Das Schütz fällt sofort ab",
+            "Die Sicherung fällt",
+            "Der Aus-Taster schliesst"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Hilfskontakt hält das Schütz."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m4-p1",
+      "titel": "Wechselschaltung nach Schema verdrahten",
+      "stufe": "Fortgeschritten",
+      "ziel": "Eine Wechselschaltung mit zwei Wechslern und einer Lampe nach Schema spannungsfrei verdrahten und das Ergebnis ablesen. Diese Aufgabe machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Vor dem Einschalten misst die Fachperson die Durchgängigkeit des Schutzleiters und den Isolationswiderstand (siehe Modul 7). Einschalten macht ausschliesslich sie.",
+      "kriterien": [
+        "Richtige Adern an richtigen Klemmen (L an com von S1, Korrespondierende a mit a und b mit b, com von S2 an die Lampe)",
+        "Aderfarben stimmen: Aussenleiter braun, schwarz oder grau, N blau, PE gelb-grün (NIN 2025 Teil 5.1.4.3)",
+        "Du benennst, was die Lampe in beiden Stellungen jedes Schalters tun muss, und liest das Ergebnis ab. Es stimmt mit der Tabelle überein.",
+        "Arbeit nach Auftrag des Meisters am Übungsbrett, spannungsfrei verdrahtet, unter Anleitung und Aufsicht der Elektro-Fachperson",
+        "Schutzleiter und Isolationswiderstand werden vor dem Einschalten von der Fachperson gemessen, Einschalten macht ausschliesslich sie"
+      ]
+    },
+    {
+      "id": "m4-p2",
+      "titel": "Ausschaltung mit Fehlersuche",
+      "stufe": "Anfänger",
+      "ziel": "Eine Ausschaltung nach Schema spannungsfrei verdrahten und einen vorgegebenen Fehlerfall logisch eingrenzen. Diese Aufgabe machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Vor dem Einschalten misst die Fachperson die Durchgängigkeit des Schutzleiters und den Isolationswiderstand (siehe Modul 7). Einschalten macht ausschliesslich sie.",
+      "kriterien": [
+        "Schalter im L, N direkt an die Lampe, PE angeschlossen",
+        "Du benennst, was die Lampe bei S1 ein und aus tun muss, und liest das Ergebnis ab",
+        "Symptom des Fehlerfalls benannt und Ursache am Schema gefunden",
+        "Vorgehen in Schritten beschrieben, am Übungsbrett spannungsfrei verdrahtet",
+        "Schutzleiter und Isolationswiderstand werden vor dem Einschalten von der Fachperson gemessen, Einschalten macht ausschliesslich sie"
+      ]
+    }
+  ],
+  "schaltungen": [
+    "ausschaltung",
+    "steckdose_geschaltet",
+    "serie",
+    "wechsel",
+    "kreuz",
+    "stromstoss",
+    "fehler-kurzschluss",
+    "fehler-l-direkt",
+    "fehler-n-fehlt",
+    "fehler-pe-vergessen",
+    "fehler-schalter-im-n",
+    "fehler-wechsel-vertauscht"
+  ]
+}

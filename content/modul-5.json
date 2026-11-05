@@ -1,0 +1,866 @@
+{
+  "id": "modul-5",
+  "nummer": 5,
+  "titel": "Schutz",
+  "beschreibung": "Wie eine Installation Menschen schützt: Basisschutz und Fehlerschutz, RCD (FI), automatische Abschaltung, Schutzleiter, Netzsysteme, Potentialausgleich und Überspannungsschutz.",
+  "minutenGesamt": 32,
+  "lektionen": [
+    {
+      "id": "m5-l1",
+      "titel": "Basisschutz und Fehlerschutz",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "Grundbegriffe NIN Kapitel 4.1, kein Einzelfund in ElektroCampus-Recherche Schutz und RCD (2026-11)",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11), Funde 1.3 und 1.4 (nur Hinweise)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Beim Auto verhindert die Kabelisolation, dass du an Strom kommst, und die Sicherung schaltet bei einem Kurzschluss ab. Das sind schon zwei Schutzebenen.",
+          "elektro": "Im Haus heisst die erste Ebene Basisschutz (Isolation, Abdeckung) und die zweite Fehlerschutz (Abschaltung im Fehlerfall)."
+        },
+        {
+          "typ": "text",
+          "text": "Basisschutz schützt dich gegen direktes Berühren spannungsführender Teile. Das ist die Isolation um die Adern und die Abdeckung der Klemmen."
+        },
+        {
+          "typ": "text",
+          "text": "Fehlerschutz greift, wenn der Basisschutz ausfällt. Ein Beispiel ist ein Gerätegehäuse, das im Fehlerfall unter Spannung steht. Dann muss die Anlage automatisch abschalten."
+        },
+        {
+          "typ": "merke",
+          "text": "Basisschutz: nichts Gefährliches berühren können. Fehlerschutz: im Fehlerfall abschalten."
+        },
+        {
+          "typ": "text",
+          "text": "Zusätzlich gibt es den Zusatzschutz mit dem RCD (FI) und den Schutzpotentialausgleich. Beides schauen wir in den nächsten Lektionen an."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau dir bei der Arbeit ein Kabel und eine Steckdose an. Zeige darauf, was zum Basisschutz gehört. Frage deine Elektro-Fachperson, welcher Teil der Anlage den Fehlerschutz übernimmt."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l1-q1",
+          "frage": "Was ist Basisschutz?",
+          "optionen": [
+            "Schutz gegen direktes Berühren, zum Beispiel durch Isolation und Abdeckung",
+            "Abschaltung der Anlage im Fehlerfall",
+            "Der Anschluss an das Netz des Werks",
+            "Ein Prüfprotokoll nach der Montage"
+          ],
+          "richtig": 0,
+          "erklaerung": "Basisschutz verhindert das direkte Berühren spannungsführender Teile, etwa mit Isolation und Abdeckung."
+        },
+        {
+          "id": "m5-l1-q2",
+          "frage": "Wofür ist der Fehlerschutz da?",
+          "optionen": [
+            "Damit Kabel schöner aussehen",
+            "Damit bei einem Fehler, etwa unter Spannung stehendem Gehäuse, die Anlage abschaltet",
+            "Damit der Zähler richtig misst",
+            "Damit die Lampen heller leuchten"
+          ],
+          "richtig": 1,
+          "erklaerung": "Fehlerschutz ist der Schutz im Fehlerfall durch automatische Abschaltung."
+        },
+        {
+          "id": "m5-l1-q3",
+          "frage": "Ein Kabel hat eine kaputte Isolation, und du könntest die Ader berühren. Welcher Schutz ist ausgefallen?",
+          "optionen": [
+            "Der Fehlerschutz",
+            "Der Basisschutz",
+            "Der Zähler",
+            "Der Netzanschluss"
+          ],
+          "richtig": 1,
+          "erklaerung": "Die Isolation gehört zum Basisschutz. Er schützt dich gegen direktes Berühren."
+        },
+        {
+          "id": "m5-l1-q4",
+          "frage": "Welches Gerät gehört zum Zusatzschutz?",
+          "optionen": [
+            "Kabelbinder",
+            "RCD (FI)",
+            "Dämmerungsschalter",
+            "Schützenbrett"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der RCD (FI) ist der Zusatzschutz zu Basisschutz und Fehlerschutz."
+        }
+      ]
+    },
+    {
+      "id": "m5-l2",
+      "titel": "RCD (FI): wofür er da ist",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "Funktionsprinzip RCD, laut ElektroCampus-Recherche Schutz und RCD (2026-11) (W11) ohne Einzelquelle, nur Grundwissen",
+        "Hager, Produktinformation Fehlerstromschutzschalter 21DE0241 (Typenlogik, siehe d-schutz-rcd.md)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto fliesst der Strom von der Batterie zum Verbraucher und über die Masse zurück. Fehlt unterwegs Strom, hast du irgendwo einen Fehler im Bordnetz.",
+          "elektro": "Der RCD vergleicht den Strom, der in die Anlage hineingeht, mit dem Strom, der zurückkommt. Fehlt ein kleiner Teil, fliesst er woanders hin, vielleicht durch einen Menschen, und der RCD schaltet ab."
+        },
+        {
+          "typ": "text",
+          "text": "FI und RCD sind dasselbe Gerät mit zwei Namen. Er heisst Fehlerstrom-Schutzschalter. Er misst den Unterschied zwischen Hin- und Rückstrom."
+        },
+        {
+          "typ": "text",
+          "text": "Ein Leitungsschutzschalter (LS) schützt die Leitung vor Überlast und Kurzschluss. Der RCD schützt in erster Linie Personen vor Fehlerströmen."
+        },
+        {
+          "typ": "merke",
+          "text": "Der RCD schaltet ab, wenn Strom verloren geht. Der LS schaltet ab, wenn zu viel Strom fliesst."
+        },
+        {
+          "typ": "merke",
+          "text": "Berührst du L und N gleichzeitig, fliesst der gleiche Strom hin und zurück. Der RCD sieht keinen Fehlerstrom und schaltet nicht ab. Der RCD ersetzt nie die fünf Sicherheitsregeln."
+        },
+        {
+          "typ": "text",
+          "text": "Die Prüftaste (T) am RCD löst ihn gezielt aus. In welchem Abstand die Anlage damit geprüft wird, legt dein Betrieb fest. Frage deine Elektro-Fachperson."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau im Verteiler nach dem RCD und dem Prüfknopf (T). Frage deine Elektro-Fachperson, wann und wie die Auslösung geprüft wird. Du prüfst nichts an der Anlage ohne ihre Anweisung und nie ohne ihre Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l2-q1",
+          "frage": "Was vergleicht ein RCD?",
+          "optionen": [
+            "Spannung und Frequenz",
+            "Hinstrom und Rückstrom",
+            "Kabellänge und Querschnitt",
+            "Temperatur und Feuchte"
+          ],
+          "richtig": 1,
+          "erklaerung": "Fehlt ein kleiner Teil des Rückstroms, fliesst er irgendwo anders hin. Dann schaltet der RCD ab."
+        },
+        {
+          "id": "m5-l2-q2",
+          "frage": "Was ist der Unterschied zwischen FI und RCD?",
+          "optionen": [
+            "Der FI ist für Strom, der RCD für Wasser",
+            "Es gibt keinen, es sind zwei Namen für dasselbe Gerät",
+            "Der RCD ist nur für Industrie",
+            "Der FI schützt nur Lampen"
+          ],
+          "richtig": 1,
+          "erklaerung": "FI und RCD sind zwei Namen für den Fehlerstrom-Schutzschalter."
+        },
+        {
+          "id": "m5-l2-q3",
+          "frage": "Wofür ist der Leitungsschutzschalter (LS) in erster Linie da?",
+          "optionen": [
+            "Er schützt die Leitung vor Überlast und Kurzschluss",
+            "Er misst den Fehlerstrom",
+            "Er ersetzt den Schutzleiter",
+            "Er zählt den Verbrauch"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der LS schützt die Leitung. Den Personenschutz übernimmt zusätzlich der RCD."
+        },
+        {
+          "id": "m5-l2-q4",
+          "frage": "Du berührst gleichzeitig L und N. Was macht der RCD?",
+          "optionen": [
+            "Er schaltet sofort ab",
+            "Er sieht keinen Fehlerstrom und schaltet nicht ab",
+            "Er schaltet nur ab, wenn es regnet",
+            "Er misst die Spannung"
+          ],
+          "richtig": 1,
+          "erklaerung": "Hin- und Rückstrom sind gleich gross. Darum ersetzt der RCD die fünf Sicherheitsregeln nie."
+        }
+      ]
+    },
+    {
+      "id": "m5-l3",
+      "titel": "RCD 30 mA: wo er verlangt wird",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Müller, Neuerungen betreffend NIN 2020 (Beleuchtung Wohnbauten, 0.4 s)",
+        "ESTI Bulletin 9/2010 und Schmid, bulletin.ch 9/2022 (Steckdosen bis 32 A, Baustellen)",
+        "Electrosuisse NIN 2025 COR1, 2.2.1.44 (trockene Räume)",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11), Funde 5.1, 5.2, 2.1 bis 2.3, 1.2"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Ein RCD mit 30 mA Auslösestrom ist der Zusatzschutz für Personen. Er wird an diesen Orten und Stromkreisen verlangt:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Steckdosen bis 32 A, die frei benutzt werden können",
+            "Alle Stromkreise in Räumen mit Badewanne oder Dusche",
+            "Aussenstromkreise",
+            "Baustellen",
+            "Leuchtenstromkreise in Wohnbauten (seit NIN 2020 belegt)"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Der RCD 30 mA für Leuchtenstromkreise in Wohnbauten ist seit der NIN 2020 belegt. Für die NIN 2025 ist keine Änderung belegt, du darfst also von der gleichen Forderung ausgehen. Den Wortlaut der NIN 2025 und die Abgrenzung des Begriffs Wohnbauten bestätigt der Meister am Normtext."
+        },
+        {
+          "typ": "text",
+          "text": "Pass auf mit dem Wort Nassraum. Nach der NIN 2025 gelten Küchen in Wohnungen und Baderäume in Wohnungen als trockene Räume. Feucht oder nass sind zum Beispiel Grossküchen, Waschanstalten oder Autowaschplätze. Ob ein Stromkreis einen RCD 30 mA braucht, hängt vom Ort und der Art des Stromkreises ab, nicht von einem Gefühl für Feuchtigkeit."
+        },
+        {
+          "typ": "merke",
+          "text": "RCD 30 mA: Steckdosen bis 32 A, Räume mit Badewanne oder Dusche, aussen, Baustelle. Leuchten in Wohnbauten: seit NIN 2020 belegt, für NIN 2025 keine Änderung belegt, Wortlaut beim Meister bestätigen."
+        },
+        {
+          "typ": "text",
+          "text": "Massgebend bleibt die NIN 2025. Zweifelst du, fragst du deine Elektro-Fachperson."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Gehe in Gedanken durch eine Wohnung. Notiere, bei welchen Stromkreisen ein RCD 30 mA verlangt wird (Steckdosen, Raum mit Dusche, Balkon, Beleuchtung). Vergleiche mit dem Verteiler eures nächsten Auftrags, wenn deine Elektro-Fachperson ihn dir zeigt."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l3-q1",
+          "frage": "Welchen Auslösestrom hat der Zusatzschutz-RCD für Steckdosen?",
+          "optionen": [
+            "10 mA",
+            "30 mA",
+            "300 mA",
+            "1 A"
+          ],
+          "richtig": 1,
+          "erklaerung": "Für den Zusatzschutz wird ein RCD mit höchstens 30 mA verwendet."
+        },
+        {
+          "id": "m5-l3-q2",
+          "frage": "Bis zu welchem Strom brauchen frei benutzbare Steckdosen den RCD 30 mA?",
+          "optionen": [
+            "Bis 6 A",
+            "Bis 16 A",
+            "Bis 32 A",
+            "Nur über 63 A"
+          ],
+          "richtig": 2,
+          "erklaerung": "Steckdosen bis 32 A gehören dazu."
+        },
+        {
+          "id": "m5-l3-q3",
+          "frage": "Welche Stromkreise sind in Räumen mit Badewanne oder Dusche mit RCD 30 mA zu schützen?",
+          "optionen": [
+            "Nur die Steckdosen",
+            "Nur die Beleuchtung",
+            "Alle Stromkreise im Raum",
+            "Keine, wenn ein LS vorhanden ist"
+          ],
+          "richtig": 2,
+          "erklaerung": "In Räumen mit Badewanne oder Dusche gilt der RCD 30 mA für alle Stromkreise."
+        },
+        {
+          "id": "m5-l3-q4",
+          "frage": "Wie gelten Küchen und Baderäume in Wohnungen nach der NIN 2025 bezüglich Feuchtigkeit?",
+          "optionen": [
+            "Als nasse Räume",
+            "Als trockene Räume",
+            "Als Aussenbereich",
+            "Als Baustelle"
+          ],
+          "richtig": 1,
+          "erklaerung": "Küchen und Baderäume in Wohnungen gelten als trockene Räume. Der RCD 30 mA folgt aus den Regeln für Steckdosen und Räume mit Badewanne oder Dusche."
+        },
+        {
+          "id": "m5-l3-q5",
+          "frage": "Seit wann ist der RCD 30 mA für Leuchtenstromkreise in Wohnbauten belegt?",
+          "optionen": [
+            "Seit der NIN 2020",
+            "Erst seit der NIN 2025",
+            "Sie ist nur Gewohnheit",
+            "Sie gilt nur auf Baustellen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Forderung ist seit der NIN 2020 belegt. Für die NIN 2025 ist keine Änderung belegt. Den Wortlaut und die Abgrenzung Wohnbauten bestätigt der Meister am Normtext."
+        }
+      ]
+    },
+    {
+      "id": "m5-l4",
+      "titel": "RCD-Typen: A, F, B und Sonderfälle",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Hager, Produktinformation Fehlerstromschutzschalter 21DE0241 (Typen A, F, B, S)",
+        "Electrosuisse NIN 2025 COR1, 7.12.5.3.0.3 .101 (PV, RCD Typ B)",
+        "Müller, Neuerungen betreffend NIN 2020, 7.22 (Ladestation)",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11), Funde 6.1 bis 6.6, 6.9"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Eine Lichtmaschine und ein Anlasser haben ganz verschiedene Ströme. Du nimmst auch nicht für alles dieselbe Sicherung.",
+          "elektro": "Auch beim RCD gibt es Typen. Der Typ passt zur Art des möglichen Fehlerstroms."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Typ A: Standard für Stromkreise mit Steckdosen und einfachen Verbrauchern",
+            "Typ F: erkennt zusätzlich Mischfrequenzen von einphasigen Frequenzumrichtern (zum Beispiel Waschmaschine, Wärmepumpe)",
+            "Typ B: erkennt zusätzlich glatte Gleichfehlerströme (zum Beispiel dreiphasige Frequenzumrichter)"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Typ F und Typ B sind nicht gleichwertig. Typ B kann mehr, aber Typ F erkennt keine glatten Gleichfehlerströme. Welcher Typ nötig ist, sagt zuerst die Herstellerangabe des Geräts."
+        },
+        {
+          "typ": "text",
+          "text": "Bei Photovoltaik gilt nach NIN 2025 (7.12): Wird auf der AC-Seite ein RCD verwendet, muss er Typ B sein. Es gibt drei Ausnahmen: Der Wechselrichter hat mindestens einfache Trennung zwischen AC und DC, die Anlage hat einfache Trennung durch einen Transformator mit getrennten Wicklungen, oder der Hersteller verlangt keinen Typ B."
+        },
+        {
+          "typ": "text",
+          "text": "Bei Ladestationen verlangte die NIN 2020 für jeden Ladepunkt einen eigenen RCD Typ B oder Typ EV. Ob die NIN 2025 daran etwas ändert, klärst du mit deiner Elektro-Fachperson."
+        },
+        {
+          "typ": "text",
+          "text": "Typ S ist kurzzeitverzögert und kann einem nachgelagerten RCD vorgeschaltet werden, damit zuerst der RCD auslöst, der dem Fehler am nächsten ist. Das nennt man Selektivität."
+        },
+        {
+          "typ": "merke",
+          "text": "Normal Typ A. Typ F bei einphasigen Umrichtern. Typ B bei glatten Gleichfehlerströmen. Typ F ist kein Ersatz für Typ B. Im Zweifel gilt die Herstellerangabe."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau auf dem Typenschild eines RCD nach dem Typ. Frage deine Elektro-Fachperson, bei welchem Verbraucher sie einen anderen Typ einbaut und warum. Du baust keinen RCD ein und tauschst keinen aus ohne ihre Anleitung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l4-q1",
+          "frage": "Welcher RCD-Typ ist für Steckdosenstromkreise und einfache Verbraucher üblich?",
+          "optionen": [
+            "Typ A",
+            "Typ B",
+            "Typ C",
+            "Typ Z"
+          ],
+          "richtig": 0,
+          "erklaerung": "Typ A ist der übliche Typ. Typ F und Typ B kommen bei besonderen Verbrauchern."
+        },
+        {
+          "id": "m5-l4-q2",
+          "frage": "Wofür ist ein RCD Typ F gedacht?",
+          "optionen": [
+            "Für glatte Gleichfehlerströme jeder Art",
+            "Für einphasige Geräte mit Frequenzumrichter",
+            "Für Glühlampen",
+            "Für Klingeltrafos"
+          ],
+          "richtig": 1,
+          "erklaerung": "Typ F erkennt Mischfrequenzen einphasiger Umrichter. Glatte Gleichfehlerströme erkennt erst Typ B."
+        },
+        {
+          "id": "m5-l4-q3",
+          "frage": "Kann ein RCD Typ F einen geforderten Typ B ersetzen?",
+          "optionen": [
+            "Ja, sie sind gleichwertig",
+            "Nein, Typ F erkennt keine glatten Gleichfehlerströme",
+            "Ja, aber nur bei Regen",
+            "Nein, weil Typ B nur für Beleuchtung ist"
+          ],
+          "richtig": 1,
+          "erklaerung": "Typ F und Typ B sind nicht gleichwertig. Typ B enthält die Funktion von Typ F, umgekehrt nicht. Welcher Typ eingebaut wird, entscheidet die Elektro-Fachperson nach Herstellerangabe und NIN."
+        },
+        {
+          "id": "m5-l4-q4",
+          "frage": "Welcher RCD-Typ gilt bei PV nach NIN 2025 auf der AC-Seite grundsätzlich?",
+          "optionen": [
+            "Typ A",
+            "Typ F",
+            "Typ B, mit drei Ausnahmen",
+            "Es gibt keine Regel"
+          ],
+          "richtig": 2,
+          "erklaerung": "Wird ein RCD auf der AC-Seite verwendet, muss er Typ B sein, ausser eine der drei Ausnahmen trifft zu."
+        },
+        {
+          "id": "m5-l4-q5",
+          "frage": "Was bedeutet Selektivität bei RCDs?",
+          "optionen": [
+            "Dass der RCD nur eine Farbe hat",
+            "Dass vorgelagerter und nachgelagerter RCD so abgestimmt sind, dass nur der richtige auslöst",
+            "Dass der RCD nur bei Regen schaltet",
+            "Dass kein LS nötig ist"
+          ],
+          "richtig": 1,
+          "erklaerung": "Selektivität bedeutet, dass nur das Gerät auslöst, das dem Fehler am nächsten ist."
+        }
+      ]
+    },
+    {
+      "id": "m5-l5",
+      "titel": "Automatische Abschaltung: Zeit und Strom",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ESTI Fachbeitrag 02/2014 (Moser), Zitat NIN 4.1.1.4.4",
+        "Schmid, bulletin.ch 9/2022, S. 61 (0.4 s)",
+        "Müller, Neuerungen betreffend NIN 2020, 4.1.1.3.2.1",
+        "Electrosuisse NIN 2025 COR1, 4.3.1.6 (Ia B und C, 5 s)",
+        "ABB Technikblatt 2CDC401002D0104 (D, MITTEL)",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11), Funde 7.1, 8.3, 9.1 bis 9.4"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Beim Anlassen muss genug Strom fliessen, damit der Motor dreht. Ist der Massepunkt schlecht, bricht der Strom ein.",
+          "elektro": "Bei einem Fehler muss genug Strom fliessen, damit der LS schnell abschaltet. Ist die Fehlerschleife hochohmig, fliesst zu wenig Strom."
+        },
+        {
+          "typ": "text",
+          "text": "Für Endstromkreise bis 63 A mit Steckdosen verlangt die NIN eine Abschaltzeit von höchstens 0.4 s im Fehlerfall. Zum Schutz der Leiter selbst darf die Abschaltzeit bis 5 s betragen, aus Personenschutz kann 0.4 s nötig sein."
+        },
+        {
+          "typ": "text",
+          "text": "Die Bedingung lautet: Zs kleiner gleich U0 geteilt durch Ia. Zs ist die Impedanz der Fehlerschleife, U0 die Spannung Aussenleiter gegen Erde, Ia der Strom, bei dem die Schutzeinrichtung in der geforderten Zeit abschaltet."
+        },
+        {
+          "typ": "text",
+          "text": "Für den LS gilt als Faustwert für Ia: Charakteristik B 5 mal Nennstrom, Charakteristik C 10 mal Nennstrom. Für Charakteristik D wird oft der obere Wert des Auslösebereichs, 20 mal Nennstrom, verwendet. Dieser Wert stammt von einem Hersteller und ist weniger gut gesichert."
+        },
+        {
+          "typ": "text",
+          "text": "Beispiel: Ein LS B16 hat Ia gleich 5 mal 16 A, also 80 A. Bei U0 gleich 230 V darf die Schleifenimpedanz höchstens rund 2.9 Ohm betragen."
+        },
+        {
+          "typ": "merke",
+          "text": "Zs kleiner gleich U0 durch Ia. Je kleiner die Schleifenimpedanz, desto grösser der Fehlerstrom und desto schneller schaltet der LS ab."
+        },
+        {
+          "typ": "text",
+          "text": "Diese Werte misst die Elektro-Fachperson bei der Erstprüfung (Modul 7). Du rechnest sie hier nur nach."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Rechne für einen LS B10, einen B16 und einen C16 den Wert Ia aus. Vergleiche das Ergebnis mit deiner Elektro-Fachperson. Gemessen wird an der Anlage nur auf ihre Anweisung und unter ihrer Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l5-q1",
+          "frage": "Welche Abschaltzeit gilt nach NIN für Endstromkreise bis 63 A mit Steckdosen?",
+          "optionen": [
+            "Höchstens 0.4 s",
+            "Mindestens 5 s",
+            "Höchstens 300 s",
+            "Gar keine Vorgabe"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die NIN verlangt für diese Endstromkreise höchstens 0.4 s."
+        },
+        {
+          "id": "m5-l5-q2",
+          "frage": "Wie gross ist Ia für einen LS mit Charakteristik B und 16 A Nennstrom?",
+          "optionen": [
+            "32 A",
+            "80 A",
+            "160 A",
+            "320 A"
+          ],
+          "richtig": 1,
+          "erklaerung": "Charakteristik B hat Ia gleich 5 mal In, also 5 mal 16 A gleich 80 A."
+        },
+        {
+          "id": "m5-l5-q3",
+          "frage": "Wie gross ist Ia für einen LS mit Charakteristik C und 16 A Nennstrom?",
+          "optionen": [
+            "80 A",
+            "120 A",
+            "160 A",
+            "20 A"
+          ],
+          "richtig": 2,
+          "erklaerung": "Charakteristik C hat Ia gleich 10 mal In, also 160 A."
+        },
+        {
+          "id": "m5-l5-q4",
+          "frage": "Was sagt die Bedingung Zs kleiner gleich U0 durch Ia?",
+          "optionen": [
+            "Die Fehlerschleife darf nicht zu hochohmig sein, sonst fliesst zu wenig Fehlerstrom",
+            "Die Spannung muss möglichst klein sein",
+            "Der Schutzleiter darf nie länger als 10 m sein",
+            "Der LS muss immer 16 A haben"
+          ],
+          "richtig": 0,
+          "erklaerung": "Eine zu grosse Schleifenimpedanz begrenzt den Fehlerstrom. Dann schaltet der LS zu langsam ab."
+        }
+      ]
+    },
+    {
+      "id": "m5-l6",
+      "titel": "Schutzleiter, Netzsysteme und Erdung",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Electrosuisse NIN 2025 COR1, 5.1.4.3.1.2 und 5.1.4.3.2 (Kennzeichnung PE und PEN)",
+        "ESTI Fachbeitrag 06/2019 (Amo 145), Nullung Schema I bis III",
+        "ESTI Bulletin 9/2010 (TN-C, RCD)",
+        "ESTI Fachbeitrag 02/2014, Zitat NIN 4.1.1.4.4 (Fehlerschleife)",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11), Funde 8.3, 8.4, 8.8"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto ist die Karosserie die Masse. Jedes Teil bekommt über das Blech seinen Rückweg.",
+          "elektro": "Im Haus ist der Schutzleiter (PE) ein eigener Rückweg für Fehlerströme. Im TN-System fliesst der Fehlerstrom über den Schutzleiter zurück zur Stromquelle. Weil dieser Weg niederohmig ist, wird der Strom gross und der Schutz schaltet ab."
+        },
+        {
+          "typ": "text",
+          "text": "Isolierte Schutzleiter sind grün-gelb. Diese Farbkombination darf für nichts anderes verwendet werden. Der Schutzleiter führt im normalen Betrieb keinen Betriebsstrom und darf nie unterbrochen sein."
+        },
+        {
+          "typ": "text",
+          "text": "Der PEN-Leiter ist Schutzleiter und Neutralleiter in einem. Er ist grün-gelb und hat an den Enden zusätzlich eine blaue Markierung. In älteren Anlagen war der PEN gelb gekennzeichnet. Wird eine bestehende Anlage erweitert, wird ein grün-gelber PEN mit dem vorhandenen gelben PEN verbunden. Die Aderfarbe ersetzt nie die Messung."
+        },
+        {
+          "typ": "text",
+          "text": "Die Netzsysteme heissen heute TN-S, TN-C-S und TN-C. Sie lösen die alte Nullung Schema I, II und III ab. In älteren Anlagen kann der Neutralleiter gelb sein. In einem TN-C-System dürfen RCDs nach dem Stand NIN 2010 nicht angewendet werden. Welches System bei einem Gebäude gilt, sagt dir deine Elektro-Fachperson."
+        },
+        {
+          "typ": "merke",
+          "text": "Schutzleiter grün-gelb. PEN grün-gelb mit blauer Markierung an den Enden. Gelb kann in alten Anlagen PEN oder Neutralleiter sein."
+        },
+        {
+          "typ": "text",
+          "text": "Die Erdung verbindet die Anlage über einen Erder mit dem Erdreich, zum Beispiel über den Fundamenterder. Sie ist wichtig, aber den Fehlerstrom zurück zur Stromquelle führt im TN-System der Schutzleiter. Die Durchgängigkeit des Schutzleiters wird bei der Erstprüfung gemessen (Modul 7)."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau in einer Dose oder einem Verteiler, wo das grün-gelbe Kabel angeschlossen ist. Frage deine Elektro-Fachperson, welches Netzsystem das Gebäude hat und wie die Erdung ausgeführt ist. Du klemmst nichts um ohne ihre Anleitung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l6-q1",
+          "frage": "Welche Farbe hat ein isolierter Schutzleiter (PE)?",
+          "optionen": [
+            "Blau",
+            "Braun",
+            "Grün-gelb",
+            "Schwarz"
+          ],
+          "richtig": 2,
+          "erklaerung": "Der Schutzleiter ist grün-gelb. Die Farbkombination ist für nichts anderes erlaubt."
+        },
+        {
+          "id": "m5-l6-q2",
+          "frage": "Wofür ist der Schutzleiter da?",
+          "optionen": [
+            "Als Rückleiter für den normalen Betriebsstrom",
+            "Als Weg für Fehlerströme, damit der Schutz abschaltet",
+            "Als Ersatz für den Neutralleiter",
+            "Als Lastleiter für Motoren"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Schutzleiter führt im Normalbetrieb keinen Strom. Er leitet Fehlerströme zur Stromquelle zurück."
+        },
+        {
+          "id": "m5-l6-q3",
+          "frage": "Wie ist ein isolierter PEN-Leiter gekennzeichnet?",
+          "optionen": [
+            "Grün-gelb, an den Enden zusätzlich blau markiert",
+            "Nur blau",
+            "Rot",
+            "Ohne Farbe"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der PEN ist grün-gelb über die ganze Länge und an den Enden zusätzlich blau markiert."
+        },
+        {
+          "id": "m5-l6-q4",
+          "frage": "Du siehst in einer alten Anlage eine gelbe Ader. Was gilt?",
+          "optionen": [
+            "Es ist sicher ein Schutzleiter",
+            "Es kann ein PEN oder Neutralleiter sein, die Farbe ersetzt nie die Messung",
+            "Es ist immer spannungsfrei",
+            "Es ist immer ein Aussenleiter"
+          ],
+          "richtig": 1,
+          "erklaerung": "In älteren Anlagen war der PEN gelb gekennzeichnet, bei Nullung Schema I und III der Neutralleiter ebenfalls."
+        },
+        {
+          "id": "m5-l6-q5",
+          "frage": "Welche Verbindung bildet im TN-System den Rückweg des Fehlerstroms zur Stromquelle?",
+          "optionen": [
+            "Das Erdreich allein",
+            "Der Schutzleiter",
+            "Der Zähler",
+            "Die Wasserleitung allein"
+          ],
+          "richtig": 1,
+          "erklaerung": "Im TN-System fliesst der Fehlerstrom über den Schutzleiter zurück zur Stromquelle."
+        }
+      ]
+    },
+    {
+      "id": "m5-l7",
+      "titel": "Potentialausgleich",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Electrosuisse NIN 2025 COR1, 4.1.1.3.1.2 und Figur 1",
+        "ESTI Fachbeitrag 02/2014, Zitat NIN 6.1.3.6.3 und 4.1.5.2",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11), Funde 8.1, 8.2, W14"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto liegen Motorblock, Karosserie und Batterie-Minus alle auf demselben Massepotential, sonst gibt es Probleme.",
+          "elektro": "Der Potentialausgleich verbindet leitfähige Teile, damit zwischen ihnen keine gefährliche Spannungsdifferenz entsteht."
+        },
+        {
+          "typ": "text",
+          "text": "Der Zweck des Haupt-Potentialausgleichs ist, Spannungsdifferenzen zwischen leitfähigen Teilen zu begrenzen, die du gleichzeitig berühren kannst."
+        },
+        {
+          "typ": "text",
+          "text": "An die Haupterdungsschiene beziehungsweise Potentialausgleichsschiene werden zum Beispiel angeschlossen: der Erdungsleiter zum Erder, die Wasserleitung, die leitende Gasleitung, Heizungsleitungen, Lüftungskanäle und die Ableitung des Blitzschutzes."
+        },
+        {
+          "typ": "text",
+          "text": "Der Fundamenterder wird als Bestandteil des Potentialausgleichsleiters mitverwendet. Wasserzähler und Ventile dürfen den PA-Leiter nicht unterbrechen, sie werden überbrückt. Die Anschlussstellen müssen zugänglich, erkennbar und gegen Selbstlockern gesichert sein."
+        },
+        {
+          "typ": "text",
+          "text": "Die Abschaltung im Fehlerfall übernimmt die Schutzeinrichtung über den Schutzleiter. Wird die geforderte Abschaltzeit nicht erreicht oder bestehen Zweifel, wird zusätzlich ein Schutzpotentialausgleich nach NIN 4.1.5.2 ausgeführt und seine Wirksamkeit geprüft."
+        },
+        {
+          "typ": "merke",
+          "text": "Potentialausgleich: leitfähige Teile verbinden, damit keine gefährliche Spannung zwischen ihnen entsteht. Er ersetzt die Abschaltung nicht."
+        },
+        {
+          "typ": "text",
+          "text": "Die Durchgängigkeit der PA-Leiter wird bei der Erstprüfung gemessen (Modul 7)."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Suche in einem Gebäude Stellen, wo Metallrohre am Potentialausgleich angeschlossen sein könnten, und frage deine Elektro-Fachperson. Du bestimmst nicht selbst, was angeschlossen wird. Sie bestimmt, was du arbeiten darfst, und beaufsichtigt dich dabei."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l7-q1",
+          "frage": "Wozu dient der Haupt-Potentialausgleich?",
+          "optionen": [
+            "Dass zwischen gleichzeitig berührbaren leitfähigen Teilen keine gefährliche Spannungsdifferenz entsteht",
+            "Dass die Lampe heller leuchtet",
+            "Dass der Zähler weniger zählt",
+            "Dass das Kabel dünner sein darf"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Potentialausgleich begrenzt Spannungsdifferenzen zwischen leitfähigen Teilen."
+        },
+        {
+          "id": "m5-l7-q2",
+          "frage": "Was gilt für Wasserzähler und Ventile im Potentialausgleich?",
+          "optionen": [
+            "Sie dürfen den PA-Leiter unterbrechen",
+            "Sie werden überbrückt, damit die Verbindung durchgehend bleibt",
+            "Sie werden weggelassen",
+            "Sie ersetzen den Schutzleiter"
+          ],
+          "richtig": 1,
+          "erklaerung": "Ausbaubare Teile wie Wasserzähler und Ventile dürfen die leitende Verbindung nicht unterbrechen."
+        },
+        {
+          "id": "m5-l7-q3",
+          "frage": "Was wird bei der Erstprüfung unter anderem kontrolliert?",
+          "optionen": [
+            "Die Durchgängigkeit von Schutz- und PA-Leitern",
+            "Die Farbe der Wandfarbe",
+            "Die Länge des Kabels im Karton",
+            "Der Standort der Steckdose im Plan"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Durchgängigkeit von Schutz- und PA-Leitern gehört zur Erstprüfung."
+        },
+        {
+          "id": "m5-l7-q4",
+          "frage": "Wer bestimmt, was du am Potentialausgleich arbeiten darfst?",
+          "optionen": [
+            "Du selbst",
+            "Die Elektro-Fachperson, die dich anleitet",
+            "Der Kunde",
+            "Niemand"
+          ],
+          "richtig": 1,
+          "erklaerung": "Du arbeitest nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ]
+    },
+    {
+      "id": "m5-l8",
+      "titel": "Überspannungsschutz (SPD)",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Electrosuisse NIN 2025 COR1, 7.12.4.4.3.101 und .102 (PV, DC-Seite)",
+        "Müller, Neuerungen betreffend NIN 2020, 4.4.3 (MITTEL)",
+        "DEHN DS612/CH-F/0520 und Hager Schweiz, Überspannungsschutz (Herstellerdarstellung)",
+        "KGV Freiburg (ECAB), Erläuterung SPD, 10.2021",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11), Funde 4.1 bis 4.5 und Widerspruch 1"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto kann ein Load Dump (Batterie bei laufendem Motor abgeklemmt) eine Spannungsspitze erzeugen, die Steuergeräte zerstört. Eine Sicherung hilft dagegen nicht, sie reagiert auf Strom. Im Haus erzeugen Blitz oder Schaltvorgänge solche Spitzen.",
+          "elektro": "Ein Überspannungsableiter (SPD) leitet kurze Spannungsspitzen ab, bevor sie Geräte beschädigen."
+        },
+        {
+          "typ": "text",
+          "text": "Ob und wo ein SPD nötig ist, regelt die NIN in Kapitel 4.4.3. Seit der NIN 2020 wurde dieses Kapitel neu strukturiert, Risikoanalysen bekommen klare Vorgaben."
+        },
+        {
+          "typ": "text",
+          "text": "Die Quellen sind nicht einheitlich. Hersteller wie DEHN und Hager stellen es so dar, dass im Wohnbau bei vielen Neubauten ein SPD am Eintritt der Hauptspeisung verlangt wird. Eine Gebäudeversicherung behandelt reine Wohngebäude bei der Subventionierung als freiwillig. Das ist keine Aussage über die Norm. Den genauen Wortlaut für ein Gebäude klärt deine Elektro-Fachperson in der NIN 2025, Kapitel 4.4.3."
+        },
+        {
+          "typ": "text",
+          "text": "Bei Photovoltaik steht es im NIN-Normtext: Ist nach 4.4.3 ein Schutz nötig, muss er auch auf der DC-Seite vorhanden sein. PV-Anlagen auf oder an Gebäuden mit äusserem Blitzschutzsystem müssen in das Blitzschutzsystem eingebunden und mit SPD ausgestattet sein."
+        },
+        {
+          "typ": "merke",
+          "text": "SPD: siehe NIN 4.4.3. Die Quellen sind unterschiedlich, also frage bei jedem Gebäude deine Elektro-Fachperson. Bei PV mit Blitzschutz sind SPD vorgeschrieben."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau im Hausanschlusskasten oder Verteiler nach einem SPD und lass dir von deiner Elektro-Fachperson erklären, warum er dort sitzt. Du baust oder tauschst keinen SPD ohne ihre Anleitung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m5-l8-q1",
+          "frage": "Wofür ist ein Überspannungsableiter (SPD) da?",
+          "optionen": [
+            "Er leitet kurze Spannungsspitzen ab, bevor sie Geräte beschädigen",
+            "Er misst den Fehlerstrom",
+            "Er ersetzt den Schutzleiter",
+            "Er zählt den Verbrauch"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ein SPD begrenzt Überspannungen, zum Beispiel durch Blitz oder Schaltvorgänge."
+        },
+        {
+          "id": "m5-l8-q2",
+          "frage": "In welchem NIN-Kapitel steht, ob und wo ein SPD nötig ist?",
+          "optionen": [
+            "4.4.3",
+            "6.1",
+            "1.1",
+            "8.9"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die NIN regelt den Schutz gegen transiente Überspannungen im Kapitel 4.4.3."
+        },
+        {
+          "id": "m5-l8-q3",
+          "frage": "Wie gehst du im Wohnbau damit um, dass die Quellen zur SPD-Pflicht nicht einheitlich sind?",
+          "optionen": [
+            "Ich lasse den SPD immer weg",
+            "Ich frage die Elektro-Fachperson, sie klärt es mit der NIN 2025",
+            "Ich entscheide selbst nach Gefühl",
+            "Ich frage den Kunden"
+          ],
+          "richtig": 1,
+          "erklaerung": "Die Pflicht im Wohnbau lässt sich aus den Quellen nicht sicher festhalten. Die Elektro-Fachperson prüft die NIN 2025."
+        },
+        {
+          "id": "m5-l8-q4",
+          "frage": "Was steht im NIN-Normtext zu PV-Anlagen auf Gebäuden mit äusserem Blitzschutzsystem?",
+          "optionen": [
+            "Sie müssen eingebunden und mit SPD ausgestattet sein",
+            "Sie brauchen nie einen SPD",
+            "Sie brauchen nur Typ A",
+            "Sie müssen unter 1 kW bleiben"
+          ],
+          "richtig": 0,
+          "erklaerung": "PV-Anlagen auf oder an Gebäuden mit äusserem Blitzschutzsystem sind einzubinden und mit SPD auszustatten."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m5-p1",
+      "titel": "Verteiler lesen: Schutzgeräte benennen",
+      "stufe": "Anfänger",
+      "ziel": "Du erkennst im Verteiler RCD, LS und Schutzleiteranschluss. Diese Aufgabe führst du nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du zeigst den RCD und den Prüfknopf.",
+        "Du zeigst einen LS und sagst, was er schützt.",
+        "Du zeigst den Anschluss der grün-gelben Schutzleiter.",
+        "Du fragst deine Elektro-Fachperson nach dem RCD-Typ und warum er gewählt wurde.",
+        "Du fasst nichts an, was unter Spannung stehen könnte."
+      ]
+    },
+    {
+      "id": "m5-p2",
+      "titel": "Wo gehört ein RCD 30 mA hin",
+      "stufe": "Anfänger",
+      "ziel": "Du erklärst für eine Wohnung, welche Stromkreise einen RCD 30 mA brauchen. Diese Aufgabe führst du nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du nennst Steckdosen bis 32 A.",
+        "Du nennst alle Stromkreise in Räumen mit Badewanne oder Dusche sowie Aussenstromkreise.",
+        "Du nennst Baustellen und Leuchtenstromkreise in Wohnbauten.",
+        "Du sagst, dass Küche und Bad in Wohnungen als trockene Räume gelten.",
+        "Du sagst, dass die NIN 2025 massgebend ist und du bei Zweifel die Elektro-Fachperson fragst."
+      ]
+    },
+    {
+      "id": "m5-p3",
+      "titel": "Abschaltbedingung nachrechnen",
+      "stufe": "Anfänger",
+      "ziel": "Du rechnest für einen Stromkreis den Wert Ia und die höchste zulässige Schleifenimpedanz aus. Diese Aufgabe führst du nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du nennst die Bedingung Zs kleiner gleich U0 durch Ia.",
+        "Du rechnest Ia für Charakteristik B mit 5 mal In und für C mit 10 mal In.",
+        "Du nennst die Abschaltzeit von 0.4 s für Endstromkreise bis 63 A mit Steckdosen.",
+        "Du vergleichst dein Ergebnis mit der Elektro-Fachperson und misst nichts selbst an der Anlage."
+      ]
+    }
+  ],
+  "schaltungen": []
+}

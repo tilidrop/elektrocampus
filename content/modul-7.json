@@ -1,0 +1,811 @@
+{
+  "id": "modul-7",
+  "nummer": 7,
+  "titel": "Messen und Prüfen",
+  "beschreibung": "Multimeter und Spannungsprüfer, Spannungsfreiheit feststellen, Erstprüfung, Durchgang und Isolation, Schleifenimpedanz, Sicherheitsnachweis und Kontrollperioden. Gemessen wird an der Anlage nur auf Anweisung und unter Aufsicht der Elektro-Fachperson.",
+  "minutenGesamt": 28,
+  "lektionen": [
+    {
+      "id": "m7-l1",
+      "titel": "Multimeter richtig einsetzen",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ESTI, Aus Elektrounfällen lernen 10/2018 (Sicheres Messen, Multimeter)",
+        "ESTI, Aus Elektrounfällen lernen 02/2019 (Messkategorie III und IV)",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11), D3, D4, W5"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Am Bordnetz misst du mit dem Multimeter die Batteriespannung parallel zur Batterie.",
+          "elektro": "Im Haus misst du genauso: Spannung parallel zur Last."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Spannung: parallel messen, Messleitungen in den Buchsen für Spannung",
+            "Das Messgerät muss zur Anlage passen: Messkategorie III oder IV für Verteiler und feste Installation",
+            "Vor jeder Messung Messgerät und Messleitungen anschauen"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Die Messkategorien nach ESTI: Kategorie II für Geräte, Kategorie III für Verteilanlagen und feste Installationen, Kategorie IV am Anschlusspunkt der Stromversorgung. Für Verteiler und feste Installationen reicht Kategorie II nicht."
+        },
+        {
+          "typ": "text",
+          "text": "Fehlbedienung ist gefährlich. Steckt eine Messleitung in der Strombuchse und du misst Spannung, entsteht ein Kurzschluss. Bei Multimetern ohne automatische Buchsensperre darf der Funktionsschalter nur betätigt werden, wenn das Gerät spannungsfrei ist."
+        },
+        {
+          "typ": "text",
+          "text": "Strom misst du an Installationen im Normalfall nicht in Reihe mit dem Multimeter. ESTI empfiehlt dafür ein Zangenamperemeter, bei dem du die Messleitungen nicht falsch stecken kannst."
+        },
+        {
+          "typ": "merke",
+          "text": "Spannung messen ist parallel. Das Multimeter ist nicht zum Feststellen der Spannungsfreiheit zugelassen (nächste Lektion)."
+        },
+        {
+          "typ": "text",
+          "text": "Gemessen wird an der Anlage nur auf Anweisung und unter Aufsicht der Elektro-Fachperson. Hier lernst du die Theorie."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lass dir von deiner Elektro-Fachperson das Multimeter zeigen. Lerne die Stellungen und die Messkategorie auf dem Gerät kennen. Du misst nichts an der Anlage ohne ihre Anweisung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m7-l1-q1",
+          "frage": "Wie wird eine Spannung gemessen?",
+          "optionen": [
+            "In Reihe zur Last",
+            "Parallel zur Last",
+            "Mit dem Gerät in der Hand ohne Leitungen",
+            "Nur mit einem Hammer"
+          ],
+          "richtig": 1,
+          "erklaerung": "Spannung wird parallel gemessen."
+        },
+        {
+          "id": "m7-l1-q2",
+          "frage": "Welche Messkategorie ordnet ESTI Verteilanlagen und festen Installationen zu?",
+          "optionen": [
+            "Kategorie I",
+            "Kategorie II",
+            "Kategorie III",
+            "Keine"
+          ],
+          "richtig": 2,
+          "erklaerung": "Verteilanlagen und feste Installationen gehören zur Kategorie III. Am Anschlusspunkt der Stromversorgung gilt Kategorie IV."
+        },
+        {
+          "id": "m7-l1-q3",
+          "frage": "Was passiert, wenn eine Messleitung in der Strombuchse steckt und du Spannung misst?",
+          "optionen": [
+            "Es entsteht ein Kurzschluss",
+            "Nichts, das Gerät rechnet um",
+            "Der Wert wird genauer",
+            "Das Gerät piept leiser"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Strombuchse hat einen sehr kleinen Innenwiderstand. Das ergibt einen Kurzschluss."
+        },
+        {
+          "id": "m7-l1-q4",
+          "frage": "Womit misst du Strom an einer Installation im Normalfall statt mit dem Multimeter in Reihe?",
+          "optionen": [
+            "Mit einem Zangenamperemeter",
+            "Mit einem Phasenprüfer",
+            "Mit einem Hammer",
+            "Mit einem Massband"
+          ],
+          "richtig": 0,
+          "erklaerung": "ESTI empfiehlt das Zangenamperemeter, weil die Messleitungen nicht falsch gesteckt werden können."
+        }
+      ]
+    },
+    {
+      "id": "m7-l2",
+      "titel": "Spannungsfreiheit feststellen",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Electrosuisse, Sicherheitsrisiko Phasenprüfer, 2025",
+        "ESTI, Aus Elektrounfällen lernen 10/2018 und 02/2019",
+        "ESTI Weisung 407, Version 0526 (gültig ab 1. Mai 2026), fünf Sicherheitsregeln gleich wie in Version 0720",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11), F1.1",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11), D1, D2, D5"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Bevor du am Auto an der Zündanlage arbeitest, klemmst du die Batterie ab und prüfst, dass nichts mehr anliegt.",
+          "elektro": "Bevor jemand an der Installation arbeitet, wird die Spannungsfreiheit festgestellt. Dafür gilt ein bestimmtes Prüfgerät."
+        },
+        {
+          "typ": "text",
+          "text": "Das Multimeter ist laut ESTI nicht zum Feststellen der Spannungsfreiheit zugelassen. Zugelassen sind nur Messgeräte nach SN EN 61243-3, also der zweipolige Spannungsprüfer. Phasenprüfer, berührungslose Prüfer, Multimeter und Installationstester erfüllen diese Norm nicht."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Zweipoliger Spannungsprüfer nach EN 61243-3, Messkategorie III oder IV",
+            "Kein Wahlschalter, korrekte Anzeige ohne Bedienhandlung",
+            "Fest angeschlossene Messleitungen",
+            "Anzeige auch ohne Batterie"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Ein Phasenprüfer ist nur für Funktionsprüfungen erlaubt, zum Beispiel um eine geschaltete Steckdose zu testen. Sobald die Sicherheitsregeln gefordert sind, braucht es den zweipoligen Prüfer."
+        },
+        {
+          "typ": "text",
+          "text": "Die 3-Punkte-Regel nach ESTI: Erstens prüfst du den Prüfer an einem Stromkreis, der sicher Spannung führt. Zweitens prüfst du den Zielstromkreis. Drittens prüfst du den Prüfer nochmals an der bekannten Spannung, bevor du direkt berührst. So weisst du, dass er richtig anzeigt."
+        },
+        {
+          "typ": "merke",
+          "text": "Spannungsfreiheit: nur zweipoliger Prüfer nach EN 61243-3, vorher und nachher an bekannter Spannung testen. Nie mit Multimeter oder Phasenprüfer."
+        },
+        {
+          "typ": "text",
+          "text": "Die fünf Sicherheitsregeln laut ESTI Weisung 407: freischalten und allseitig trennen, gegen Wiedereinschalten sichern, auf Spannungslosigkeit prüfen, erden und kurzschliessen, benachbarte Teile unter Spannung schützen. Bei Niederspannung darf das Erden und Kurzschliessen entfallen, wenn keine Gefahr von Spannungsübertragung oder Rückeinspeisung besteht."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lass dir von deiner Elektro-Fachperson ihren zweipoligen Spannungsprüfer zeigen und die 3-Punkte-Regel vorführen. Du siehst zu, benennst die drei Schritte und prüfst anhand der Checkliste, ob sie eingehalten werden. Die Spannungsfreiheit stellt die Elektro-Fachperson fest. Was du im Betrieb selbst tun darfst, legt der Betrieb fest."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m7-l2-q1",
+          "frage": "Womit darf die Spannungsfreiheit festgestellt werden?",
+          "optionen": [
+            "Mit dem Multimeter",
+            "Mit dem Phasenprüfer",
+            "Mit einem zweipoligen Spannungsprüfer nach EN 61243-3",
+            "Mit einem berührungslosen Prüfer"
+          ],
+          "richtig": 2,
+          "erklaerung": "Nur Messgeräte nach EN 61243-3 sind dafür zugelassen."
+        },
+        {
+          "id": "m7-l2-q2",
+          "frage": "Wofür darf ein Phasenprüfer eingesetzt werden?",
+          "optionen": [
+            "Für Funktionsprüfungen, zum Beispiel einer geschalteten Steckdose",
+            "Zum Feststellen der Spannungsfreiheit",
+            "Zur Isolationsmessung",
+            "Zur Schleifenmessung"
+          ],
+          "richtig": 0,
+          "erklaerung": "Phasenprüfer sind nur für Funktionsprüfungen erlaubt, nicht für die Sicherheitsregeln."
+        },
+        {
+          "id": "m7-l2-q3",
+          "frage": "Was besagt die 3-Punkte-Regel?",
+          "optionen": [
+            "Prüfer an bekannter Spannung testen, Zielkreis prüfen, Prüfer nochmals an bekannter Spannung testen",
+            "Dreimal auf das Kabel klopfen",
+            "Drei Personen müssen dabei sein",
+            "Nur drei Leiter dürfen angeschlossen sein"
+          ],
+          "richtig": 0,
+          "erklaerung": "So stellst du sicher, dass der Prüfer vor und nach der Messung richtig anzeigt."
+        },
+        {
+          "id": "m7-l2-q4",
+          "frage": "Welche Messkategorie verlangt ESTI für Messgeräte zur Prüfung der Spannungsfreiheit?",
+          "optionen": [
+            "Kategorie I oder II",
+            "Kategorie III oder IV",
+            "Keine",
+            "Nur Kategorie I"
+          ],
+          "richtig": 1,
+          "erklaerung": "ESTI verlangt Messgeräte mit Berührungsschutz der Kategorie III und IV."
+        }
+      ]
+    },
+    {
+      "id": "m7-l3",
+      "titel": "Erstprüfung: Rahmen und Reihenfolge",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ESTI, Unfallbericht 2026-0301 (Erstprüfung, NIN 2025 Kapitel 6.1, Unfallbeispiel)",
+        "ESTI Bulletin 12/2017, Art. 24 NIV",
+        "ESTI, Wegleitung Prüfung Art. 13 NIV, 15.9.2025 (Prüfpunkte)",
+        "Voltimum, Grundlagen der Prüfung elektrischer Anlagen (DIN VDE 0100-600, Reihenfolge, MITTEL)",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11), B1, B2"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Vor der Probefahrt prüfst du am Auto Bremse, Licht und Flüssigkeiten. Erst dann gibst du es frei.",
+          "elektro": "Vor der Inbetriebnahme einer Installation wird nach einer Liste geprüft. Erst danach wird sie eingeschaltet."
+        },
+        {
+          "typ": "text",
+          "text": "Vor der Inbetriebnahme einer Installation oder von Teilen davon ist eine Erstprüfung durchzuführen und zu protokollieren. Grundlage ist die NIN 2025, Kapitel 6.1, und Art. 24 NIV. Durchführen dürfen sie Elektroinstallateure EFZ und Montage-Elektriker EFZ. Für Hilfskräfte gibt es keine Berechtigung dazu."
+        },
+        {
+          "typ": "text",
+          "text": "Eine Reihenfolge zum Lernen. Sie lehnt sich an eine Fachquelle zur deutschen Parallelnorm an, die selbst von einer angemessenen Reihenfolge spricht. Die Polarität führt diese Quelle nicht als eigenen Punkt, in der Praxis wird sie bei der Durchgangs- oder Funktionsprüfung mitgeprüft:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "1. Besichtigen (Sichtprüfung)",
+            "2. Durchgängigkeit von Schutz- und PA-Leitern",
+            "3. Isolationswiderstand",
+            "4. Polarität",
+            "5. Spannung und Drehfeld",
+            "6. Schleifenimpedanz",
+            "7. RCD-Prüfung",
+            "8. Funktionsprüfung"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Die Messungen 2 und 3 brauchen eine spannungsfreie Anlage. Die Messungen 5 bis 7 brauchen Spannung. Die Liste ist eine Gliederung zum Lernen und nicht der Wortlaut der Norm. Das Protokoll der Firma ist massgebend."
+        },
+        {
+          "typ": "text",
+          "text": "Praxisbeispiel aus einem ESTI-Unfallbericht: Zwei Hilfskräfte schalteten eine Beleuchtungsinstallation ohne Erstprüfung wieder ein. Ein Aussenleiter war mit dem Schutzleiter vertauscht. Eine Hilfskraft wurde durchströmt und musste reanimiert werden. Bei der Prüfung der Leitfähigkeit des Schutzleiters wäre der Fehler aufgefallen."
+        },
+        {
+          "typ": "merke",
+          "text": "Erst messen, dann einschalten. Eingeschaltet wird nur auf Anweisung der Elektro-Fachperson, nach der Erstprüfung."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau dir das Erstprüfungsprotokoll deiner Firma an, wenn deine Elektro-Fachperson es dir zeigt. Finde die Prüfpunkte darin. Du misst nur auf ihre Anweisung und unter ihrer Aufsicht. Das Protokoll unterschreibst du nicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m7-l3-q1",
+          "frage": "Wann muss die Erstprüfung durchgeführt werden?",
+          "optionen": [
+            "Vor der Inbetriebnahme",
+            "Nach fünf Jahren",
+            "Nur bei einem Defekt",
+            "Nach der Übergabe an den Kunden"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Erstprüfung ist vor der Inbetriebnahme durchzuführen und zu protokollieren."
+        },
+        {
+          "id": "m7-l3-q2",
+          "frage": "Was war die Ursache des Unfalls im ESTI-Beispiel?",
+          "optionen": [
+            "Eingeschaltet ohne Erstprüfung, ein Aussenleiter war mit dem Schutzleiter vertauscht",
+            "Ein Kabel war zu lang",
+            "Eine Lampe war defekt",
+            "Der Zähler war falsch eingebaut"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Prüfung der Leitfähigkeit des Schutzleiters hätte den vertauschten Anschluss gezeigt."
+        },
+        {
+          "id": "m7-l3-q3",
+          "frage": "Welcher Prüfpunkt steht in der Lernliste an erster Stelle?",
+          "optionen": [
+            "Besichtigen",
+            "Schleifenimpedanz",
+            "RCD-Prüfung",
+            "Funktionsprüfung"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Besichtigung ist der erste Schritt, danach folgen Prüfen und Messen."
+        },
+        {
+          "id": "m7-l3-q4",
+          "frage": "Wer darf die Erstprüfung durchführen?",
+          "optionen": [
+            "Jede Hilfskraft",
+            "Elektroinstallateur EFZ oder Montage-Elektriker EFZ",
+            "Der Kunde",
+            "Der Materiallieferant"
+          ],
+          "richtig": 1,
+          "erklaerung": "Für Hilfskräfte gibt es keine Berechtigung zur Erstprüfung."
+        },
+        {
+          "id": "m7-l3-q5",
+          "frage": "Welche Prüfungen brauchen eine spannungsfreie Anlage?",
+          "optionen": [
+            "Durchgängigkeit und Isolationswiderstand",
+            "Schleifenimpedanz und RCD-Prüfung",
+            "Drehfeld und Spannung",
+            "Funktionsprüfung unter Last"
+          ],
+          "richtig": 0,
+          "erklaerung": "Durchgängigkeit und Isolation misst man spannungsfrei. Schleifenimpedanz, RCD, Drehfeld und Spannung brauchen Spannung."
+        }
+      ]
+    },
+    {
+      "id": "m7-l4",
+      "titel": "Durchgängigkeit und Isolationswiderstand",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Voltimum, Grundlagen der Prüfung elektrischer Anlagen und Grenzwerte Erstprüfung (DIN VDE 0100-600, MITTEL)",
+        "Schweizer Lernkarten, Messen und Prüfen gemäss NIN 2025 (zweite Quelle, MITTEL)",
+        "IEC 60364-6 Tabelle Isolationswiderstand, Ausgabe 2016 (MITTEL)",
+        "ESTI-Unfallbericht 2026-0301 (Schutzleiter)",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11), B3, B4"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Beim Kabelbaum im Auto prüfst du, ob ein Kabel durchgehend ist und ob Strom nach Masse abfliesst.",
+          "elektro": "Bei Durchgängigkeit prüfst du, ob Schutz- und PA-Leiter lückenlos sind. Bei der Isolationsmessung, ob die Isolation dicht ist."
+        },
+        {
+          "typ": "text",
+          "text": "Der Piepston eines normalen Multimeters ist keine Durchgangsmessung der Erstprüfung. Für die Erstprüfung braucht es ein Installationsprüfgerät mit einer Leerlaufspannung von 4 bis 24 V und mindestens 200 mA Messstrom. Messleitungen werden vorher abgeglichen. Bei Gleichstrom wird die Polarität gewechselt."
+        },
+        {
+          "typ": "text",
+          "text": "Beim Isolationswiderstand legt das Prüfgerät eine Prüfspannung an und misst den Strom durch die Isolation. Je höher der Widerstand, desto besser die Isolation. Die Anlage muss dafür spannungsfrei sein, empfindliche Geräte und Überspannungsschutz werden abgetrennt."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Stromkreise bis 500 V: Prüfspannung 500 V DC, Mindestwert 1 MOhm",
+            "SELV und PELV: Prüfspannung 250 V DC, Mindestwert 0.5 MOhm"
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Durchgang: Installationsprüfgerät mit mindestens 200 mA, nicht der Multimeter-Piepston. Isolation: 500 V DC und mindestens 1 MOhm, bei SELV und PELV 250 V DC und 0.5 MOhm."
+        },
+        {
+          "typ": "text",
+          "text": "Die Prüfspannung ist selbst gefährlich, auch die Restladung nach der Messung. Kapazitive Prüflinge werden entladen. Ob und wie gemessen wird, bestimmt deine Elektro-Fachperson."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lass dir ein Installationsprüfgerät und ein Isolationsmessgerät zeigen und erklären. Du führst keine Messung an der Anlage ohne die Anweisung und Aufsicht der Elektro-Fachperson durch."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m7-l4-q1",
+          "frage": "Ist der Piepston eines normalen Multimeters eine Durchgangsmessung der Erstprüfung?",
+          "optionen": [
+            "Ja, immer",
+            "Nein, die Erstprüfung braucht ein Installationsprüfgerät mit mindestens 200 mA",
+            "Ja, wenn es laut piept",
+            "Nur bei Regen"
+          ],
+          "richtig": 1,
+          "erklaerung": "Für die Erstprüfung ist ein Messstrom von mindestens 200 mA nötig."
+        },
+        {
+          "id": "m7-l4-q2",
+          "frage": "Welchen Mindestwert und welche Prüfspannung gelten für Stromkreise bis 500 V?",
+          "optionen": [
+            "1 MOhm bei 500 V DC",
+            "1 Ohm bei 12 V",
+            "100 kOhm bei 230 V AC",
+            "5 MOhm bei 5000 V"
+          ],
+          "richtig": 0,
+          "erklaerung": "Bis 500 V gilt 500 V DC und mindestens 1 MOhm."
+        },
+        {
+          "id": "m7-l4-q3",
+          "frage": "Welche Werte gelten für SELV und PELV?",
+          "optionen": [
+            "500 V DC und 1 MOhm",
+            "250 V DC und 0.5 MOhm",
+            "1000 V DC und 2 MOhm",
+            "230 V AC und 0.1 MOhm"
+          ],
+          "richtig": 1,
+          "erklaerung": "Bei SELV und PELV beträgt die Prüfspannung 250 V DC und der Mindestwert 0.5 MOhm."
+        },
+        {
+          "id": "m7-l4-q4",
+          "frage": "In welchem Zustand ist die Anlage bei der Isolationsmessung?",
+          "optionen": [
+            "Spannungsfrei",
+            "Unter Volllast",
+            "Bei laufendem Motor",
+            "Mit offenem Verteiler im Betrieb"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Isolationsmessung geschieht spannungsfrei."
+        }
+      ]
+    },
+    {
+      "id": "m7-l5",
+      "titel": "Schleifenimpedanz und RCD-Prüfung",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ESTI Fachbeitrag 02/2014 (Moser), Zitat NIN 4.1.1.4.4 und 6.1.3.6.3",
+        "Electrosuisse NIN 2025 COR1, 4.3.1.6",
+        "Schmid, bulletin.ch 9/2022 (0.4 s)",
+        "ESTI, Wegleitung Prüfung Art. 13 NIV (Prüfpunkte)",
+        "Voltimum, Grenzwerte Erstprüfung (Beispielrechnung, MITTEL)",
+        "ElektroCampus-Recherche Schutz und RCD (2026-11) und e-messen-pruefen-grundlagen.md, B5, B6"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Beim Anlassen siehst du, wie stark die Batterie einbricht, wenn der Anlasser viel Strom zieht. Ein schlechter Massepunkt macht es schlimmer.",
+          "elektro": "Die Schleifenimpedanz ist der Widerstand der Strombahn bei einem Fehler. Ist sie klein, fliesst im Fehlerfall viel Strom und der LS schaltet schnell ab."
+        },
+        {
+          "typ": "text",
+          "text": "Die Strombahn geht von der Stromquelle über den Aussenleiter zum Fehler und über den Schutzleiter zurück. Diesen Weg misst man als Fehlerschleife."
+        },
+        {
+          "typ": "text",
+          "text": "Die Bedingung lautet Zs kleiner gleich U0 durch Ia. Mit Ia gleich 5 mal In bei Charakteristik B und 10 mal In bei Charakteristik C. Für einen LS B16 ergibt das 80 A und bei 230 V eine höchste Schleifenimpedanz von rund 2.9 Ohm. Für einen LS C16 sind es 160 A und rund 1.4 Ohm."
+        },
+        {
+          "typ": "text",
+          "text": "Zuerst wird die Durchgängigkeit des Schutzleiters geprüft, dann die Fehlerschleife gemessen. Die Messung an der entferntesten Stelle eines Stromkreises genügt, zusammen mit dem Nachweis der durchgehenden Schutzleiterverbindung."
+        },
+        {
+          "typ": "text",
+          "text": "Die RCD-Prüfung ist ein eigener Prüfpunkt der Erstprüfung. Das Prüfgerät löst den RCD aus. Die genauen Auslösewerte hängen vom Gerät ab und stehen in dessen Angaben."
+        },
+        {
+          "typ": "merke",
+          "text": "Kleine Schleifenimpedanz, grosser Fehlerstrom, schnelle Abschaltung. Zuerst Durchgängigkeit des Schutzleiters, dann Schleife."
+        },
+        {
+          "typ": "text",
+          "text": "Schleifenimpedanz und RCD-Prüfung machst du nur, wenn deine Elektro-Fachperson es anweist und dabei ist."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Rechne für einen LS B10 und einen LS C10 Ia und die höchste Schleifenimpedanz bei 230 V aus. Frage deine Elektro-Fachperson, wo sie die Schleifenimpedanz misst. Du siehst zu und misst nur auf ihre Anweisung und unter ihrer Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m7-l5-q1",
+          "frage": "Was beschreibt die Schleifenimpedanz?",
+          "optionen": [
+            "Den Widerstand der Strombahn bei einem Fehler",
+            "Die Farbe der Isolation",
+            "Die Länge des Kabels",
+            "Die Anzahl der Dosen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Schleifenimpedanz ist der Widerstand der Fehlerschleife."
+        },
+        {
+          "id": "m7-l5-q2",
+          "frage": "Wie lautet die Abschaltbedingung?",
+          "optionen": [
+            "Zs kleiner gleich U0 durch Ia",
+            "Zs gleich 10 Ohm",
+            "Ia gleich U0 mal 5",
+            "Ia kleiner gleich Zs"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Fehlerschleife darf nicht zu hochohmig sein, damit Ia fliesst."
+        },
+        {
+          "id": "m7-l5-q3",
+          "frage": "Was kommt vor der Schleifenmessung?",
+          "optionen": [
+            "Die Prüfung der Durchgängigkeit des Schutzleiters",
+            "Die Übergabe an den Kunden",
+            "Die Isolationsmessung mit 5000 V",
+            "Nichts"
+          ],
+          "richtig": 0,
+          "erklaerung": "Zuerst wird die Durchgängigkeit des Schutzleiters geprüft, dann die Fehlerschleife gemessen."
+        },
+        {
+          "id": "m7-l5-q4",
+          "frage": "Wie gross ist Ia bei einem LS C16?",
+          "optionen": [
+            "80 A",
+            "160 A",
+            "32 A",
+            "16 A"
+          ],
+          "richtig": 1,
+          "erklaerung": "Charakteristik C hat Ia gleich 10 mal In, also 160 A."
+        }
+      ]
+    },
+    {
+      "id": "m7-l6",
+      "titel": "Sicherheitsnachweis und Abnahmekontrolle",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ESTI Bulletin 3/2017 (Schlusskontrolle und Abnahmekontrolle)",
+        "ESTI Mitteilung 2024-0802",
+        "BFE NIV Fact-Sheet 36 (Umfang Abnahmekontrolle) und 40 (Mess- und Prüfprotokoll)",
+        "ESTI Bulletin 8/2011 (Pflichten, Art. 5 NIV)",
+        "BFE Entwurf Änderung NIV (Art. 37, Entwurf, MITTEL)",
+        "NIV SR 734.27 Art. 24 und 37 im Volltext, ElektroCampus-Recherche Sicherheit und Recht (2026-11), F2.13",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11), C1, C2"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Nach der Reparatur gibt es einen Prüfbericht. So weiss der nächste Besitzer, was gemacht wurde.",
+          "elektro": "Nach der Elektroarbeit gibt es den Sicherheitsnachweis (SiNa). Er ist eine Art Konformitätserklärung für die Installation."
+        },
+        {
+          "typ": "text",
+          "text": "Nach dem Erstellen der Installation führt der Betrieb die Schlusskontrolle durch. Die Ergebnisse werden im SiNa festgehalten, dazu gehört ein Mess- und Prüfprotokoll. Der Inhaber der Installationsbewilligung übergibt den SiNa dem Eigentümer, der ihn der Netzbetreiberin zustellt (Art. 24 NIV). Den Abschluss der Arbeiten meldet der Installateur der Netzbetreiberin (Art. 23 NIV)."
+        },
+        {
+          "typ": "text",
+          "text": "Mindestangaben des SiNa nach Art. 37 NIV:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Adresse der Installation und des Eigentümers",
+            "Beschreibung inklusive angewendeter Normen",
+            "Kontrollperiode",
+            "Name und Adresse des Installateurs",
+            "Ergebnis der Schlusskontrolle",
+            "Name und Adresse des Inhabers der Kontrollbewilligung und Ergebnis seiner Kontrolle bei Abnahmekontrollen und periodischen Kontrollen"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Übernimmt der Eigentümer eine Installation mit einer Kontrollperiode von weniger als 20 Jahren, veranlasst er innerhalb von sechs Monaten eine Abnahmekontrolle durch ein unabhängiges Kontrollorgan oder eine akkreditierte Inspektionsstelle (Art. 35 NIV). Grundlage ist der SiNa mit dem Mess- und Prüfprotokoll des Erstellers."
+        },
+        {
+          "typ": "text",
+          "text": "Wer an Planung, Erstellung, Änderung oder Instandstellung beteiligt war, darf die Abnahmekontrolle nicht machen (Art. 31 NIV). Der Eigentümer muss den SiNa auf Verlangen vorweisen und bewahrt die Grundlagen mindestens eine Kontrollperiode lang auf (Art. 5 NIV)."
+        },
+        {
+          "typ": "merke",
+          "text": "Der SiNa bestätigt die Normkonformität. Ihn erstellt und unterzeichnet die fachkundige oder kontrollberechtigte Person. Als Hilfskraft unterschreibst du weder SiNa noch Protokoll."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lass dir von deiner Elektro-Fachperson einen ausgefüllten SiNa zeigen, ohne Kundendaten. Suche die Mindestangaben. Du erstellst und unterschreibst nichts davon."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m7-l6-q1",
+          "frage": "Was bestätigt der Sicherheitsnachweis?",
+          "optionen": [
+            "Dass die Installation den Normen entspricht",
+            "Dass die Lampe leuchtet",
+            "Dass der Kunde bezahlt hat",
+            "Dass das Kabel neu ist"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der SiNa ist eine Art Konformitätserklärung für die Installation."
+        },
+        {
+          "id": "m7-l6-q2",
+          "frage": "Innerhalb welcher Frist veranlasst der Eigentümer bei einer Kontrollperiode unter 20 Jahren die Abnahmekontrolle?",
+          "optionen": [
+            "Sechs Monate",
+            "Eine Woche",
+            "Zehn Jahre",
+            "Gar keine Frist"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Eigentümer veranlasst die Abnahmekontrolle innerhalb von sechs Monaten (Art. 35 NIV)."
+        },
+        {
+          "id": "m7-l6-q3",
+          "frage": "Wer darf die Abnahmekontrolle nicht machen?",
+          "optionen": [
+            "Wer an Planung oder Erstellung der Anlage beteiligt war",
+            "Eine unabhängige Kontrolle",
+            "Eine akkreditierte Inspektionsstelle",
+            "Niemand ist ausgeschlossen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Wer beteiligt war, darf die Abnahmekontrolle nicht selbst machen (Art. 31 NIV)."
+        },
+        {
+          "id": "m7-l6-q4",
+          "frage": "Wer muss den SiNa auf Verlangen vorweisen?",
+          "optionen": [
+            "Der Eigentümer",
+            "Der Nachbar",
+            "Der Lieferant",
+            "Die Hilfskraft allein"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Eigentümer muss den SiNa vorweisen und die Grundlagen mindestens eine Kontrollperiode aufbewahren."
+        },
+        {
+          "id": "m7-l6-q5",
+          "frage": "Darfst du als Hilfskraft das Mess- und Prüfprotokoll unterschreiben?",
+          "optionen": [
+            "Ja, wenn ich allein gemessen habe",
+            "Nein, das tun die fachkundige oder kontrollberechtigte Person",
+            "Ja, wenn der Kunde es will",
+            "Nur freitags"
+          ],
+          "richtig": 1,
+          "erklaerung": "Als Hilfskraft unterschreibst du weder SiNa noch Protokoll."
+        }
+      ]
+    },
+    {
+      "id": "m7-l7",
+      "titel": "Kontrollperioden und Fristen",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ESTI Bulletin 6/2018 (Teilrevision NIV, Kontrollperioden)",
+        "ESTI Mitteilung 2020-0601 (Erläuterungen zu Kontrollperioden)",
+        "BFE, Erläuternder Bericht zur Revision der NIV, Mai 2022",
+        "ESTI Infoblatt Periodische Kontrolle, Oktober 2017",
+        "ESTI Bulletin 5/2011 (Aufforderung und Mahnungen)",
+        "NIV SR 734.27 Anhang im Volltext, ElektroCampus-Recherche Sicherheit und Recht (2026-11), F2.18",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11), C3, C4"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Beim Auto gibt es die Motorfahrzeugkontrolle in festen Abständen. Wer mehr Risiko trägt, wird öfter geprüft.",
+          "elektro": "Auch Installationen werden periodisch kontrolliert. Je grösser die Gefahr, desto kürzer die Kontrollperiode."
+        },
+        {
+          "typ": "text",
+          "text": "Im Anhang der NIV kommen die Kontrollperioden 1, 3, 5, 10 und 20 Jahre vor. Beispiele nach den ESTI- und BFE-Publikationen:"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "20 Jahre: Wohnbauten und Wohninstallationen",
+            "10 Jahre: Verkaufslokale, die nicht unter die Räume für grössere Personenzahlen fallen",
+            "5 Jahre: Räume für eine grössere Personenzahl, öffentliche Ladestationen, Installationen nach Nullung Schema III",
+            "3 Jahre: explosionsgefährdete Bereiche der Zonen 0, 20, 1 und 21, mit Ausnahmen, seit 2018",
+            "1 Jahr: zum Beispiel Baustellen und Märkte (NIV-Anhang)"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Mindestens sechs Monate vor Ablauf der Kontrollperiode fordert die Netzbetreiberin den Eigentümer schriftlich auf, den SiNa bis zum Ende der Periode einzureichen. Die Frist kann bis längstens ein Jahr nach Ablauf verlängert werden. Nach der Aufforderung folgen zwei Mahnungen, danach geht die Durchsetzung an das ESTI."
+        },
+        {
+          "typ": "text",
+          "text": "Bei Installationen mit zehn oder zwanzig Jahren Kontrollperiode ist zusätzlich bei jeder Handänderung zu kontrollieren, wenn die letzte Kontrolle mehr als fünf Jahre zurückliegt. Mängel müssen unverzüglich behoben werden."
+        },
+        {
+          "typ": "merke",
+          "text": "Kontrollperioden: 1, 3, 5, 10 und 20 Jahre. Wohnen 20 Jahre. Verantwortlich für die Fristen ist der Eigentümer."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Frage deine Elektro-Fachperson, welche Kontrollperiode auf dem SiNa eines Auftrags steht und warum. Du bestimmst keine Kontrollperiode, die legt das Kontrollorgan fest."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m7-l7-q1",
+          "frage": "Welche Kontrollperioden kommen im Anhang der NIV vor?",
+          "optionen": [
+            "5, 10 und 20 Jahre",
+            "1, 3, 5, 10 und 20 Jahre",
+            "Nur 20 Jahre",
+            "2, 4 und 8 Jahre"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Anhang enthält 1, 3, 5, 10 und 20 Jahre."
+        },
+        {
+          "id": "m7-l7-q2",
+          "frage": "Welche Kontrollperiode gilt für Wohnbauten?",
+          "optionen": [
+            "1 Jahr",
+            "5 Jahre",
+            "10 Jahre",
+            "20 Jahre"
+          ],
+          "richtig": 3,
+          "erklaerung": "Wohnbauten und Wohninstallationen haben 20 Jahre."
+        },
+        {
+          "id": "m7-l7-q3",
+          "frage": "Wie früh fordert die Netzbetreiberin den Eigentümer vor Ablauf der Kontrollperiode zum SiNa auf?",
+          "optionen": [
+            "Mindestens sechs Monate vorher",
+            "Einen Tag vorher",
+            "Erst nach drei Jahren",
+            "Gar nicht"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Aufforderung erfolgt mindestens sechs Monate vor Ablauf."
+        },
+        {
+          "id": "m7-l7-q4",
+          "frage": "Wer ist für die Einhaltung der Fristen verantwortlich?",
+          "optionen": [
+            "Der Eigentümer",
+            "Der Mieter",
+            "Die Hilfskraft",
+            "Der Lieferant"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Eigentümer ist verantwortlich, nicht Kontrollorgan oder Installateur."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m7-p1",
+      "titel": "Prüfliste der Erstprüfung aufschreiben",
+      "stufe": "Anfänger",
+      "ziel": "Du schreibst die Prüfpunkte der Erstprüfung aus dem Kopf auf und ordnest sie nach spannungsfrei und unter Spannung. Diese Aufgabe führst du nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du nennst Besichtigen, Durchgängigkeit PE und PA, Isolationswiderstand, Polarität, Spannung und Drehfeld, Schleifenimpedanz, RCD-Prüfung und Funktionsprüfung.",
+        "Du ordnest die spannungsfreien Prüfungen vor die Messungen unter Spannung.",
+        "Du erklärst, dass erst gemessen und dann eingeschaltet wird, und nur auf Anweisung der Elektro-Fachperson.",
+        "Du erzählst das ESTI-Unfallbeispiel in zwei Sätzen.",
+        "Du vergleichst mit dem Protokoll deiner Firma, wenn deine Elektro-Fachperson es dir zeigt."
+      ]
+    },
+    {
+      "id": "m7-p2",
+      "titel": "Spannungsfreiheit mit der 3-Punkte-Regel beobachten",
+      "stufe": "Anfänger",
+      "ziel": "Du erklärst die 3-Punkte-Regel mit dem zweipoligen Spannungsprüfer und beobachtest, ob die Elektro-Fachperson sie einhält. Diese Aufgabe machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson. Die Spannungsfreiheit stellt sie fest.",
+      "kriterien": [
+        "Du erklärst, warum das Multimeter dafür nicht zugelassen ist.",
+        "Du nennst EN 61243-3 und die Messkategorie III oder IV.",
+        "Du benennst und beobachtest, dass der Prüfer an bekannter Spannung getestet, der Zielkreis geprüft und der Prüfer nochmals an bekannter Spannung getestet wird.",
+        "Du prüfst anhand einer Checkliste, ob die Elektro-Fachperson alle drei Schritte einhält.",
+        "Du wartest mit jeder weiteren Arbeit, bis die Elektro-Fachperson es sagt."
+      ]
+    },
+    {
+      "id": "m7-p3",
+      "titel": "Sicherheitsnachweis lesen",
+      "stufe": "Anfänger",
+      "ziel": "Du erkennst die Mindestangaben in einem SiNa-Muster. Diese Aufgabe führst du nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du findest Adresse, Eigentümer und Installateur.",
+        "Du findest Beschreibung, Normen und Kontrollperiode.",
+        "Du findest das Ergebnis der Schlusskontrolle.",
+        "Du fragst deine Elektro-Fachperson, wer unterzeichnet und wer die Abnahmekontrolle macht.",
+        "Du unterschreibst weder SiNa noch Messprotokoll."
+      ]
+    }
+  ],
+  "schaltungen": []
+}

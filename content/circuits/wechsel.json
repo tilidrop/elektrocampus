@@ -1,0 +1,30 @@
+{
+  "id": "wechsel",
+  "titel": "Wechselschaltung",
+  "schema": "Sch3",
+  "beschreibung": "Eine Lampe wird von zwei Orten geschaltet. L geht auf den gemeinsamen Kontakt von S1, die beiden Korrespondierenden verbinden S1 und S2, vom gemeinsamen Kontakt von S2 geht der Schalterdraht zur Lampe. Aderfarben nach NIN 2025 Teil 5.1.4.3: Aussenleiter braun, schwarz oder grau (in der App L braun), N blau, PE gelb-grün. Der Schalterdraht ist ein geschalteter Aussenleiter (braun, schwarz oder grau). Empfehlung aus Kursunterlagen, keine Normpflicht: Korrespondierende in gleicher Farbe, Lampendraht in einer anderen Farbe. Klemmennamen wie com, a, b sind Bezeichnungen der App, keine Schweizer Norm.",
+  "teile": [
+    {"id":"L","typ":"quelle","pol":"L","x":30,"y":60},
+    {"id":"N","typ":"quelle","pol":"N","x":30,"y":150},
+    {"id":"PE","typ":"quelle","pol":"PE","x":30,"y":240},
+    {"id":"S1","typ":"wechsler","x":170,"y":60},
+    {"id":"S2","typ":"wechsler","x":330,"y":60},
+    {"id":"E1","typ":"lampe","x":480,"y":150}
+  ],
+  "soll": [
+    ["L","S1.com"],
+    ["S1.a","S2.a"],
+    ["S1.b","S2.b"],
+    ["S2.com","E1.l"],
+    ["N","E1.n"],
+    ["PE","E1.pe"]
+  ],
+  "tabelle": [
+    {"S1":"a","S2":"a","E1":true},
+    {"S1":"a","S2":"b","E1":false},
+    {"S1":"b","S2":"a","E1":false},
+    {"S1":"b","S2":"b","E1":true}
+  ],
+  "farben": {"L":"braun","N":"blau","PE":"gelb-gruen"},
+  "fehler": null
+}

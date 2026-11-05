@@ -1,0 +1,748 @@
+{
+  "id": "modul-3",
+  "nummer": 3,
+  "titel": "Kabel, Querschnitt, Absicherung",
+  "beschreibung": "Wie dick ein Kabel sein muss, welcher LS-Schalter dazu passt, welche Kabel für welchen Einbauort gelten und wie du den Spannungsfall rechnest.",
+  "minutenGesamt": 29,
+  "lektionen": [
+    {
+      "id": "m3-l1",
+      "titel": "Querschnitt und Strom",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Müller PE, NIN-Arbeitsblätter Auflage 12, Blatt 27.2 Überstromschutz für Leitungen",
+        "Schmucki, Leitungen richtig planen und verlegen, bulletin.ch 5/2017",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Abschnitt Weitere Punkte aus dem Review (H7)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Das Startkabel zum Anlasser ist dick, das Kabel zum Innenlicht dünn. Der Anlasser zieht viel Strom, das Licht wenig.",
+          "elektro": "In der Installation gilt dasselbe. Je mehr Strom fliesst, desto grösser muss der Querschnitt sein. Ein zu dünnes Kabel wird heiss."
+        },
+        {
+          "typ": "text",
+          "text": "Der Querschnitt ist die Fläche des Kupfers in mm². Ein dicker Querschnitt ist wie eine breite Strasse. Viel Verkehr (Strom) passt hindurch, ohne dass es eng wird."
+        },
+        {
+          "typ": "text",
+          "text": "Strom erwärmt jedes Kabel. Ist die Ader zu dünn, wird sie heiss. Die Isolation leidet und im schlimmsten Fall brennt es."
+        },
+        {
+          "typ": "text",
+          "text": "Der Querschnitt hängt nicht nur von der Leistung ab. Mit entscheiden Verlegeart, Häufung mehrerer Kabel, Umgebungstemperatur, Spannungsfall und Kurzschlussschutz."
+        },
+        {
+          "typ": "merke",
+          "text": "Mehr Strom braucht mehr Querschnitt. Zu wenig Querschnitt heisst: Erwärmung und Brandgefahr."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Vergleiche am Auto das Kabel zum Anlasser mit dem Kabel zum Innenlicht. Erkläre in einem Satz, warum die beiden nicht gleich dick sind. Diese Übung ist reine Theorie. Praktische Arbeiten an Kabeln machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m3-l1-q1",
+          "frage": "Was passiert, wenn ein Kabel für den fliessenden Strom zu dünn ist?",
+          "optionen": [
+            "Es erwärmt sich stark",
+            "Es wird kälter",
+            "Der Strom sinkt auf null",
+            "Nichts, der Querschnitt spielt keine Rolle"
+          ],
+          "richtig": 0,
+          "erklaerung": "Zu viel Strom in zu wenig Kupfer erwärmt die Ader."
+        },
+        {
+          "id": "m3-l1-q2",
+          "frage": "Welcher Vergleich passt zu Querschnitt und Strom?",
+          "optionen": [
+            "Dickes Anlasserkabel für viel Strom, dünnes Lichtkabel für wenig",
+            "Alle Kabel im Auto sind gleich dick",
+            "Dünne Kabel führen mehr Strom",
+            "Die Kabelfarbe bestimmt die Stromstärke"
+          ],
+          "richtig": 0,
+          "erklaerung": "Wer viel Strom hat, braucht ein dickes Kabel."
+        },
+        {
+          "id": "m3-l1-q3",
+          "frage": "In welcher Einheit wird der Querschnitt angegeben?",
+          "optionen": [
+            "mm²",
+            "Ampere",
+            "Volt",
+            "Ohm"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Querschnitt ist eine Fläche und wird in mm² angegeben."
+        },
+        {
+          "id": "m3-l1-q4",
+          "frage": "Wovon hängt der Querschnitt zusätzlich zur Leistung ab?",
+          "optionen": [
+            "Von Verlegeart, Häufung, Temperatur und Spannungsfall",
+            "Nur von der Mantelfarbe",
+            "Nur vom Preis",
+            "Vom Wochentag der Montage"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Leistung allein reicht nicht. Verlegeart, Häufung, Temperatur, Spannungsfall und Kurzschlussschutz entscheiden mit."
+        }
+      ]
+    },
+    {
+      "id": "m3-l2",
+      "titel": "Richtwerte für Kupferkabel",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ESTI-Fachbeitrag 02/2014 (Amo/Ba), Tabelle maximale Leitungslängen für 4 % Spannungsfall nach Sicherungsnennstrom",
+        "ABB ElektroSPICKER Kabel- und Leitungsdimensionierung, 032021 (Belastbarkeit 1.5 und 2.5 mm²)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 2.1 und 2.3"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto steht auf jeder Sicherung ihr Wert, etwa 10 A oder 15 A. Das Kabel ist darauf abgestimmt.",
+          "elektro": "Im Haus gibt es Richtwerte, welcher Querschnitt zu welcher Absicherung passt. Sie helfen dir, schnell die richtige Grössenordnung zu finden."
+        },
+        {
+          "typ": "text",
+          "text": "Die ESTI ordnet im Fachbeitrag 02/2014 jedem Querschnitt einen Sicherungsnennstrom zu (Kupfer):"
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "1.5 mm²: 13 A",
+            "2.5 mm²: 16 A",
+            "4 mm²: 20 A",
+            "6 mm²: 25 A",
+            "10 mm²: 40 A",
+            "16 mm²: 63 A"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Das sind Richtwerte. Die genaue Belastbarkeit hängt von der Verlegeart ab. Beispiel für Leitungen im Rohr in der Wand mit drei belasteten Adern: 1.5 mm² vertragen 15 A, 2.5 mm² vertragen 20 A. Massgebend sind die Belastbarkeitstabellen der NIN mit den Korrekturfaktoren."
+        },
+        {
+          "typ": "merke",
+          "text": "Richtwerte sind ein Einstieg: 1.5 mm² mit 13 A, 2.5 mm² mit 16 A. Die Tabellen der NIN sind massgebend. Im Zweifel fragst du die Fachperson."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schreibe die sechs Richtwerte auf eine Merkkarte. Ordne dann drei Geräte in deiner Wohnung einem Querschnitt zu und prüfe mit der Fachperson, ob die Zuordnung stimmt. Praktische Arbeiten an Anlagen machst du nur unter Anleitung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m3-l2-q1",
+          "frage": "Welcher Sicherungsnennstrom ist 1.5 mm² nach dem ESTI-Richtwert zugeordnet?",
+          "optionen": [
+            "13 A",
+            "25 A",
+            "40 A",
+            "63 A"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die ESTI-Tabelle nennt 1.5 mm² mit 13 A."
+        },
+        {
+          "id": "m3-l2-q2",
+          "frage": "Welcher Querschnitt gehört nach Richtwert zu 16 A?",
+          "optionen": [
+            "2.5 mm²",
+            "1.5 mm²",
+            "10 mm²",
+            "16 mm²"
+          ],
+          "richtig": 0,
+          "erklaerung": "2.5 mm² wird mit 16 A abgesichert."
+        },
+        {
+          "id": "m3-l2-q3",
+          "frage": "Welche Absicherung ordnet der Richtwert 10 mm² zu?",
+          "optionen": [
+            "40 A",
+            "13 A",
+            "20 A",
+            "80 A"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Zuordnung ist 10 mm² mit 40 A."
+        },
+        {
+          "id": "m3-l2-q4",
+          "frage": "Wovon hängt die genaue Belastbarkeit eines Kabels zusätzlich ab?",
+          "optionen": [
+            "Von der Verlegeart und der Häufung",
+            "Von der Mantelfarbe",
+            "Vom Hersteller des LS-Schalters",
+            "Vom Wetter am Tag der Montage"
+          ],
+          "richtig": 0,
+          "erklaerung": "Verlegeart, Häufung und Temperatur ändern die zulässige Belastung."
+        },
+        {
+          "id": "m3-l2-q5",
+          "frage": "Welche Unterlage ist für die genauen Belastbarkeitswerte massgebend?",
+          "optionen": [
+            "Die Belastbarkeitstabellen der NIN",
+            "Ein Werbeprospekt",
+            "Die Meinung eines Kollegen",
+            "Eine Notiz auf der Baustelle"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Richtwerte sind ein Einstieg. Die Tabellen der NIN enthalten die verbindlichen Werte."
+        }
+      ]
+    },
+    {
+      "id": "m3-l7",
+      "titel": "Verlegeart, Häufung und Temperatur",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "Müller PE, NIN-Arbeitsblätter Auflage 12, Blatt 27.2 (Belastbarkeit, Korrekturfaktoren)",
+        "ABB ElektroSPICKER Kabel- und Leitungsdimensionierung, 032021 (Tabelle 7, Häufung)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 2.1 und 2.2"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Mehrere Kabel im selben Kabelbaum geben ihre Wärme schlechter ab. Im heissen Motorraum noch schlechter.",
+          "elektro": "Im Haus ist es gleich. Liegen mehrere Kabel zusammen oder ist es heiss, vertragen die Kabel weniger Strom."
+        },
+        {
+          "typ": "text",
+          "text": "Die Belastbarkeit Iz hängt von der Verlegeart ab. Beispiel für 2.5 mm² Kupfer mit drei belasteten Adern: im Rohr in der Wand (B2) 20 A, direkt auf der Wand (C) 24 A."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Häufung gebündelter Kabel: 1 Kabel Faktor 1.00, 2 Kabel 0.80, 3 Kabel 0.70.",
+            "Umgebungstemperatur: 30 Grad Faktor 1.00, 40 Grad (PVC) Faktor 0.87."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Rechenbeispiel mit klarer Annahme: 2.5 mm², Rohr in der Wand, drei Kabel gebündelt. Iz = 20 A mal 0.70 = 14 A. Ein LS mit 16 A schützt dann nicht mehr richtig, denn 16 A liegen über 14 A."
+        },
+        {
+          "typ": "merke",
+          "text": "Häufung und Wärme senken die Belastbarkeit. Der LS-Nennstrom darf nie über der verminderten Belastbarkeit liegen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Rechne selbst: 2.5 mm², Iz 20 A, 40 Grad Umgebung. Wie gross ist die verminderte Belastbarkeit? Besprich das Ergebnis mit der Fachperson. Praktische Arbeiten dazu machst du nur unter Anleitung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m3-l7-q1",
+          "frage": "Wie wirkt sich die Häufung mehrerer Kabel im selben Kanal aus?",
+          "optionen": [
+            "Die Belastbarkeit sinkt",
+            "Die Belastbarkeit steigt",
+            "Nichts ändert sich",
+            "Die Spannung steigt"
+          ],
+          "richtig": 0,
+          "erklaerung": "Mehrere Kabel geben die Wärme schlechter ab, darum gelten Korrekturfaktoren kleiner als 1."
+        },
+        {
+          "id": "m3-l7-q2",
+          "frage": "Welcher Faktor gilt für drei gebündelte Kabel?",
+          "optionen": [
+            "0.70",
+            "1.00",
+            "1.30",
+            "0.10"
+          ],
+          "richtig": 0,
+          "erklaerung": "Für drei gebündelte Kabel gilt der Faktor 0.70."
+        },
+        {
+          "id": "m3-l7-q3",
+          "frage": "2.5 mm² mit Iz 20 A, drei Kabel gebündelt (Faktor 0.70). Wie gross ist die verminderte Belastbarkeit?",
+          "optionen": [
+            "14 A",
+            "20 A",
+            "28 A",
+            "7 A"
+          ],
+          "richtig": 0,
+          "erklaerung": "20 A mal 0.70 ergibt 14 A."
+        },
+        {
+          "id": "m3-l7-q4",
+          "frage": "Passt ein LS mit 16 A zu dieser verminderten Belastbarkeit von 14 A?",
+          "optionen": [
+            "Nein, der LS liegt über der Belastbarkeit",
+            "Ja, 16 A ist genau richtig",
+            "Ja, ein LS darf immer grösser sein",
+            "Das spielt keine Rolle"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Nennstrom des LS darf die Belastbarkeit des Kabels nicht übersteigen."
+        }
+      ]
+    },
+    {
+      "id": "m3-l3",
+      "titel": "Der LS-Schalter schützt das Kabel",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Schmucki, Leitungen richtig planen und verlegen, bulletin.ch 5/2017 (NIN 4.3.3 und 4.3.4)",
+        "Electrosuisse, Corrigendum zur NIN 2025, 11.2025, Kapitel 4.3.1.6.1 und Figur 11",
+        "ABB Seite Auswahl und Umgebungsbedingungen (Charakteristik B und C)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 2.3"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Der Sicherungskasten im Auto schützt das Kabel. Eine Sicherung brennt durch, bevor das Kabel selbst heiss wird und brennt.",
+          "elektro": "Im Haus übernimmt der LS-Schalter (Leitungsschutzschalter) diese Aufgabe. Er schaltet ab, bevor das Kabel überlastet wird."
+        },
+        {
+          "typ": "text",
+          "text": "Der Wert auf dem LS-Schalter muss zum Kabel passen. Die Regel: Der Betriebsstrom Ib ist kleiner oder gleich dem Nennstrom In, und In ist kleiner oder gleich der Belastbarkeit Iz. Beispiel: 2.5 mm² im Rohr hat Iz 20 A, ein LS mit 16 A passt."
+        },
+        {
+          "typ": "text",
+          "text": "Auf Materiallisten steht zum Beispiel LS C13 oder LS C16. Die Zahl ist der Nennstrom in Ampere. Der Buchstabe nennt die Auslösecharakteristik. B löst magnetisch bei 3 bis 5 mal In aus, C bei 5 bis 10 mal In."
+        },
+        {
+          "typ": "text",
+          "text": "Auch bei einem Kurzschluss muss der LS schnell genug abschalten. Beispiel aus der NIN 2025: Der magnetische Auslöser muss bei 200 A oder weniger ansprechen. Dazu passen ein LS C20 (10 mal 20 A) oder ein LS B40 (5 mal 40 A)."
+        },
+        {
+          "typ": "merke",
+          "text": "Kabel zuerst wählen, dann LS-Schalter passend dazu. Nie einen grösseren LS-Schalter einsetzen, nur weil er dauernd auslöst."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau im Sicherungskasten deines Autos nach. Lies den Wert einer Sicherung und überlege, welches Kabel dahinter liegt. Im Haus tauschst du keinen LS aus, ausser unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m3-l3-q1",
+          "frage": "Was muss zum Kabel passen?",
+          "optionen": [
+            "Der Nennstrom des LS-Schalters",
+            "Die Farbe des Mantels",
+            "Die Länge des Rohrs",
+            "Die Marke der Klemmen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der LS-Schalter schützt das Kabel nur, wenn sein Nennstrom zur Belastbarkeit des Kabels passt."
+        },
+        {
+          "id": "m3-l3-q2",
+          "frage": "Ein LS-Schalter löst dauernd aus. Was tust du zuerst?",
+          "optionen": [
+            "Die Ursache suchen und die Fachperson fragen",
+            "Einen grösseren LS einsetzen",
+            "Den LS überbrücken",
+            "Den LS ausbauen"
+          ],
+          "richtig": 0,
+          "erklaerung": "Ein grösserer LS kann das Kabel überlasten. Zuerst klärt ihr Last und Kabel."
+        },
+        {
+          "id": "m3-l3-q3",
+          "frage": "Was bedeutet C13 bei einem LS-Schalter?",
+          "optionen": [
+            "Charakteristik C mit 13 A Nennstrom",
+            "Er hat 13 Pole",
+            "Er schaltet nach 13 Sekunden",
+            "Er ist für 13 m Kabel"
+          ],
+          "richtig": 0,
+          "erklaerung": "Der Buchstabe ist die Charakteristik, die Zahl der Nennstrom in Ampere."
+        },
+        {
+          "id": "m3-l3-q4",
+          "frage": "Bei welchem Vielfachen von In löst die Charakteristik C magnetisch aus?",
+          "optionen": [
+            "5 bis 10 mal In",
+            "3 bis 5 mal In",
+            "50 bis 100 mal In",
+            "1 mal In"
+          ],
+          "richtig": 0,
+          "erklaerung": "B löst bei 3 bis 5 mal In aus, C bei 5 bis 10 mal In."
+        },
+        {
+          "id": "m3-l3-q5",
+          "frage": "Welche Bedingung muss für Betriebsstrom Ib, Nennstrom In und Belastbarkeit Iz gelten?",
+          "optionen": [
+            "Ib ist höchstens In, und In ist höchstens Iz",
+            "In ist grösser als Iz",
+            "Ib ist grösser als Iz",
+            "Alle drei müssen gleich sein"
+          ],
+          "richtig": 0,
+          "erklaerung": "So bleibt das Kabel geschützt: Ib höchstens In, In höchstens Iz."
+        }
+      ]
+    },
+    {
+      "id": "m3-l4",
+      "titel": "Kabeltyp nach Einbauort",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "LEONI Studer AG, Das richtige Sicherheitsniveau, 12.2016 (zitiert Electrosuisse Bulletin 6/2015, Stand NIN 2015)",
+        "Electrosuisse, Corrigendum zur NIN 2025, 11.2025, Kapitel 5.2.1.2 (Legende und Fussnote 5)",
+        "Händlerangabe Funktionserhalt FE180/E30 orange (Dätwyler)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 1.2"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto liegt ein Kabel im Motorraum anders als eines im Innenraum. Hitze, Öl und Schmutz verlangen anderes Material.",
+          "elektro": "Auch im Haus bestimmt der Einbauort und der Brandschutz den Kabeltyp."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "TT (PVC): nach Electrosuisse-Empfehlung nur in Räumen der Klasse BD1, also geringe Personenbesetzung und einfache Rettungswege, zum Beispiel Wohnhäuser normaler Höhe. Im Fluchtweg ist TT nicht zugelassen.",
+            "FE0D (Brandklasse Dca-s2,d2,a2): halogenfrei, aber nicht für Fluchtwege zugelassen. Empfohlener Mantel grau.",
+            "FE05C (Brandklasse Cca-s1,d1,a1): für Fluchtwege und hohe Anforderungen. Empfohlener Mantel gelb.",
+            "Funktionserhalt, zum Beispiel FE180/E30 orange: die Brandschutzbehörde kann für E30, E60 und E90 einen gemeinsamen Test von Kabel und Tragsystem verlangen."
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "In der Brandklasse stehen a1 und a2 für halogenfrei. Die Empfehlung stammt von Electrosuisse (Stand NIN 2015). Welches Kabel in einem Raum verlangt wird, legen Brandschutz und Planung fest. Für Aussenbereiche, UV, Öl und mechanische Belastung brauchst du besondere Leitungen. Den genauen Typ klärst du mit der Fachperson und dem Kabelkatalog."
+        },
+        {
+          "typ": "merke",
+          "text": "Zuerst den Einbauort und die Brandschutzanforderung klären, dann den Kabeltyp wählen. TT gehört nicht in den Fluchtweg."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Nimm die Liste und ordne drei Einbauorte zu: ein Wohnzimmer in einem Wohnhaus, ein Fluchtweg im Schulhaus, ein Raum mit Funktionserhalt. Welcher Kabeltyp gehört wohin? Besprich deine Antwort mit der Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m3-l4-q1",
+          "frage": "In welchen Räumen ist TT nach Electrosuisse nur zulässig?",
+          "optionen": [
+            "In Räumen der Klasse BD1, zum Beispiel Wohnhäuser normaler Höhe",
+            "In allen Fluchtwegen",
+            "Nur im Freien",
+            "Nur in Tunneln"
+          ],
+          "richtig": 0,
+          "erklaerung": "TT (PVC) ist laut Electrosuisse auf BD1-Räume beschränkt und im Fluchtweg nicht zugelassen."
+        },
+        {
+          "id": "m3-l4-q2",
+          "frage": "Welches Kabel ist für Fluchtwege und hohe Brandschutzanforderungen gedacht?",
+          "optionen": [
+            "FE05C",
+            "TT",
+            "Td",
+            "FE0D"
+          ],
+          "richtig": 0,
+          "erklaerung": "FE05C (Cca-s1,d1,a1) ist für Fluchtwege vorgesehen. FE0D ist dafür nicht zugelassen."
+        },
+        {
+          "id": "m3-l4-q3",
+          "frage": "Was kennzeichnet FE0D?",
+          "optionen": [
+            "Halogenfrei, aber nicht für Fluchtwege zugelassen",
+            "Zugelassen für alle Fluchtwege",
+            "Es enthält Halogene",
+            "Es ist ein Erdkabel"
+          ],
+          "richtig": 0,
+          "erklaerung": "FE0D (Dca-s2,d2,a2) ist halogenfrei, aber nicht für Fluchtwege."
+        },
+        {
+          "id": "m3-l4-q4",
+          "frage": "Was bedeutet a1 oder a2 in der Brandklasse?",
+          "optionen": [
+            "Halogenfrei",
+            "Besonders dick",
+            "Für Erdverlegung",
+            "Wasserdicht"
+          ],
+          "richtig": 0,
+          "erklaerung": "a1 und a2 stehen laut NIN 2025 für halogenfrei."
+        },
+        {
+          "id": "m3-l4-q5",
+          "frage": "Was kann die Brandschutzbehörde bei Funktionserhalt E30, E60 oder E90 verlangen?",
+          "optionen": [
+            "Einen gemeinsamen Test von Kabel und Tragsystem",
+            "Dass jedes Kabel orange ist",
+            "Dass nur Gummikabel verwendet werden",
+            "Nichts"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die NIN 2025 vermerkt, dass die Behörde den gemeinsamen Test von Kabel und Tragsystem verlangen kann."
+        }
+      ]
+    },
+    {
+      "id": "m3-l5",
+      "titel": "Rechenbeispiel Gerät, Querschnitt und LS",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Müller PE, NIN-Arbeitsblätter Auflage 12, Blatt 27.2 (Belastbarkeit, Rechnung gegen Tabelle)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 4 (Rechnungen, keine Normquelle für das Gerät)"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto liest du die Leistung einer Zusatzlampe ab und rechnest, welche Sicherung dazu passt.",
+          "elektro": "Im Haus machst du dasselbe: Leistung vom Typenschild lesen, Strom ausrechnen, Kabel und LS dazu wählen."
+        },
+        {
+          "typ": "text",
+          "text": "Einphasig, ohmsche Last: Strom I = Leistung P geteilt durch Spannung U. Beispiel mit der Annahme P = 3.6 kW und U = 230 V: I = 3600 / 230 = rund 15.7 A. Ein LS mit 16 A passt. 2.5 mm² im Rohr hat bei zwei belasteten Adern 23 A, das reicht."
+        },
+        {
+          "typ": "text",
+          "text": "Dreiphasig mit drei Aussenleitern: Leistung = Wurzel 3 mal 400 V mal Strom. Beispiel mit 16 A je Phase: 1.73 mal 400 V mal 16 A = rund 11.1 kW. Für 16 A genügen 5x2.5 mm² (Belastbarkeit im Rohr 20 A bei drei belasteten Adern)."
+        },
+        {
+          "typ": "text",
+          "text": "Das sind Rechenbeispiele. Welche Absicherung und welcher Querschnitt für ein echtes Gerät gelten, bestimmen Typenschild, Netzbetreiber und die Fachperson."
+        },
+        {
+          "typ": "merke",
+          "text": "Zuerst I aus P und U rechnen. Bei drei Phasen zusätzlich durch Wurzel 3 teilen. Dann Kabel und LS nach der Belastbarkeit wählen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Lies auf einem Typenschild die Leistung und die Spannung. Rechne den Strom aus und vergleiche mit den Richtwerten aus Lektion 2. Besprich das Ergebnis mit der Fachperson. Am Gerät selbst arbeitest du nur unter Anleitung und Aufsicht."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m3-l5-q1",
+          "frage": "Wie rechnest du den Strom eines einphasigen ohmschen Geräts?",
+          "optionen": [
+            "I = P geteilt durch U",
+            "I = P mal U",
+            "I = U geteilt durch P",
+            "I = P plus U"
+          ],
+          "richtig": 0,
+          "erklaerung": "Strom ist Leistung geteilt durch Spannung."
+        },
+        {
+          "id": "m3-l5-q2",
+          "frage": "Ein Gerät mit 3.6 kW hängt an 230 V einphasig. Wie gross ist der Strom ungefähr?",
+          "optionen": [
+            "15.7 A",
+            "3.6 A",
+            "157 A",
+            "1.6 A"
+          ],
+          "richtig": 0,
+          "erklaerung": "3600 W geteilt durch 230 V ergibt rund 15.7 A."
+        },
+        {
+          "id": "m3-l5-q3",
+          "frage": "Wie gross ist die Leistung bei 3x400 V und 16 A je Phase ungefähr?",
+          "optionen": [
+            "11.1 kW",
+            "6.4 kW",
+            "3.7 kW",
+            "25 kW"
+          ],
+          "richtig": 0,
+          "erklaerung": "Wurzel 3 mal 400 V mal 16 A ergibt rund 11.1 kW."
+        },
+        {
+          "id": "m3-l5-q4",
+          "frage": "Wer bestimmt die Absicherung und den Querschnitt für ein echtes Gerät?",
+          "optionen": [
+            "Typenschild, Netzbetreiber und Fachperson",
+            "Du allein",
+            "Die Farbe des Geräts",
+            "Der Zufall"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Rechnungen zeigen nur die Grössenordnung. Verbindlich sind Typenschild, Netzbetreiber und Fachperson."
+        }
+      ]
+    },
+    {
+      "id": "m3-l6",
+      "titel": "Spannungsfall auf langen Strecken",
+      "minuten": 5,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "elektro-rechner.ch, Spannungsfall berechnen NIN (NIN 5.2.5.1, 4 Prozent)",
+        "ESTI-Fachbeitrag 02/2014 (Amo/Ba), Tabelle für 4 % Spannungsfall",
+        "WV-CH 2021 mit den TAB der Verteilnetzbetreiber, Kapitel 5 (Hausleitungen)",
+        "ElektroCampus-Recherche Kabel und Absicherung (2026-11), Kapitel 3 und Offene Frage Nr. 7"
+      ],
+      "theorie": [
+        {
+          "typ": "vergleich",
+          "auto": "Ein sehr langes Kabel zum Anhängerlicht lässt die Lampen dunkler leuchten. Auf dem Weg geht Spannung verloren.",
+          "elektro": "Auch im Haus verliert ein langes Kabel Spannung. Das nennt man Spannungsfall. Das Gerät am Ende bekommt weniger als die Netzspannung."
+        },
+        {
+          "typ": "text",
+          "text": "Je länger das Kabel und je dünner der Querschnitt, desto grösser der Spannungsfall. Nach NIN 5.2.5.1 sind höchstens 4 Prozent der Bemessungsspannung erlaubt, das sind 9.2 V bei 230 V und 16 V bei 400 V. Abweichungen sind für Motoranlauf und hohe Einschaltströme zulässig."
+        },
+        {
+          "typ": "text",
+          "text": "Vereinfachte Formel für Kupfer (κ = 56 m pro Ohm und mm²): zweipolig ΔU = 2 mal L mal I geteilt durch (56 mal A), dreiphasig ΔU = Wurzel 3 mal L mal I geteilt durch (56 mal A). L ist die einfache Länge in Metern. Die genaue Rechnung nach NIN nutzt die Leitertemperatur von 55 Grad und gibt rund 14 Prozent mehr Widerstand."
+        },
+        {
+          "typ": "text",
+          "text": "Beispiel aus der Ausbildung: Ein zweipoliges Heizgerät mit 7.5 kW zwischen zwei Aussenleitern an 400 V hängt an 30 m Kupferkabel mit 4 mm². Es fliessen I = 7500 / 400 = 18.75 A. ΔU = 2 mal 30 mal 18.75 geteilt durch (56 mal 4) = rund 5 V. Das sind etwa 1.25 Prozent von 400 V und damit weit unter 16 V. Am Anfang der Leitung braucht es darum rund 405 V, damit am Gerät 400 V ankommen. Bei Drehstromgeräten rechnest du mit Wurzel 3 und erhältst andere Werte."
+        },
+        {
+          "typ": "text",
+          "text": "Zur Kontrolle: Die ESTI-Tabelle nennt für 2.5 mm² mit 16 A dreiphasig bei 4 Prozent eine maximale Länge von 70 m. Hausleitungen haben strengere Werte der Netzbetreiber, zum Beispiel höchstens 0.5 Prozent bis 100 kVA."
+        },
+        {
+          "typ": "merke",
+          "text": "Lange Strecke heisst: Spannungsfall beachten. Grenze 4 Prozent, mehr Querschnitt hilft."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Rechne das Beispiel mit 25 m statt 30 m nach. Überlege auch: Wo im Auto ist die längste Leitung und warum ist sie dicker? Das ist eine Rechenübung. Messungen an echten Anlagen machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m3-l6-q1",
+          "frage": "Was ist Spannungsfall?",
+          "optionen": [
+            "Spannungsverlust auf dem Weg durch das Kabel",
+            "Ein Absturz von der Leiter",
+            "Ein Spannungsprüfer, der ausfällt",
+            "Der Ausfall des LS-Schalters"
+          ],
+          "richtig": 0,
+          "erklaerung": "Auf der Leitung geht ein Teil der Spannung verloren."
+        },
+        {
+          "id": "m3-l6-q2",
+          "frage": "Wie viel Spannungsfall ist nach NIN höchstens erlaubt?",
+          "optionen": [
+            "4 Prozent der Bemessungsspannung",
+            "40 Prozent",
+            "0.04 Prozent",
+            "Gar keiner"
+          ],
+          "richtig": 0,
+          "erklaerung": "Die Grenze ist 4 Prozent, das sind 9.2 V bei 230 V und 16 V bei 400 V."
+        },
+        {
+          "id": "m3-l6-q3",
+          "frage": "Wie gross war der Spannungsfall im Beispiel mit zweipoligem Gerät, 7.5 kW bei 400 V, 30 m und 4 mm²?",
+          "optionen": [
+            "Rund 5 V",
+            "Rund 50 V",
+            "Rund 0.05 V",
+            "Rund 500 V"
+          ],
+          "richtig": 0,
+          "erklaerung": "I = 18.75 A, ΔU = 2 mal 30 mal 18.75 geteilt durch 224, also rund 5 V."
+        },
+        {
+          "id": "m3-l6-q4",
+          "frage": "Was beugt dem Spannungsfall bei langen Strecken vor?",
+          "optionen": [
+            "Ein grösserer Querschnitt",
+            "Ein dünneres Kabel",
+            "Eine andere Mantelfarbe",
+            "Ein kleinerer LS-Schalter"
+          ],
+          "richtig": 0,
+          "erklaerung": "Mehr Kupfer bedeutet weniger Widerstand und weniger Verlust."
+        },
+        {
+          "id": "m3-l6-q5",
+          "frage": "Wofür steht L in der Formel für den Spannungsfall?",
+          "optionen": [
+            "Für die einfache Länge der Leitung",
+            "Für die doppelte Länge",
+            "Für die Leistung",
+            "Für den Leiter"
+          ],
+          "richtig": 0,
+          "erklaerung": "L ist die einfache Länge. Den Hin- und Rückweg erfasst der Faktor 2 in der zweipoligen Formel."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m3-p1",
+      "titel": "Kabel nach Einbauort wählen",
+      "stufe": "Anfänger",
+      "ziel": "Anhand der Einbauort-Tabelle für drei Situationen den passenden Kabeltyp wählen. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Wohnhaus mit normaler Personenbesetzung (BD1) dem Typ TT zuordnen",
+        "Fluchtweg dem Typ FE05C zuordnen und begründen, warum TT dort nicht passt",
+        "Halogenfrei und Funktionserhalt bei den passenden Fällen erkennen",
+        "Auswahl mit einem Satz begründen"
+      ]
+    },
+    {
+      "id": "m3-p2",
+      "titel": "Querschnitt und LS-Schalter zuordnen",
+      "stufe": "Anfänger",
+      "ziel": "Für eine Beleuchtung, eine Steckdosengruppe und ein Gerät mit 3.6 kW Querschnitt und LS-Wert nennen. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Richtwert nach ESTI (1.5 mm² mit 13 A, 2.5 mm² mit 16 A) korrekt benannt",
+        "Strom aus Leistung und Spannung korrekt gerechnet",
+        "Begründung, warum der LS-Wert zur Belastbarkeit des Kabels passen muss"
+      ]
+    },
+    {
+      "id": "m3-p3",
+      "titel": "Spannungsfall nachrechnen",
+      "stufe": "Anfänger",
+      "ziel": "Den Spannungsfall für ein Beispiel mit der vereinfachten Formel rechnen und mit der Grenze von 4 Prozent vergleichen. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Strom aus Leistung und Spannung gerechnet",
+        "Formel für zweipoliges Gerät korrekt angewendet",
+        "Ergebnis mit 4 Prozent der Spannung verglichen"
+      ]
+    }
+  ],
+  "schaltungen": []
+}

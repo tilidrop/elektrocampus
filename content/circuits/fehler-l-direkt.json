@@ -1,0 +1,30 @@
+{
+  "id": "fehler-l-direkt",
+  "titel": "Fehlersuche: Lampe brennt immer",
+  "schema": "Sch0",
+  "beschreibung": "Ausschaltung, bei der L am Schalter vorbei auf die Lampe geht. Aderfarben nach NIN 2025 Teil 5.1.4.3: Aussenleiter braun, schwarz oder grau (in der App L braun), N blau, PE gelb-grün. Der Schalterdraht ist ein geschalteter Aussenleiter und bekommt als Einzelader braun, schwarz oder grau. Empfehlung aus Kursunterlagen, keine Normpflicht: Lampendraht in einer anderen Farbe als die Einspeisung.",
+  "teile": [
+    {"id":"L","typ":"quelle","pol":"L","x":30,"y":60},
+    {"id":"N","typ":"quelle","pol":"N","x":30,"y":150},
+    {"id":"PE","typ":"quelle","pol":"PE","x":30,"y":240},
+    {"id":"S1","typ":"ausschalter","x":200,"y":60},
+    {"id":"E1","typ":"lampe","x":450,"y":150}
+  ],
+  "soll": [
+    ["L","S1.in"],
+    ["S1.out","E1.l"],
+    ["N","E1.n"],
+    ["PE","E1.pe"]
+  ],
+  "tabelle": [
+    {"S1":"aus","E1":false},
+    {"S1":"ein","E1":true}
+  ],
+  "farben": {"L":"braun","N":"blau","PE":"gelb-gruen"},
+  "fehler": {
+    "beschreibung": "L ist direkt an E1.l angeschlossen statt über den Schalter S1.",
+    "ort": "E1.l",
+    "wires": [["L","S1.in"],["L","E1.l"],["N","E1.n"],["PE","E1.pe"]],
+    "symptom": "Die Lampe brennt immer, der Schalter hat keine Wirkung."
+  }
+}

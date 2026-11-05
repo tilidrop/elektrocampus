@@ -1,0 +1,619 @@
+{
+  "id": "modul-1",
+  "nummer": 1,
+  "titel": "Grundlagen",
+  "beschreibung": "Spannung, Strom, Widerstand, Leistung, Ohmsches Gesetz und das Schweizer Netz mit 230 und 400 V.",
+  "minutenGesamt": 24,
+  "lektionen": [
+    {
+      "id": "m1-l1",
+      "titel": "Spannung",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ESTI Weisung 100 (Version 0619), Begriffe Kleinspannung und Niederspannung",
+        "NIV SR 734.27 Art. 1 Abs. 2",
+        "Electrosuisse, Sicherheitsrisiko Phasenprüfer (2025)",
+        "ESTI Wegleitung Prüfung Art. 13 NIV (15. September 2025), Prüfstoff Grundlagen",
+        "ElektroCampus-Recherche Sicherheit und Recht (2026-11) (F1.7, F3.4), ElektroCampus-Recherche Messen und Pruefen (2026-11) (A4, D1)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Spannung ist der Druck, der Ladungen antreibt. Ihre Einheit ist das Volt (V), das Formelzeichen ist U."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Die 12-V-Batterie hat 12 V zwischen den Polen, auch wenn nichts angeschlossen ist. 12 V liegen weit unter der Kleinspannungsgrenze.",
+          "elektro": "In der Steckdose liegen 230 V an, auch wenn nichts angeschlossen ist. Schon 230 V Wechselspannung können tödlich sein (Suva)."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "Kleinspannung: höchstens 50 V Wechselspannung bzw. 120 V Gleichspannung.",
+            "Niederspannung: höchstens 1000 V Wechselspannung bzw. 1500 V Gleichspannung. Die Steckdose gehört dazu.",
+            "Die NIV gilt für Installationen bis 1000 V Wechselspannung bzw. 1500 V Gleichspannung."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Spannung gibt es zwischen zwei Punkten. Du misst sie parallel zum Bauteil. Mit dem Multimeter darfst du Spannung messen, aber nicht die Spannungsfreiheit feststellen. Dafür ist nur der zweipolige Spannungsprüfer nach EN 61243-3 zugelassen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Miss mit dem Multimeter die Spannung einer Autobatterie. Überlege dann, was bei einer Steckdose anders wäre. An der Steckdose misst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m1-l1-q1",
+          "frage": "Welche Einheit hat die Spannung?",
+          "optionen": [
+            "Ampere",
+            "Ohm",
+            "Volt",
+            "Watt"
+          ],
+          "richtig": 2,
+          "erklaerung": "Spannung wird in Volt (V) gemessen."
+        },
+        {
+          "id": "m1-l1-q2",
+          "frage": "Wie schliesst du ein Voltmeter an?",
+          "optionen": [
+            "In Reihe in der Leitung",
+            "Parallel zum Bauteil",
+            "Gar nicht",
+            "Nur an Erde"
+          ],
+          "richtig": 1,
+          "erklaerung": "Spannung misst du zwischen zwei Punkten, also parallel."
+        },
+        {
+          "id": "m1-l1-q3",
+          "frage": "In welchen Bereich gehört die Spannung der Steckdose?",
+          "optionen": [
+            "Kleinspannung",
+            "Niederspannung",
+            "Hochspannung",
+            "Keiner davon"
+          ],
+          "richtig": 1,
+          "erklaerung": "Niederspannung reicht bis 1000 V Wechselspannung. Kleinspannung endet bei 50 V Wechselspannung."
+        },
+        {
+          "id": "m1-l1-q4",
+          "frage": "Womit darfst du die Spannungsfreiheit feststellen?",
+          "optionen": [
+            "Mit einem Multimeter",
+            "Mit einem Phasenprüfer",
+            "Nur mit einem zweipoligen Spannungsprüfer nach EN 61243-3",
+            "Mit einem berührungslosen Prüfer"
+          ],
+          "richtig": 2,
+          "erklaerung": "Multimeter, Phasenprüfer und berührungslose Prüfer erfüllen die Norm dafür nicht."
+        }
+      ]
+    },
+    {
+      "id": "m1-l2",
+      "titel": "Strom",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "hoch",
+      "quellen": [
+        "ESTI, Aus Elektrounfällen lernen 10/2018, Sicheres Messen beim Prüfen der Spannungsfreiheit, Gefahren beim Einsatz von Multimetern",
+        "ESTI, Aus Elektrounfällen lernen 02/2019, Pflichten der Vorgesetzten zum Schutz der Lernenden",
+        "Suva Magazin, Stromschlag: So wirkt Strom im Körper (26.06.2026)",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11) (D4)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Strom ist die Ladung, die pro Sekunde durch einen Leiter fliesst. Die Einheit ist das Ampere (A), das Formelzeichen ist I."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Der Anlasser zieht einen grossen Strom. Darum sind seine Kabel dick.",
+          "elektro": "Je mehr Strom, desto dicker muss der Leiter sein, sonst wird er heiss. Darum gibt es verschiedene Querschnitte und Sicherungen."
+        },
+        {
+          "typ": "text",
+          "text": "Strom misst du in Reihe, das Messgerät wird in die Leitung geschaltet. In einer Reihenschaltung ist der Strom überall gleich. Bei normalen Multimetern ist das gefährlich: Eine falsche Stellung des Funktionsschalters oder eine Messleitung in der Strombuchse verursacht beim Spannungsmessen einen Kurzschluss (ESTI). Das ESTI empfiehlt für das sichere Messen das Zangenamperemeter. Bei Multimetern ohne automatische Buchsensperre darf der Funktionsschalter nur betätigt werden, wenn das Multimeter spannungsfrei ist."
+        },
+        {
+          "typ": "merke",
+          "text": "An 230 V misst du Strom nie mit dem Multimeter in der Leitung, sondern mit der Stromzange, und nur auf Anweisung der Elektro-Fachperson. Denk an die Wirkung: Strom durch den Körper wird ab etwa 50 mA lebensgefährlich (Modul 0)."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Überlege, warum das Kabel zum Anlasser einen grösseren Querschnitt hat als das Kabel zur Innenraumbeleuchtung. Schreib die Antwort in zwei Sätzen auf. Strommessungen an Installationen machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m1-l2-q1",
+          "frage": "Welche Einheit hat der Strom?",
+          "optionen": [
+            "Volt",
+            "Ampere",
+            "Ohm",
+            "Hertz"
+          ],
+          "richtig": 1,
+          "erklaerung": "Strom wird in Ampere (A) gemessen."
+        },
+        {
+          "id": "m1-l2-q2",
+          "frage": "Wie wird Strom grundsätzlich gemessen?",
+          "optionen": [
+            "Parallel zum Bauteil",
+            "In Reihe, das Gerät wird in die Leitung geschaltet",
+            "Gar nicht",
+            "Nur an der Steckdose"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Strom muss durch das Messgerät fliessen. Darum schaltest du es in Reihe."
+        },
+        {
+          "id": "m1-l2-q3",
+          "frage": "Was passiert, wenn die Messleitung in der Strombuchse steckt und du damit Spannung misst?",
+          "optionen": [
+            "Nichts",
+            "Es entsteht ein Kurzschluss",
+            "Die Anzeige friert ein",
+            "Die Spannung sinkt"
+          ],
+          "richtig": 1,
+          "erklaerung": "Das ESTI warnt vor dieser Fehlbedienung. Sie verursacht einen Kurzschluss."
+        },
+        {
+          "id": "m1-l2-q4",
+          "frage": "Wie misst du an einer 230-V-Anlage den Strom sicher?",
+          "optionen": [
+            "Mit dem Multimeter in der Leitung",
+            "Mit der Stromzange, auf Anweisung der Elektro-Fachperson",
+            "Mit einem Phasenprüfer",
+            "Gar nicht, das ist nie nötig"
+          ],
+          "richtig": 1,
+          "erklaerung": "Eine Stromzange schliesst die Fehlbedienung aus. Du misst nur auf Anweisung."
+        }
+      ]
+    },
+    {
+      "id": "m1-l3",
+      "titel": "Widerstand",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "ESTI Wegleitung Prüfung Art. 13 NIV (15. September 2025), Prüfstoff Grundlagen und Schutzleiterprüfung",
+        "ESTI Unfallbericht 2026-0301 (2. März 2026)",
+        "Voltimum, Grundlagen der Prüfung elektrischer Anlagen (DIN VDE 0100-600), Schweizer Lernkarten NIN 2025 (Fachquellen, keine Normtexte)",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11) (B3)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Widerstand bremst den Strom. Die Einheit ist das Ohm (Ω), das Formelzeichen ist R."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Ein korrodiertes Massekabel oder eine lose Klemme hat einen hohen Widerstand. Das Licht wird schwach, der Anlasser dreht lahm.",
+          "elektro": "Eine lose Klemme im Verteiler hat denselben Effekt. Hier entsteht Wärme, weil der Widerstand höher ist."
+        },
+        {
+          "typ": "text",
+          "text": "Bei der Serieschaltung werden die Widerstände addiert. Der Strom ist überall gleich."
+        },
+        {
+          "typ": "text",
+          "text": "Auch der Schutzleiter hat einen Widerstand. Bei der Erstprüfung wird seine Durchgängigkeit gemessen, und dabei fallen fehlerhafte Anschlüsse auf (ESTI). Laut Fachquellen braucht es dafür ein Messgerät mit einer Leerlaufspannung von 4 bis 24 V und mindestens 200 mA. Das ist ein Installationsprüfgerät, nicht der Piepston am Multimeter."
+        },
+        {
+          "typ": "merke",
+          "text": "Schlechte Verbindung bedeutet hohen Widerstand, und der erzeugt Wärme. Darum werden Klemmen sauber und fest angezogen."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Zwei Widerstände von 100 Ω und 50 Ω sind in Serie. Wie gross ist der Gesamtwiderstand? Rechne und kontrolliere mit dem Multimeter, wenn du die Bauteile hast. Messungen an Installationen machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m1-l3-q1",
+          "frage": "Welche Einheit hat der Widerstand?",
+          "optionen": [
+            "Ohm",
+            "Volt",
+            "Watt",
+            "Ampere"
+          ],
+          "richtig": 0,
+          "erklaerung": "Widerstand wird in Ohm gemessen."
+        },
+        {
+          "id": "m1-l3-q2",
+          "frage": "Zwei Widerstände mit 100 Ω und 50 Ω sind in Serie. Wie gross ist der Gesamtwiderstand?",
+          "optionen": [
+            "50 Ω",
+            "75 Ω",
+            "150 Ω",
+            "5000 Ω"
+          ],
+          "richtig": 2,
+          "erklaerung": "In Serie werden die Widerstände addiert: 100 + 50 = 150 Ω."
+        },
+        {
+          "id": "m1-l3-q3",
+          "frage": "Was passiert an einer losen Klemme mit hohem Übergangswiderstand?",
+          "optionen": [
+            "Sie wird kälter",
+            "Sie wird warm bis heiss",
+            "Nichts",
+            "Die Spannung verschwindet"
+          ],
+          "richtig": 1,
+          "erklaerung": "Strom durch einen hohen Widerstand erzeugt Wärme."
+        },
+        {
+          "id": "m1-l3-q4",
+          "frage": "Welchen Messstrom braucht die Durchgängigkeitsmessung des Schutzleiters laut Fachquellen mindestens?",
+          "optionen": [
+            "Etwa 1 mA",
+            "200 mA",
+            "Genau 1 A",
+            "Der Piepston genügt"
+          ],
+          "richtig": 1,
+          "erklaerung": "Genannt werden 4 bis 24 V Leerlaufspannung und mindestens 200 mA. Das ist mehr als ein einfacher Multimeter-Summer."
+        }
+      ]
+    },
+    {
+      "id": "m1-l4",
+      "titel": "Das Ohmsche Gesetz",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "ESTI Wegleitung Prüfung Art. 13 NIV (15. September 2025): Ohmsches Gesetz gehört zum Prüfstoff",
+        "Die Rechenformeln selbst sind Grundwissen ohne Schweizer Normquelle, ElektroCampus-Recherche Messen und Pruefen (2026-11) (A4)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Spannung, Strom und Widerstand hängen zusammen. Das beschreibt das Ohmsche Gesetz."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "U = R × I",
+            "I = U / R",
+            "R = U / I"
+          ]
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Eine 12-V-Lampe mit 4 Ω zieht 3 A (12 / 4). Die 12 V liegen weit unter der Kleinspannungsgrenze.",
+          "elektro": "Ein Gerät mit 46 Ω an 230 V zieht 5 A (230 / 46). Dieselbe Rechnung, aber 230 V können tödlich sein."
+        },
+        {
+          "typ": "merke",
+          "text": "Bei gleicher Spannung gilt: mehr Widerstand heisst weniger Strom, weniger Widerstand heisst mehr Strom. Ein Kurzschluss hat fast keinen Widerstand, darum fliesst ein sehr grosser Strom."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Rechne: Ein Gerät hat 23 Ω und hängt an 230 V. Wie gross ist der Strom? Dann: Es fliessen 10 A bei 230 V. Wie gross ist der Widerstand? Das ist eine reine Rechenübung am Schreibtisch."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m1-l4-q1",
+          "frage": "Wie lautet das Ohmsche Gesetz für den Strom?",
+          "optionen": [
+            "I = U × R",
+            "I = U / R",
+            "I = R / U",
+            "I = U + R"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Strom ist Spannung geteilt durch Widerstand."
+        },
+        {
+          "id": "m1-l4-q2",
+          "frage": "Ein Gerät mit 46 Ω hängt an 230 V. Wie gross ist der Strom?",
+          "optionen": [
+            "2 A",
+            "5 A",
+            "10 A",
+            "46 A"
+          ],
+          "richtig": 1,
+          "erklaerung": "I = 230 V / 46 Ω = 5 A."
+        },
+        {
+          "id": "m1-l4-q3",
+          "frage": "Ein Verbraucher nimmt 10 A bei 230 V auf. Wie gross ist sein Widerstand?",
+          "optionen": [
+            "2300 Ω",
+            "23 Ω",
+            "240 Ω",
+            "0.04 Ω"
+          ],
+          "richtig": 1,
+          "erklaerung": "R = 230 V / 10 A = 23 Ω."
+        },
+        {
+          "id": "m1-l4-q4",
+          "frage": "Was passiert bei gleicher Spannung, wenn der Widerstand kleiner wird?",
+          "optionen": [
+            "Der Strom wird kleiner",
+            "Der Strom wird grösser",
+            "Der Strom bleibt gleich",
+            "Die Spannung steigt"
+          ],
+          "richtig": 1,
+          "erklaerung": "Weniger Widerstand heisst mehr Strom. Beim Kurzschluss ist der Widerstand fast null."
+        },
+        {
+          "id": "m1-l4-q5",
+          "frage": "Eine 12-V-Lampe hat 4 Ω. Wie gross ist der Strom?",
+          "optionen": [
+            "3 A",
+            "48 A",
+            "0.33 A",
+            "8 A"
+          ],
+          "richtig": 0,
+          "erklaerung": "I = 12 V / 4 Ω = 3 A."
+        }
+      ]
+    },
+    {
+      "id": "m1-l5",
+      "titel": "Leistung",
+      "minuten": 4,
+      "geprueft": false,
+      "belegt": "offen",
+      "quellen": [
+        "ESTI Wegleitung Prüfung Art. 13 NIV (15. September 2025): Leistung, Verkettung und Drehstromleistung gehören zum Prüfstoff",
+        "Schulaufgabe Heizgerät 7.5 kW (Vault, Friedli), ElektroCampus-Recherche Messen und Pruefen (2026-11) (Offene Frage 7)",
+        "Die Formel P = U × I ist Grundwissen ohne Schweizer Normquelle, ElektroCampus-Recherche Messen und Pruefen (2026-11) (A4)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Leistung sagt, wie viel Energie ein Gerät pro Sekunde umsetzt. Die Einheit ist das Watt (W), das Formelzeichen ist P."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "P = U × I",
+            "I = P / U"
+          ]
+        },
+        {
+          "typ": "text",
+          "text": "Diese einfache Form gilt für Gleichstrom und für einphasige Verbraucher mit rein ohmscher Last, zum Beispiel einen Heizlüfter. Bei Drehstrom kommt ein Verkettungsfaktor dazu. Das lernst du später, das ESTI zählt Verkettung und Drehstromleistung zum Prüfstoff."
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Eine 12-V-Lampe mit 55 W zieht gut 4.5 A. Das merkst du an der Sicherung im Auto.",
+          "elektro": "Ein Heizgerät mit 7.5 kW, zweipolig an 400 V betrieben (Aufgabe aus dem Unterricht), zieht I = 7500 W / 400 V = 18.75 A."
+        },
+        {
+          "typ": "merke",
+          "text": "Aus Leistung und Spannung rechnest du den Strom. Für Kabel und Sicherung zählt der Strom, dazu kommen Verlegeart, Häufung, Temperatur und Länge."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Rechne den Strom für einen Heizlüfter mit 2000 W an 230 V. Überlege danach, ob eine Steckdose mit einem dünnen Verlängerungskabel dafür geeignet ist. Das ist eine Rechenübung. Anschliessen und Absichern machst du nur unter Anleitung und Aufsicht der Elektro-Fachperson."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m1-l5-q1",
+          "frage": "Welche Formel gilt für die Leistung bei einphasiger ohmscher Last?",
+          "optionen": [
+            "P = U / I",
+            "P = U × I",
+            "P = U + I",
+            "P = R × I"
+          ],
+          "richtig": 1,
+          "erklaerung": "Leistung ist Spannung mal Strom."
+        },
+        {
+          "id": "m1-l5-q2",
+          "frage": "Ein Gerät zieht 10 A an 230 V. Wie gross ist die Leistung?",
+          "optionen": [
+            "23 W",
+            "230 W",
+            "2300 W",
+            "240 W"
+          ],
+          "richtig": 2,
+          "erklaerung": "P = 230 V × 10 A = 2300 W."
+        },
+        {
+          "id": "m1-l5-q3",
+          "frage": "Ein Heizlüfter hat 2000 W und hängt an 230 V. Wie gross ist der Strom ungefähr?",
+          "optionen": [
+            "2 A",
+            "8.7 A",
+            "20 A",
+            "460 A"
+          ],
+          "richtig": 1,
+          "erklaerung": "I = 2000 W / 230 V ≈ 8.7 A."
+        },
+        {
+          "id": "m1-l5-q4",
+          "frage": "Ein Heizgerät mit 7.5 kW hängt zweipolig an 400 V. Wie gross ist der Strom?",
+          "optionen": [
+            "3 A",
+            "18.75 A",
+            "187.5 A",
+            "0.05 A"
+          ],
+          "richtig": 1,
+          "erklaerung": "I = 7500 W / 400 V = 18.75 A."
+        },
+        {
+          "id": "m1-l5-q5",
+          "frage": "Was zählt neben dem Strom für Kabel und Sicherung?",
+          "optionen": [
+            "Nur die Farbe des Kabels",
+            "Verlegeart, Häufung, Temperatur und Länge",
+            "Nur der Preis",
+            "Nichts"
+          ],
+          "richtig": 1,
+          "erklaerung": "Der Strom allein reicht nicht. Verlegeart, Häufung, Temperatur und Länge spielen mit."
+        }
+      ]
+    },
+    {
+      "id": "m1-l6",
+      "titel": "Das Schweizer Netz: 230 und 400 V",
+      "minuten": 4,
+      "geprueft": true,
+      "belegt": "mittel",
+      "quellen": [
+        "Vault, Elektro-Beratung NIN 2025 (230/400 V, 50 Hz, TN-S): Grundwissen, MITTEL, ElektroCampus-Recherche Messen und Pruefen (2026-11) (A1)",
+        "ESTI Fachbeitrag 06/2019 (Nullung Schema I bis III und TN-Systeme, Neutralleiter gelb in Altanlagen)",
+        "ElektroCampus-Recherche Messen und Pruefen (2026-11) (A1, A2)"
+      ],
+      "theorie": [
+        {
+          "typ": "text",
+          "text": "Im Schweizer Hausnetz hast du in der Regel ein TN-S-System mit 50 Hz. Zwischen einem Aussenleiter (L) und dem Neutralleiter (N) liegen 230 V. Zwischen zwei Aussenleitern liegen 400 V."
+        },
+        {
+          "typ": "liste",
+          "punkte": [
+            "L gegen N: 230 V",
+            "L gegen L: 400 V",
+            "Frequenz: 50 Hz",
+            "Ein Drehstromanschluss hat drei Aussenleiter L1, L2 und L3, dazu N und den Schutzleiter PE. Es gibt auch einphasige Anschlüsse."
+          ]
+        },
+        {
+          "typ": "vergleich",
+          "auto": "Im Auto hast du 12 V mit dem Pluspol als Hinleiter und der Masse als Rückleiter. 12 V liegen weit unter der Kleinspannungsgrenze.",
+          "elektro": "Im Haus sind es 230 V und 400 V. Das ist eine andere Liga, hier gilt Modul 0."
+        },
+        {
+          "typ": "merke",
+          "text": "Alte Anlagen heissen Nullung Schema I, II und III. Heute heissen sie TN-S, TN-C-S und TN-C. In solchen Altanlagen kann gelb der Neutralleiter sein. Die Aderfarbe ersetzt nie die Messung."
+        }
+      ],
+      "praxis": [
+        {
+          "typ": "text",
+          "text": "Schau mit der Elektro-Fachperson im Verteiler nach, welche Stromkreise an welchem Aussenleiter hängen. Die Aussenleiter sind oft mit L1, L2 und L3 beschriftet. Du führst das nur unter Anleitung und Aufsicht der Elektro-Fachperson aus."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "m1-l6-q1",
+          "frage": "Wie hoch ist die Spannung zwischen Aussenleiter und Neutralleiter im Schweizer Netz?",
+          "optionen": [
+            "12 V",
+            "110 V",
+            "230 V",
+            "400 V"
+          ],
+          "richtig": 2,
+          "erklaerung": "L gegen N sind 230 V."
+        },
+        {
+          "id": "m1-l6-q2",
+          "frage": "Wie hoch ist die Spannung zwischen zwei Aussenleitern?",
+          "optionen": [
+            "230 V",
+            "400 V",
+            "50 V",
+            "690 V"
+          ],
+          "richtig": 1,
+          "erklaerung": "L gegen L sind 400 V."
+        },
+        {
+          "id": "m1-l6-q3",
+          "frage": "Welche Frequenz hat das Schweizer Netz?",
+          "optionen": [
+            "16.7 Hz",
+            "50 Hz",
+            "60 Hz",
+            "100 Hz"
+          ],
+          "richtig": 1,
+          "erklaerung": "Im Hausnetz sind es 50 Hz."
+        },
+        {
+          "id": "m1-l6-q4",
+          "frage": "Wie viele Aussenleiter hat ein Drehstromanschluss?",
+          "optionen": [
+            "Einen",
+            "Zwei",
+            "Drei",
+            "Fünf"
+          ],
+          "richtig": 2,
+          "erklaerung": "Drehstrom hat drei Aussenleiter L1, L2 und L3."
+        },
+        {
+          "id": "m1-l6-q5",
+          "frage": "Du findest in einer alten Anlage eine gelbe Ader. Was gilt?",
+          "optionen": [
+            "Sie ist immer der Schutzleiter",
+            "Sie kann der Neutralleiter sein, die Farbe ersetzt nie die Messung",
+            "Sie ist immer spannungsfrei",
+            "Sie ist immer ein Aussenleiter"
+          ],
+          "richtig": 1,
+          "erklaerung": "In Nullung Schema I und III ist der Neutralleiter gelb."
+        }
+      ]
+    }
+  ],
+  "praxisaufgaben": [
+    {
+      "id": "m1-p1",
+      "titel": "Ohm und Leistung rechnen",
+      "stufe": "Anfänger",
+      "ziel": "Strom, Widerstand und Leistung aus gegebenen Werten sicher berechnen. Messungen an Anlagen führst du nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du rechnest den Strom eines 2000-W-Heizlüfters an 230 V.",
+        "Du rechnest den Widerstand eines Geräts, das 10 A bei 230 V zieht.",
+        "Du schreibst Formel, Einsetzen und Einheit auf."
+      ]
+    },
+    {
+      "id": "m1-p2",
+      "titel": "Netz im Verteiler lesen",
+      "stufe": "Anfänger",
+      "ziel": "Im Verteiler L, N und PE erkennen und die Spannungen benennen. Du führst die Aufgabe nur unter Anleitung und Aufsicht der Elektro-Fachperson aus.",
+      "kriterien": [
+        "Du nennst die Spannung zwischen L und N sowie zwischen zwei Aussenleitern.",
+        "Du erkennst im Verteiler die drei Aussenleiter.",
+        "Du fragst die Elektro-Fachperson, was du im Verteiler messen darfst, bevor du misst."
+      ]
+    }
+  ],
+  "schaltungen": []
+}
