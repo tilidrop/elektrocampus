@@ -71,4 +71,22 @@ await ladeModule();
 window.addEventListener("hashchange", render);
 render();
 
-if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+if ("serviceWorker" in navigator) {
+  // Neue Version: der Service Worker übernimmt sofort, die Seite zeigt erst nach Tippen die neuen Inhalte.
+  const hatteController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!hatteController || document.getElementById("update-hinweis")) return;
+    const b = document.createElement("button");
+    b.id = "update-hinweis";
+    b.className = "update-hinweis";
+    b.textContent = "Neue Version geladen. Tippe hier zum Aktualisieren.";
+    b.addEventListener("click", () => location.reload());
+    document.body.append(b);
+  });
+  navigator.serviceWorker.register("sw.js").then((reg) => {
+    // Eine installierte App bleibt oft lange im Hintergrund: beim Zurückkehren nach Updates suchen.
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") reg.update().catch(() => {});
+    });
+  }).catch(() => {});
+}

@@ -1,6 +1,6 @@
 // Service Worker: alles vorab cachen, offline-fähig, Update über neue VERSION.
 // GEN:START
-const VERSION = "ed8212e121";
+const VERSION = "2d6e97b5f5";
 const FILES = [
   "./",
   "index.html",

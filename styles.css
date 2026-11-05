@@ -212,3 +212,10 @@ p { margin: 0.4rem 0; }
 .tab-zeile .ic { width: 18px; height: 18px; color: var(--ok); }
 summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; }
 .symptom { margin-top: 0; }
+
+.update-hinweis {
+  position: fixed; left: 16px; right: 16px; bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 50;
+  min-height: 48px; padding: 12px 16px; border: 0; border-radius: 12px;
+  background: var(--orange); color: #1a1200; font: inherit; font-weight: 600; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
